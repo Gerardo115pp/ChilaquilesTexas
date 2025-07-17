@@ -1,0 +1,40 @@
+# Output
+/**/.output/
+/**/.vercel/
+/**/.netlify/
+/**/.wrangler/
+/**/build/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.*
+!.env.example
+!.env.test
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+/**/node_modules/
+/**/src/serverInfo.js
+/**/*.log
+/**/build/
+/**/__pycache__/
+/**/*.pyc
+/**/.vscode/
+/**/operation_data/
+/**/*.backup
+*.code-workspace
+/**/generic.go
+/database/
+wordpress/wp_plugins/**/vendor/
+docs/
+secrets/
+/**/.svelte-kit/
+apps/client/static/
+ssl/
+action_scripts/
+databases/qdrant/
