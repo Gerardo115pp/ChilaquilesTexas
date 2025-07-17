@@ -1,0 +1,36 @@
+server {
+    listen 443;
+    server_name texas.loschilaquiles.com;
+
+    http2 on;
+
+    ssl_certificate /home/el_maligno/local_domain_certificates/texas.loschilaquiles.com/texas.loschilaquiles.com.pem;
+    ssl_certificate_key /home/el_maligno/local_domain_certificates/texas.loschilaquiles.com/texas.loschilaquiles.com-key.pem;
+
+    location / {
+        proxy_set_header Host $host;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_method $request_method;
+        # Development server
+        proxy_pass https://texas.loschilaquiles.com:1367;
+    }
+
+    location /resources {
+        root /var/www/texas.loschilaquiles/resources;
+        rewrite ^/resources/(.*)$ /$1 break;
+        # add_header Cache-Control "public, max-age=3600"; # 1 hour. testing, real value should be higher
+        add_header Cache-Control "public, max-age=604800"; # 1 week
+        try_files $uri $uri/ =404;
+    }
+}
+
+server {
+    listen 80;
+    server_name texas.loschilaquiles.com;
+
+    location / {
+        return 301 https://$host$request_uri;
+    }
+}

@@ -38,3 +38,5 @@ apps/client/static/
 ssl/
 action_scripts/
 databases/qdrant/
+
+/**/secretfile_*
