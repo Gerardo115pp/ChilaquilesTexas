@@ -31,6 +31,7 @@ export default defineConfig(async  ({ command, mode, isSsrBuild, isPreview }) =>
 				"@events": path.resolve(__dirname, 'src/events'),
 				"@stores": path.resolve(__dirname, 'src/stores'),
 				"@app": path.resolve(__dirname, 'src'),
+				"@common": path.resolve(__dirname, 'src/common'),
 			},
 		},
 		plugins: [
