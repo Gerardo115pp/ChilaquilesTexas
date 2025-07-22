@@ -1,8 +1,10 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+    import { page_backgrounds } from "@app/common/page_medias";
+    import PageBackground from "@components/PageBackground/PageBackground.svelte";
+</script>
 
-<style>
-    h1 {
-        font-family: var(--font-titles);
-    }
-</style>
+<main id="txc-home-page">
+    <PageBackground 
+        page_background={page_backgrounds.home}
+    />
+</main>

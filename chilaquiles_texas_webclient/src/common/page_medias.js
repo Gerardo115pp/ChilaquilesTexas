@@ -166,9 +166,6 @@ const toVideoURI = (filename) => `${videos_prefix}/${filename}`;
         ])
     );
 
-    /**
-     * @type {Object<string, PageBackground>}
-     */
     export const page_backgrounds = {
         home: HOME_PAGE_BACKGROUND,
         our_history: OUR_HISTORY_BACKGROUND,
