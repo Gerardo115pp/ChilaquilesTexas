@@ -69,4 +69,9 @@ export const website_page_paths = {
     PAN_DULCE_PAGE: pan_dulce_page
 }
 
-
+export const external_links = {
+    ADDRESS: "https://g.co/kgs/BzDK3Hu",
+    EMAIL: "mailto: hola@loschilaquiles.com",
+    PHONE: "tel: +18324697664",
+    INSTAGRAM: "https://instagram.com/loschilaquiles"
+}
