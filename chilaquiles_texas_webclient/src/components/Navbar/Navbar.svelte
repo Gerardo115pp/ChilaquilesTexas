@@ -1,6 +1,7 @@
 <script>
     import InstagramIcon from "@components/icons/InstagramIcon.svelte";
     import SpotifyIcon from "@components/icons/SpotifyIcon.svelte";
+    import { website_page_paths } from "@app/common/page_paths";
 
 
     /*=============================================
@@ -19,19 +20,19 @@
         const nav_options = [
             {
                 name: "About us",
-                href: "/about-us"
+                href: website_page_paths.ABOUT_US_PAGE.path
             },
             {
                 name: "Menu",
-                href: "/cover-menu"
+                href: website_page_paths.COVER_MENU_PAGE.path
             },
             {
                 name: "Coffee",
-                href: "/coffee"
+                href: website_page_paths.COFFEE_PAGE.path
             },
             {
                 name: "Pan Dulce",
-                href: "/pan-dulce"
+                href: website_page_paths.PAN_DULCE_PAGE.path
             }
         ];
     
