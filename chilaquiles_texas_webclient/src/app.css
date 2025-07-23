@@ -32,6 +32,8 @@
             --font-size-h5: calc(var(--font-size-h4) * 0.71875); /* 24px */
             --font-size-h6: calc(var(--font-size-h5) * 0.71875); /* 17px */
 
+            font-size: var(--font-size-3);
+
         /* Families */
             --font-read: 'belwe';
             --font-titles: 'belwe-bold';
@@ -110,12 +112,17 @@
         --border-radius: 0px;
         --body-bg-color: var(--grey);
         --body-text-color: var(--grey-1);
+        --padding--video-background-page: 46px 68px;
 }
 
 
 /*=============================================
 =            Normalize            =
 =============================================*/
+
+    * {
+        box-sizing: border-box;
+    }
 
     body {
         margin: 0;
@@ -139,5 +146,30 @@
     h1 {
         font-size: var(--font-size-h2);
     }
+
+    ul, ol {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
 /*=====  End of Normalize  ======*/
+
+
+/*=============================================
+=            Buttons            =
+=============================================*/
+
+    button, .txc-button {
+        font-family: var(--font-titles);
+        background-color: var(--theme-color);
+        color: var(--grey-1);
+        font-weight: 600;
+        font-size: var(--font-size-1);
+        padding: calc(var(--spacing-2) * 1.0625) calc(var(--spacing-3) * 0.8125);
+        border: none;
+        line-height: 1;
+        text-transform: uppercase;
+    }
+
+/*=====  End of Buttons  ======*/
 
