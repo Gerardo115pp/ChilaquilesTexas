@@ -1,4 +1,5 @@
 import { breakpoints } from "./breakpoints";
+import { website_page_paths } from "./page_paths";
 import { PageBackground } from "@models/PageBackgrounds";
 import { ReactiveMediaList } from "@models/ReactiveMedia";
 
@@ -166,14 +167,59 @@ const toVideoURI = (filename) => `${videos_prefix}/${filename}`;
         ])
     );
 
-    export const page_backgrounds = {
-        home: HOME_PAGE_BACKGROUND,
-        our_history: OUR_HISTORY_BACKGROUND,
-        san_miguel: SAN_MIGUEL_BACKGROUND,
-        menu: MENU_BACKGROUND,
-        coffee: COFFEE_BACKGROUND,
-        pan_dulce: PAN_DULCE_BACKGROUND
-    };  
+    /**
+    * @typedef {Object} PageToBackgroundRelation
+     * @property {import('./page_paths').WebsitePagePath} page_data
+     * @property {PageBackground} background
+    */
+
+    /**
+     * @type {Map<string, PageToBackgroundRelation>}
+     */
+    const video_background_pages = new Map([
+        [website_page_paths.HOME.path, { 
+            page_data: website_page_paths.HOME,
+            background: HOME_PAGE_BACKGROUND 
+        }],
+        [website_page_paths.ABOUT_US_PAGE.path, {
+            page_data: website_page_paths.ABOUT_US_PAGE,
+            background: OUR_HISTORY_BACKGROUND
+        }],
+        [website_page_paths.COVER_MENU_PAGE.path, {
+            page_data: website_page_paths.COVER_MENU_PAGE,
+            background: MENU_BACKGROUND
+        }],
+        [website_page_paths.SAN_MIGUEL_PAGE.path, {
+            page_data: website_page_paths.SAN_MIGUEL_PAGE,
+            background: SAN_MIGUEL_BACKGROUND
+        }],
+        [website_page_paths.COFFEE_PAGE.path, {
+            page_data: website_page_paths.COFFEE_PAGE,
+            background: COFFEE_BACKGROUND
+        }],
+        [website_page_paths.PAN_DULCE_PAGE.path, {
+            page_data: website_page_paths.PAN_DULCE_PAGE,
+            background: PAN_DULCE_BACKGROUND
+        }]
+    ]);
+
+    /**
+     * Checks if the given page path is a video background page.
+     * @param {string} page_path - The path of the page to check.
+     * @returns {boolean} - Returns true if the page is a video background page, false
+     */
+    export const isVideoBackgroundPage = (page_path) => {
+        return video_background_pages.has(page_path);
+    }
+
+    /**
+     * Returns and object containing the page data and background for the given page path.
+     * @param {string} page_path 
+     * @returns {PageToBackgroundRelation | null} 
+     */
+    export const getPageBackground = (page_path) => {
+        return video_background_pages.get(page_path) || null;
+    }
 /*=====  End of Page backgrounds  ======*/
 
 
