@@ -4,7 +4,4 @@
 </script>
 
 <main id="txc-home-page">
-    <PageBackground 
-        page_background={page_backgrounds.home}
-    />
 </main>
