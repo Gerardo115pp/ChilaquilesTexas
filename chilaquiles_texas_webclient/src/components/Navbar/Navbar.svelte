@@ -1,7 +1,7 @@
 <script>
     import InstagramIcon from "@components/icons/InstagramIcon.svelte";
     import SpotifyIcon from "@components/icons/SpotifyIcon.svelte";
-    import { website_page_paths } from "@app/common/page_paths";
+    import { external_links, website_page_paths } from "@app/common/page_paths";
 
 
     /*=============================================
@@ -44,7 +44,7 @@
         <menu id="txc-nv-cr-navoptions">
             {#each nav_options as nv_option_item}
                 <li class="txc-nv-cr-navoption">
-                    <a href="{nv_option_item.href}">
+                    <a href="{nv_option_item.href}" class="force-hover">
                         {nv_option_item.name}
                     </a>
                 </li>
@@ -62,9 +62,9 @@
                 </span>
             </li>
             <li class="txc-nv-cl-socials-item">
-                <span class="txc-nv-cl-socials-item-icon-wrapper">
+                <a href="{external_links.INSTAGRAM}" class="txc-nv-cl-socials-item-icon-wrapper">
                     <InstagramIcon />
-                </span>
+                </a>
             </li>
         </ul>
         <button id="txc-nv-order-online-btn" class="txc-button">
@@ -146,7 +146,7 @@
                 text-transform: none;
             }
 
-            span.txc-nv-cl-socials-item-icon-wrapper {
+            .txc-nv-cl-socials-item-icon-wrapper {
                 height: 100%;
                 aspect-ratio: 1 / 1;
             }

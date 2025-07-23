@@ -14,6 +14,8 @@
         --grey-8: hsl(0, 0%, 13%, 0.5);
         --grey-9: #000000;
         --grey: var(--grey-9);
+
+        --grey-1-hover: var(--grey-2);
     /* Fonts */
         /* Sizes */
             --font-size-1: 16px; /* 16px */
@@ -153,10 +155,29 @@
         margin: 0;
     }
 
+/*=====  End of Normalize  ======*/
+
+
+/*=============================================
+=            Texts            =
+=============================================*/
+
+
     a {
         color: var(--body-text-color);
+        transition: color 0.3s ease-out;
+
+        &:hover {
+            color: var(--grey-1-hover);
+        }
+        &.force-hover:hover {
+            color: var(--grey-1-hover) !important;
+        }
+        
     }
-/*=====  End of Normalize  ======*/
+
+/*=====  End of Texts  ======*/
+
 
 
 /*=============================================
