@@ -1,7 +1,9 @@
 <script>
     import { page } from '$app/state';
     import '@app/app.css';
-    import { page_backgrounds } from '@app/common/page_medias';
+    import { getPageBackground, isVideoBackgroundPage } from '@app/common/page_medias';
+    import { website_page_paths } from '@app/common/page_paths';
+    import DesayunoCopy from '@components/CommonCopy/DesayunoCopy.svelte';
     import Navbar from '@components/Navbar/Navbar.svelte';
     import PageBackground from '@components/PageBackground/PageBackground.svelte';
     import { onMount } from 'svelte';
@@ -38,31 +40,16 @@
         const determinePageBackground = () => {
             const page_pathname = page.url.pathname;
 
-            let new_page_background = page_backgrounds.home;
+            let page_data = getPageBackground(page_pathname);
 
-            switch (page_pathname) {
-                case '/about-us':
-                    new_page_background = page_backgrounds.our_history;
-                    break;
-                case '/cover-menu':
-                    new_page_background = page_backgrounds.menu;
-                    break;
-                case '/coffee':
-                    new_page_background = page_backgrounds.coffee;
-                    break;
-                case '/pan-dulce':
-                    new_page_background = page_backgrounds.pan_dulce;
-                    break;
-                case '/san-miguel':
-                    new_page_background = page_backgrounds.san_miguel;
-                    break;
-            }
+            if (page_data == null) {
+                console.debug("In @app/routes/+layout.determinePageBackground: No page background found for page path: %O", page_pathname);
+            }        
 
-            page_background = new_page_background;
+            page_background = page_data?.background ?? null;
         }
     
     /*=====  End of Methods  ======*/
-    
     
 </script>
 
@@ -74,9 +61,14 @@
     {/if}
     <div id="txc-video-background-page-layout">
         <div id="txc-vbpl-side-content"></div>
-        <div id="txc-vbpl-page-content">
+        <div id="txc-vbpl-main-content">
             <Navbar />
-            {@render children()}
+            <div id="txc-vbpl-page--common-content">
+                <DesayunoCopy />
+            </div>
+            <div id="txc-vbpl-page--main-content">
+                {@render children()}
+            </div>
         </div>
     </div>
 </div>

@@ -21,7 +21,7 @@
             --font-size-3: calc(var(--font-size-1) * 1.3225); /* 21px */
             --font-size-4: calc(var(--font-size-1) * 1.5); /* 23px */
 
-            --font-size-p: var(--font-size-2);
+            --font-size-p: var(--font-size-3);
             --font-size-p-small: var(--font-size-1);
             --font-size-fineprint: calc(var(--font-size-1) * 0.8);
 
@@ -115,7 +115,6 @@
         --padding--video-background-page: 46px 68px;
 }
 
-
 /*=============================================
 =            Normalize            =
 =============================================*/
@@ -129,6 +128,8 @@
         padding: 0;
         font-family: var(--font-read);
         font-size: var(--font-size-3);
+        color: var(--body-text-color);
+        background-color: var(--body-bg-color);
     }
 
     main {
@@ -137,7 +138,6 @@
 
     h1, h2, h3, h4, h5, h6 {
         font-family: var(--font-titles);
-        color: var(--grey-7);
         font-weight: normal;
         line-height: 1;
         margin: 0;
@@ -151,6 +151,10 @@
         list-style: none;
         padding: 0;
         margin: 0;
+    }
+
+    a {
+        color: var(--body-text-color);
     }
 /*=====  End of Normalize  ======*/
 
