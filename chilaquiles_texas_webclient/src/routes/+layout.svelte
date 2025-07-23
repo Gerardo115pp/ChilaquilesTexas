@@ -4,6 +4,8 @@
     import { getPageBackground, isVideoBackgroundPage } from '@app/common/page_medias';
     import { website_page_paths } from '@app/common/page_paths';
     import DesayunoCopy from '@components/CommonCopy/DesayunoCopy.svelte';
+    import Footer from '@components/Footer/Footer.svelte';
+    import LosChilaquilesLogo from '@components/icons/LosChilaquilesLogo.svelte';
     import Navbar from '@components/Navbar/Navbar.svelte';
     import PageBackground from '@components/PageBackground/PageBackground.svelte';
     import { onMount } from 'svelte';
@@ -60,24 +62,68 @@
         />
     {/if}
     <div id="txc-video-background-page-layout">
-        <div id="txc-vbpl-side-content"></div>
+        <div id="txc-vbpl-side-content">
+            <div id="txc-vbpl-sc-logo-wrapper">
+                <LosChilaquilesLogo />
+            </div>
+        </div>
         <div id="txc-vbpl-main-content">
             <Navbar />
-            <div id="txc-vbpl-page--common-content">
-                <DesayunoCopy />
+            <div id="txc-vbpl-mc-with-common-copy">
+                <div id="txc-vbpl-page--common-content">
+                    <DesayunoCopy />
+                </div>
+                <div id="txc-vbpl-page--main-content">
+                    {@render children()}
+                </div>
             </div>
-            <div id="txc-vbpl-page--main-content">
-                {@render children()}
-            </div>
+            <Footer />
         </div>
     </div>
 </div>
 
 <style>
-    #txc-video-background-page-layout {
-        display: grid;
-        grid-template-columns: auto min(75.36dvw, 1447px);
-        padding: var(--padding--video-background-page);
-        column-gap: min(59px, 3.072dvw);
-    }
+    
+    /*=============================================
+    =       VBPL(Video Background Page Layout)    =
+    =============================================*/
+
+        #libery-website-content:has(> #txc-video-background-page-layout) {
+            display: grid;
+            place-items: center;
+        }
+    
+        #txc-video-background-page-layout {
+            box-sizing: border-box;
+            width: 100%;
+            max-width: 1920px;
+            height: 100dvh;
+            display: grid;
+            grid-template-columns: auto min(75.36dvw, 1447px);
+            padding: var(--padding--video-background-page);
+            column-gap: min(59px, 3.072dvw);
+
+            & > #txc-vbpl-side-content, & > #txc-vbpl-main-content {
+                height: 100%;
+            }
+        }
+
+        #txc-vbpl-side-content {
+            display: grid;
+            place-items: center;
+            
+            & #txc-vbpl-sc-logo-wrapper {
+                width: 96.3578%;
+            }
+        }
+
+        #txc-vbpl-main-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    
+    /*=====  End of VBPL layout  ======*/
+    
+    
 </style>
