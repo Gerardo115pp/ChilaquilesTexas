@@ -18,7 +18,12 @@ export default defineConfig(async  ({ command, mode, isSsrBuild, isPreview }) =>
 		server: {
 			open: false,
 			host: "0.0.0.0",
-			port: 1367
+			port: 1367,
+			hmr: {
+				protocol: 'wss',
+				host: 'texas.loschilaquiles.com',
+				port: 1367,
+			}
 		},
 		resolve: {
 			alias: {
