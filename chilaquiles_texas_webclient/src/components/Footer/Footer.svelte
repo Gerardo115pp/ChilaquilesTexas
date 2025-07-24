@@ -4,7 +4,13 @@
 
 <footer id="txc-vbpl-footer">
     <address id="txc-vbpl-footer-content">
-        <a id="txc-vbpl-footer-contact-address" href="{external_links.ADDRESS}" class="txc-vbpl-footer-contact-item">
+        <a 
+            id="txc-vbpl-footer-contact-address"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="{external_links.ADDRESS}"
+            class="txc-vbpl-footer-contact-item"
+        >
             702 E 11TH STREET, HOUSTON, TEXAS
         </a>
         <hgroup id="txc-vbpl-footer-open-days">
@@ -12,10 +18,22 @@
                 SEVEN DAYS A WEEK / <strong>FROM 7AM TO 7PM</strong>
             </h4>
         </hgroup>
-        <a id="txc-vbpl-footer-contact-email" href="{external_links.EMAIL}" class="txc-vbpl-footer-contact-item">
+        <a 
+            id="txc-vbpl-footer-contact-email"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="{external_links.EMAIL}"
+            class="txc-vbpl-footer-contact-item"
+        >
             hola@loschilaquiles.com
         </a>
-        <a id="txc-vbpl-footer-contact-phone" href="{external_links.PHONE}" class="txc-vbpl-footer-contact-item">
+        <a 
+            id="txc-vbpl-footer-contact-phone"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="{external_links.PHONE}"
+            class="txc-vbpl-footer-contact-item"
+        >
             +1 832 469 7664
         </a>
     </address>

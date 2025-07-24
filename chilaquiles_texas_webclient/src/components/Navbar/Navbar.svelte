@@ -62,7 +62,12 @@
                 </span>
             </li>
             <li class="txc-nv-cl-socials-item">
-                <a href="{external_links.INSTAGRAM}" class="txc-nv-cl-socials-item-icon-wrapper">
+                <a 
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   href="{external_links.INSTAGRAM}" 
+                   class="txc-nv-cl-socials-item-icon-wrapper"
+                >
                     <InstagramIcon />
                 </a>
             </li>
