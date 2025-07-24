@@ -122,6 +122,21 @@
             flex-direction: column;
             justify-content: space-between;
         }
+
+        
+        /*----------  With common copy  ----------*/
+        
+            #txc-vbpl-mc-with-common-copy {
+                display: grid;
+                grid-template-columns: auto 1fr;
+            }
+
+            #txc-vbpl-page--main-content {
+                display: grid;
+                width: 100%;
+                height: 100%;
+                place-items: center;
+            }
     
     /*=====  End of VBPL layout  ======*/
     
