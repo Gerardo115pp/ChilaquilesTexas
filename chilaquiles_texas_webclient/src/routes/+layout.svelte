@@ -1,4 +1,5 @@
 <script>
+    import { afterNavigate } from '$app/navigation';
     import { page } from '$app/state';
     import '@app/app.css';
     import { getPageBackground, isVideoBackgroundPage } from '@app/common/page_medias';
@@ -17,7 +18,7 @@
     
         /**
          * @type {import('./$types').LayoutProps}
-        */
+         */
         let { children } = $props();
 
         /**
@@ -25,11 +26,18 @@
          * @type {import('@models/PageBackgrounds').PageBackground | null}
          */
         let page_background = $state(null);
+
+        $effect(() => console.debug("In @app/routes/+layout.svelte: Page background is: %O", page_background));
     
     /*=====  End of Properties  ======*/
     
     onMount(() => {
-        determinePageBackground();
+        determinePageBackground(page.url.pathname);
+    });
+
+    afterNavigate(() => {
+        console.debug(`In @app/routes/+layout.svelte: Page changed to: ${page.url.pathname}`);
+        handleCSRNavigate(page.url.pathname);
     });
     
     /*=============================================
@@ -38,17 +46,26 @@
     
         /**
          * Determines the page background for the current page.
+         * @param {string} pathname
          */
-        const determinePageBackground = () => {
-            const page_pathname = page.url.pathname;
-
-            let page_data = getPageBackground(page_pathname);
+        const determinePageBackground = pathname => {
+            let page_data = getPageBackground(pathname);
 
             if (page_data == null) {
-                console.debug("In @app/routes/+layout.determinePageBackground: No page background found for page path: %O", page_pathname);
+                console.debug(`In @app/routes/+layout.determinePageBackground: No page background found for page path: ${pathname}`);
             }        
 
             page_background = page_data?.background ?? null;
+        }
+
+        /**
+         * Handles CSR navigation.
+         * @param {string} pathname
+         */
+        const handleCSRNavigate = pathname => {
+            // TODO: Check same page navigation.
+
+            determinePageBackground(pathname);
         }
     
     /*=====  End of Methods  ======*/
