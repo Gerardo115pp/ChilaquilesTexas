@@ -60,23 +60,23 @@
     <section class="txc-vbpl-ccb-section">
         <p>
             We use flavor to transport you to<br/>
-            our hometown: <a class:active-page={current_page_pathname === website_page_paths.SAN_MIGUEL_PAGE.path} href="{website_page_paths.SAN_MIGUEL_PAGE.path}">San Miguel Cuyutlán</a>
+            our hometown: <a class="force-hover" class:active-page={current_page_pathname === website_page_paths.SAN_MIGUEL_PAGE.path} href="{website_page_paths.SAN_MIGUEL_PAGE.path}">San Miguel Cuyutlán</a>
         </p>
     </section>
     <section class="txc-vbpl-ccb-section">
         <p>
-            <a class:active-page={current_page_pathname === website_page_paths.COVER_MENU_PAGE.path} href="{website_page_paths.COVER_MENU_PAGE.path}">Cooking</a> is more than<br/>
+            <a class="force-hover" class:active-page={current_page_pathname === website_page_paths.COVER_MENU_PAGE.path} href="{website_page_paths.COVER_MENU_PAGE.path}">Cooking</a> is more than<br/>
             just putting ingredients together.
         </p>
     </section>
     <section class="txc-vbpl-ccb-section">
         <p>
-            <a class:active-page={current_page_pathname === website_page_paths.COFFEE_PAGE.path} href="{website_page_paths.COFFEE_PAGE.path}">Coffee</a> is how we connect
+            <a class="force-hover" class:active-page={current_page_pathname === website_page_paths.COFFEE_PAGE.path} href="{website_page_paths.COFFEE_PAGE.path}">Coffee</a> is how we connect
         </p>
     </section>
     <section class="txc-vbpl-ccb-section">
         <p>
-            <a class:active-page={current_page_pathname === website_page_paths.PAN_DULCE_PAGE.path} href="{website_page_paths.PAN_DULCE_PAGE.path}">Pan Dulce</a> is our religion</p>
+            <a class="force-hover" class:active-page={current_page_pathname === website_page_paths.PAN_DULCE_PAGE.path} href="{website_page_paths.PAN_DULCE_PAGE.path}">Pan Dulce</a> is our religion</p>
     </section>
     <section class="txc-vbpl-ccb-section">
         <hgroup>
@@ -109,6 +109,10 @@
         & p {
             color: inherit;
             margin: 0;
+        }
+
+        & p, h1, a {
+            transition: color 0.3s ease-out;
         }
     }
 

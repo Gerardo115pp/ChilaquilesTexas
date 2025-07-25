@@ -1,7 +1,7 @@
 :root {
     /* Colors */
         /* Theme color */
-        --theme-color: #e60000;
+        --theme-color: hsl(0, 100%, 45%);
 
         /* Accent Yellow */
         --accent-yellow: #ffff00;
@@ -15,7 +15,8 @@
         --grey-9: #000000;
         --grey: var(--grey-9);
 
-        --grey-1-hover: var(--grey-2);
+        --grey-1-hover: hsl(from var(--theme-color) h calc(s * .6) l / .8);
+        --grey-1-active: hsl(from var(--theme-color) h s 55% / 1);
     /* Fonts */
         /* Sizes */
             --font-size-1: 16px; /* 16px */
@@ -166,13 +167,20 @@
 
     a {
         color: var(--body-text-color);
-        transition: color 0.3s ease-out;
+        transition: color 0.5s ease-out;
 
         &:hover {
             color: var(--grey-1-hover);
         }
         &.force-hover:hover {
             color: var(--grey-1-hover) !important;
+        }
+
+        &:active {
+            color: var(--grey-1-active);
+        }
+        &.force-hover:active {
+            color: var(--grey-1-active) !important;
         }
         
     }

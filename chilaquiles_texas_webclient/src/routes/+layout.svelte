@@ -10,6 +10,7 @@
     import Navbar from '@components/Navbar/Navbar.svelte';
     import PageBackground from '@components/PageBackground/PageBackground.svelte';
     import { onMount } from 'svelte';
+    import { website_page_paths } from '@app/common/page_paths';
 
     
     /*=============================================
@@ -115,7 +116,9 @@
         <div id="txc-video-background-page-layout">
             <div id="txc-vbpl-side-content">
                 <div id="txc-vbpl-sc-logo-wrapper">
-                    <LosChilaquilesLogo />
+                    <a href="{website_page_paths.HOME.path}">
+                        <LosChilaquilesLogo />
+                    </a>
                 </div>
             </div>
             <div id="txc-vbpl-main-content">
