@@ -1,3 +1,4 @@
+import { joinPath } from "@libs/utils";
 import { breakpoints } from "./breakpoints";
 import { website_page_paths } from "./page_paths";
 import { PageBackground } from "@models/PageBackgrounds";
@@ -6,6 +7,7 @@ import { ReactiveMediaList } from "@models/ReactiveMedia";
 const website_resources_prefix = "/resources";
 const covers_prefix = `${website_resources_prefix}/covers`;
 const videos_prefix = `${website_resources_prefix}/videos`;
+const image_resources_prefix = `${website_resources_prefix}/images`;
 
 /**
  * @param {string} filename 
@@ -19,6 +21,19 @@ const toCoverURI = (filename) => `${covers_prefix}/${filename}`;
  */
 const toVideoURI = (filename) => `${videos_prefix}/${filename}`;
 
+/**
+ * Returns the uri for a given image resource. it takes both a filename and an optional sub_folder.
+ * if sub_folder is empty then a uri for the form `${image_resources_prefix}/${filename}` is returned.
+ * The sub_folder parameter accepts path fragment, e.g `path/to/sub_folder`, so if it's given. the
+ * returned uri will be `${image_resources_prefix}/${sub_folder}/${filename}`. it automatically clears trailing
+ * and leading slashes on both parameters.
+ * @param {string} filename
+ * @param {string} [sub_folder=""]
+ * @returns {string}
+ */
+const toImageResourceURI = (filename, sub_folder="") => {
+    return joinPath(image_resources_prefix, sub_folder, filename);
+}
 
 /*=============================================
 =            Page backgrounds            =
@@ -221,6 +236,32 @@ const toVideoURI = (filename) => `${videos_prefix}/${filename}`;
         return video_background_pages.get(page_path) || null;
     }
 /*=====  End of Page backgrounds  ======*/
+
+
+/*=============================================
+=            Image Resources            =
+=============================================*/
+
+    const RESTAURANT_RENDER = new ReactiveMediaList(toImageResourceURI('restaurant-render-original.webp', 'cover-menu'), [
+        {
+            breakpoint: breakpoints.L,
+            media_resource_uri: toImageResourceURI('restaurant-render-L.webp', 'cover-menu'),
+        },
+        {
+            breakpoint: breakpoints.M,
+            media_resource_uri: toImageResourceURI('restaurant-render-M.webp', 'cover-menu'),
+        },
+        {
+            breakpoint: breakpoints.S,
+            media_resource_uri: toImageResourceURI('restaurant-render-S.webp', 'cover-menu'),
+        }
+    ]);
+
+    export const image_resources = {
+        RESTAURANT_RENDER,
+    }
+
+/*=====  End of Image Resources  ======*/
 
 
 
