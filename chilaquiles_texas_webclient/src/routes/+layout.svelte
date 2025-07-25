@@ -118,20 +118,22 @@
             </div>
             <div id="txc-vbpl-main-content">
                 <Navbar />
-                <div id="txc-vbpl-mc-with-common-copy">
-                    {#if current_page_layout === page_layouts.VBPL_DEFAULT}
+                {#if current_page_layout === page_layouts.VBPL_DEFAULT}
+                    <div id="txc-vbpl-mc-with-common-copy">
                         <div id="txc-vbpl-page--common-content">
                             <DesayunoCopy />
                         </div>
                         <div id="txc-vbpl-page--main-content">
                             {@render children()}
                         </div>
-                    {:else}
+                    </div>
+                {:else}
+                    <div id="txc-vbpl-mc-with-common-copy--full-main-content">
                         <div id="txc-vbpl-page--main-content" class="txc-vbpl-full-main-content">
                             {@render children()}
                         </div>
-                    {/if}
-                </div>
+                    </div>
+                {/if}
                 <Footer />
             </div>
         </div>
@@ -188,6 +190,21 @@
             }
 
             #txc-vbpl-page--main-content {
+                display: grid;
+                width: 100%;
+                height: 100%;
+                place-items: center;
+            }
+
+        
+        /*----------  Full main content  ----------*/
+        
+            #txc-vbpl-mc-with-common-copy--full-main-content {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+
+            #txc-vbpl-page--main-content.txc-vbpl-full-main-content {
                 display: grid;
                 width: 100%;
                 height: 100%;
