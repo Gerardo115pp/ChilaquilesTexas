@@ -1,8 +1,52 @@
 <script>
     import { website_page_paths } from "@app/common/page_paths";
+    import { page } from "$app/state";
+    import { afterNavigate } from "$app/navigation";
+
+    
+    /*=============================================
+    =            Properties            =
+    =============================================*/
+    
+        /**
+         * Current page. the value is use to determine what parts of the text get dimmed.
+         * @type {string}
+         */
+        let current_page_pathname = $state(page.url.pathname);
+
+        /**
+         * Whether the current page is root(usually that means pathname is '/')
+         * @type {boolean}
+         */
+        let is_root_page = $derived(current_page_pathname === website_page_paths.HOME.path);
+    
+    /*=====  End of Properties  ======*/
+
+    afterNavigate(() => {
+        handleCSRNavigate();
+    })
+
+    
+    /*=============================================
+    =            Methods            =
+    =============================================*/
+    
+        /**
+         * Updates `current_page_pathname`.
+         * @returns {void}
+         */
+        const handleCSRNavigate = () => {
+            current_page_pathname = page.url.pathname;
+        }
+    
+    /*=====  End of Methods  ======*/
+    
+    
 </script>
 
-<article id="txc-vbpl-common-copy--breakfast">
+<article id="txc-vbpl-common-copy--breakfast"
+    style:--copy-color={is_root_page ? "var(--grey-1)" : "var(--grey-7)"}
+>
     <header id="txc-vbpl-ccb-header">
         <hgroup id="txc-vbpl-ccb-header-headlines">
             <h1>
@@ -16,23 +60,23 @@
     <section class="txc-vbpl-ccb-section">
         <p>
             We use flavor to transport you to<br/>
-            our hometown: <a href="{website_page_paths.SAN_MIGUEL_PAGE.path}">San Miguel Cuyutlán</a>
+            our hometown: <a class:active-page={current_page_pathname === website_page_paths.SAN_MIGUEL_PAGE.path} href="{website_page_paths.SAN_MIGUEL_PAGE.path}">San Miguel Cuyutlán</a>
         </p>
     </section>
     <section class="txc-vbpl-ccb-section">
         <p>
-            <a href="{website_page_paths.COVER_MENU_PAGE.path}">Cooking</a> is more than<br/>
+            <a class:active-page={current_page_pathname === website_page_paths.COVER_MENU_PAGE.path} href="{website_page_paths.COVER_MENU_PAGE.path}">Cooking</a> is more than<br/>
             just putting ingredients together.
         </p>
     </section>
     <section class="txc-vbpl-ccb-section">
         <p>
-            <a href="{website_page_paths.COFFEE_PAGE.path}">Coffee</a> is how we connect
+            <a class:active-page={current_page_pathname === website_page_paths.COFFEE_PAGE.path} href="{website_page_paths.COFFEE_PAGE.path}">Coffee</a> is how we connect
         </p>
     </section>
     <section class="txc-vbpl-ccb-section">
         <p>
-            <a href="{website_page_paths.PAN_DULCE_PAGE.path}">Pan Dulce</a> is our religion</p>
+            <a class:active-page={current_page_pathname === website_page_paths.PAN_DULCE_PAGE.path} href="{website_page_paths.PAN_DULCE_PAGE.path}">Pan Dulce</a> is our religion</p>
     </section>
     <section class="txc-vbpl-ccb-section">
         <hgroup>
@@ -49,14 +93,21 @@
     article#txc-vbpl-common-copy--breakfast {
         display: flex;
         flex-direction: column;
+        color: var(--copy-color);
         font-size: var(--font-size-p);
         row-gap: 2.09em;
 
         & a {
+            color: inherit;
             font-family: var(--font-titles);
         }
 
+        & a.active-page {
+            color: var(--grey-1);
+        }
+
         & p {
+            color: inherit;
             margin: 0;
         }
     }
