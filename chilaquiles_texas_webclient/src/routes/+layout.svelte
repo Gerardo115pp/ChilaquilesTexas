@@ -2,8 +2,8 @@
     import { afterNavigate } from '$app/navigation';
     import { page } from '$app/state';
     import '@app/app.css';
-    import { getPageBackground, isVideoBackgroundPage } from '@app/common/page_medias';
-    import { website_page_paths } from '@app/common/page_paths';
+    import { getPageBackground } from '@app/common/page_medias';
+    import page_layouts, { determinePageLayout } from '@app/common/page_layouts';
     import DesayunoCopy from '@components/CommonCopy/DesayunoCopy.svelte';
     import Footer from '@components/Footer/Footer.svelte';
     import LosChilaquilesLogo from '@components/icons/LosChilaquilesLogo.svelte';
@@ -20,6 +20,12 @@
          * @type {import('./$types').LayoutProps}
          */
         let { children } = $props();
+
+        /**
+         * the name of the layout used for the current page.url.pathname. affects how content is displayed.
+         * @type {import('@common/page_layouts').PageLayout}
+         */
+        let current_page_layout = $state(determinePageLayout(page.url.pathname));
 
         /**
          * The page background for the current page.
@@ -68,12 +74,32 @@
 
             determinePageBackground(pathname);
         }
+
+        /**
+         * determines if the page layout most be changed for the given path name.
+         * @param {string} pathname
+         * @returns {void}
+         */
+        const managePageLayoutOnNavigation = pathname => {
+            const current_layout = current_page_layout;
+            const new_layout = determinePageLayout(pathname);
+
+            if (current_layout === new_layout) {
+                console.debug(`In @app/routes/+layout.managePageLayoutOnNavigation: No change in layout for path: ${pathname}`);
+                return;
+            }
+
+            current_page_layout = new_layout;
+
+        }
     
     /*=====  End of Methods  ======*/
     
 </script>
 
-<div id="libery-website-content">
+<div id="libery-website-content"
+    class="page-layout-{current_page_layout}"
+>
     {#if page_background != null} 
         <!-- 
             FIXME: This solution for recalculating the page background is far from ideal. 
@@ -83,25 +109,33 @@
             page_background={page_background}
         />
     {/if}
-    <div id="txc-video-background-page-layout">
-        <div id="txc-vbpl-side-content">
-            <div id="txc-vbpl-sc-logo-wrapper">
-                <LosChilaquilesLogo />
-            </div>
-        </div>
-        <div id="txc-vbpl-main-content">
-            <Navbar />
-            <div id="txc-vbpl-mc-with-common-copy">
-                <div id="txc-vbpl-page--common-content">
-                    <DesayunoCopy />
-                </div>
-                <div id="txc-vbpl-page--main-content">
-                    {@render children()}
+    {#if current_page_layout === page_layouts.VBPL_DEFAULT || current_page_layout === page_layouts.VBPL_FULL_MAIN_CONTENT}
+        <div id="txc-video-background-page-layout">
+            <div id="txc-vbpl-side-content">
+                <div id="txc-vbpl-sc-logo-wrapper">
+                    <LosChilaquilesLogo />
                 </div>
             </div>
-            <Footer />
+            <div id="txc-vbpl-main-content">
+                <Navbar />
+                <div id="txc-vbpl-mc-with-common-copy">
+                    {#if current_page_layout === page_layouts.VBPL_DEFAULT}
+                        <div id="txc-vbpl-page--common-content">
+                            <DesayunoCopy />
+                        </div>
+                        <div id="txc-vbpl-page--main-content">
+                            {@render children()}
+                        </div>
+                    {:else}
+                        <div id="txc-vbpl-page--main-content" class="txc-vbpl-full-main-content">
+                            {@render children()}
+                        </div>
+                    {/if}
+                </div>
+                <Footer />
+            </div>
         </div>
-    </div>
+    {/if}
 </div>
 
 <style>
