@@ -114,7 +114,9 @@
         --border-radius: 0px;
         --body-bg-color: var(--grey);
         --body-text-color: var(--grey-1);
-        --padding--video-background-page: 46px 68px;
+        --padding--video-background-page--inline: 68px;
+        --padding--video-background-page--block: 46px;
+        --padding--video-background-page: var(--padding--video-background-page--block) var(--padding--video-background-page--inline);
 }
 
 /*=============================================

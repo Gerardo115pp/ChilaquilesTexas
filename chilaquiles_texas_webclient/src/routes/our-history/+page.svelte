@@ -39,20 +39,21 @@
     
     
 </script>
-<main id="txc-cover-menu-page">
-    <article id="txc-cm-content" class="txc-common-main-content-layout">
-        <header id="txc-cm-content-header">
-            <h1 id="txc-cm-ch-title">
+
+<main id="txc-our-history-page">
+    <article id="txc-ouhis-content" class="txc-common-main-content-layout">
+        <header id="txc-ouhis-content-header">
+            <h1 id="txc-ouhis-ch-title">
                 Los Chilaquiles<br/>
                 <strong>
                     NOW OPENS IN HOUSTON
                 </strong>
             </h1>
         </header>
-        <p class="txc-cm-content-p main-content-paragraph">
+        <p class="txc-ouhis-content-p main-content-paragraph">
             After 20 years of cooking in Mexico,<br/>
-            we brought our kind of breakfast to Houston.One that moves at its own pace,<br/>
-            and doesn't care what the clock says.Because here, breakfast has no rules,<br/>
+            we brought our kind of breakfast to Houston. One that moves at its own pace,<br/>
+            and doesn't care what the clock says. Because here, breakfast has no rules,<br/>
             and that's exactly how we like it.
         </p>
         <ul class="txc-ctas-container">
@@ -61,10 +62,10 @@
             </button>
         </ul>
     </article>
-    <aside id="txc-cm-restaurant-image-wrapper">
+    <aside id="txc-ouhis-restaurant-image-wrapper">
         {#if restaurant_image_url != null}
             <img 
-                id="txc-cm-restaurant-image"
+                id="txc-ouhis-restaurant-image"
                 src="{restaurant_image_url}" 
                 alt="This is our magnificent restaurant" 
             >
@@ -73,10 +74,51 @@
 </main>
 
 <style>
-    main#txc-cover-menu-page {
+    main#txc-our-history-page {
         display: flex;
+        container-type: inline-size;
         height: 100%;
         width: 100%;
         justify-content: space-between;
+    }
+
+    
+    /*=============================================
+    =            Article content            =
+    =============================================*/
+    
+    main#txc-our-history-page article#txc-ouhis-content {
+        align-items: flex-start;
+        text-align: left;
+
+        & h1, p.main-content-paragraph {
+            text-align: inherit;
+        }
+    }
+    
+    main#txc-our-history-page article#txc-ouhis-content header {
+        & h1 {
+            font-size: calc(var(--font-size-h3) * 0.97826);
+        }
+
+        & h1 strong {
+            color: var(--theme-color);
+        }
+    }
+    
+    /*=====  End of Article content  ======*/
+    
+    
+
+
+    aside#txc-ouhis-restaurant-image-wrapper {
+        translate: var(--padding--video-background-page--inline);
+
+        & img {
+            width: 56.3925cqw;
+            aspect-ratio: 408 / 263;
+            max-height: 49dvh;
+            object-fit: cover;
+        }
     }
 </style>

@@ -73,6 +73,8 @@
             // TODO: Check same page navigation.
 
             determinePageBackground(pathname);
+
+            managePageLayoutOnNavigation(pathname);
         }
 
         /**
