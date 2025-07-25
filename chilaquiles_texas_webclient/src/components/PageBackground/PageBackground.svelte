@@ -2,7 +2,6 @@
     import { browser } from '$app/environment';
     import { page } from '$app/state';
     import { onMount } from 'svelte';
-    import { on } from 'svelte/events';
     
     /*=============================================
     =            Properties            =
@@ -18,6 +17,7 @@
          * @type {PageBackgroundProps}
          */
         let { page_background } = $props();
+        $effect(handlePageBackgroundChangeEffect)
 
         /**
          * The url of the `page_background` cover image.
@@ -55,7 +55,7 @@
     onMount(() => {
         if (!browser) return;
 
-        loadCoverImage();
+        loadCoverImage(page_background);
 
         if (debug_mode) {
             debugTPB__attachDebugMethods();
@@ -116,6 +116,9 @@
 
                     // @ts-ignore - Internal method references.
                     meg_gallery_debug_state.Methods = {
+                        flushCurrentPageBackground,
+                        isPageBackgroundStateUninitialized,
+                        loadCoverImage: () => loadCoverImage(page_background),
                         resetComponentState,
                     }
                 }
@@ -179,6 +182,7 @@
          * @returns {void}
          */
         const flushCurrentPageBackground = () => {
+            console.debug(`In @components/PageBackground/PageBackground.${flushCurrentPageBackground.name}: flushing current page background.`);
             is_page_background_cover_loaded = false;
             is_page_background_video_loaded = false;
 
@@ -221,13 +225,48 @@
         }
 
         /**
-         * loads the cover image URL for the billboard.
+         * Handles the `page_background` prop change effect.
          * @returns {void}
          */
-        const loadCoverImage = () => {
-            const new_cover_url = page_background.CoverImages.getFirstViableMedia();
+        function handlePageBackgroundChangeEffect() {
+            console.debug(`In @components/PageBackground/PageBackground.${handlePageBackgroundChangeEffect.name}: Refreshing page background.`);
+            if (page_background == null) {
+                console.log(`In @components/PageBackground/PageBackground.${handlePageBackgroundChangeEffect.name}: No page background found.`);
+            }
+
+            if (isPageBackgroundStateUninitialized()) {
+                return;
+            }
+
+            flushCurrentPageBackground();
+
+            loadCoverImage(page_background);
+        }
+
+        /**
+         * Whether the component state, related to the page background, is in a default state.
+         * @returns {boolean}
+         */
+        const isPageBackgroundStateUninitialized = () => {
+            const background_loaded = is_page_background_cover_loaded && is_page_background_video_loaded;
+            return !background_loaded || cover_image_url === undefined || video_background_url === undefined;
+        }
+
+        /**
+         * loads the cover image URL for the billboard.
+         * @param {import('@models/PageBackgrounds').PageBackground} page_bg
+         * @returns {void}
+         */
+        function loadCoverImage(page_bg) {
+            if (!isPageBackgroundStateUninitialized()) {
+                flushCurrentPageBackground();
+            }
+
+            const new_cover_url = page_bg.CoverImages.getFirstViableMedia();
 
             cover_image_url = new_cover_url;
+
+            console.debug(`In @components/PageBackground/PageBackground.${loadCoverImage.name}: Cover image url set to: ${cover_image_url}`);
         }
 
         /**

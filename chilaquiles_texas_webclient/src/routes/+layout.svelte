@@ -56,6 +56,7 @@
             }        
 
             page_background = page_data?.background ?? null;
+            console.debug(`In @app/routes/+layout.determinePageBackground: changed the page`);
         }
 
         /**
@@ -74,6 +75,10 @@
 
 <div id="libery-website-content">
     {#if page_background != null} 
+        <!-- 
+            FIXME: This solution for recalculating the page background is far from ideal. 
+            Make PageBackground handle it
+        -->
         <PageBackground 
             page_background={page_background}
         />
