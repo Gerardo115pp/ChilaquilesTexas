@@ -21,7 +21,7 @@ export const DEFAULT_LAYOUT = /** @type {PageLayout} */ (page_layouts.VBPL_DEFAU
     // If a given is not in one of these maps, assume it requires the `DEFAULT_LAYOUT`.
 
     const vbpl_full_main_content_pages = new Set([
-        website_page_paths.COVER_MENU_PAGE.path,
+        website_page_paths.ABOUT_US_PAGE.path
     ]);
 
     /**

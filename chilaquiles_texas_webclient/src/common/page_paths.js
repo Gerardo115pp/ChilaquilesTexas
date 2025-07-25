@@ -8,8 +8,6 @@
 =            Website pages definitions            =
 =============================================*/
 
-
-
     /**
      * @type {WebsitePagePath}
      */
