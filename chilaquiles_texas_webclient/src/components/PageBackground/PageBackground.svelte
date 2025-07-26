@@ -1,7 +1,7 @@
 <script>
     import { browser } from '$app/environment';
     import { page } from '$app/state';
-    import { onMount } from 'svelte';
+    import { onMount, untrack } from 'svelte';
     
     /*=============================================
     =            Properties            =
@@ -32,10 +32,17 @@
         let video_background_url = $state();
 
         /**
+         * A blob url object corresponding to the active frame of the page video background when a navigation transition started.
+         * used to fade from that frame to the new video. 
+         * @type {string | undefined}
+         */
+        let video_transition_frame = $state();
+
+        /**
          * Whether the cover image for the current `page_background` object has been loaded or not.
          * @type {boolean}
          */
-        let is_page_background_cover_loaded = false;
+        let is_page_background_cover_loaded = $state(false);
 
         /**
          * Whether the video background for the current `page_background` object has been loaded or not.
@@ -178,6 +185,50 @@
         /*=====  End of Debug  ======*/
 
         /**
+         * Captures a frame from the video element as a webp. returns the frame as an image encoded in url form.
+         * it will return null, if it can't retrieve the video element.
+         * @returns {Promise<string | null>}
+         */
+        const captureVideoFrame = async () => {
+            const video_element = getPageVideoBackgroundElement();
+
+            if (video_element === null) {
+                return null;
+            }
+
+            let canvas = document.createElement("canvas");
+
+            canvas.width = video_element.videoWidth;
+            canvas.height = video_element.videoHeight;
+
+            let ctx = canvas.getContext('2d');
+
+            if (ctx === null) {
+                console.error(`In @components/PageBackground/PageBackground.${captureVideoFrame.name}: Failed to get canvas context.`);
+                return null;
+            }
+
+            ctx.drawImage(video_element, 0, 0, canvas.width, canvas.height);
+
+            const mime_type = "image/webp";
+
+            const response = new Promise((resolve, reject) => {
+                canvas.toBlob((image_blob) => {
+                    if (image_blob === null) {
+                        reject(`In @components/PageBackground/PageBackground.${captureVideoFrame.name}: Failed to create blob from canvas.`);
+                        return;
+                    }
+                    
+                    const object_url = URL.createObjectURL(image_blob);
+
+                    resolve(object_url);
+                })
+            });
+
+            return response
+        }
+
+        /**
          * Flushes the current page background object.
          * @returns {void}
          */
@@ -188,6 +239,22 @@
 
             cover_image_url = undefined;
             video_background_url = undefined;
+        }
+
+        /**
+         * Returns the video element for the page video background if it exists. null otherwise.
+         * @returns {HTMLVideoElement | null}
+         */
+        const getPageVideoBackgroundElement = () => {
+            const video_element_id = "txcbill-video-background";
+            let local_video_element = document.getElementById(video_element_id);
+
+            if (local_video_element == null || !(local_video_element instanceof HTMLVideoElement)) {
+                console.error(`In @components/PageBackground/PageBackground.${getPageVideoBackgroundElement.name}: No video element with id '${video_element_id}' found.`);
+                return null;
+            }
+
+            return local_video_element
         }
 
         /**
@@ -218,7 +285,9 @@
          * Handles the load event of the cover image.
          * @param {Event} event 
          */
-        const handleCoverImageLoad = event => {
+        const handleCoverImageLoad = async event => {
+            console.debug(`In @components/PageBackground/PageBackground.${handleCoverImageLoad.name}: Cover image '${cover_image_url}' loaded.`);
+
             is_page_background_cover_loaded = true;
 
             loadVideoBackground(page_background);
@@ -234,9 +303,19 @@
                 console.log(`In @components/PageBackground/PageBackground.${handlePageBackgroundChangeEffect.name}: No page background found.`);
             }
 
+            untrack(_handlePageBackgroundChange);
+        }
+
+        /**
+         * Handles the `page_background` prop change. called by `handlePageBackgroundChangeEffect`
+         * @returns {Promise<void>}
+         */
+        async function _handlePageBackgroundChange() {
             if (isPageBackgroundStateUninitialized()) {
                 return;
             }
+
+            await updateTransitionFrame();
 
             flushCurrentPageBackground();
 
@@ -250,6 +329,14 @@
         const isPageBackgroundStateUninitialized = () => {
             const background_loaded = is_page_background_cover_loaded && is_page_background_video_loaded;
             return !background_loaded || cover_image_url === undefined || video_background_url === undefined;
+        }
+
+        /**
+         * Whether the video background is loaded in the component state.
+         * @returns {boolean}
+         */
+        const isVideoBackgroundURLDefined = () => {
+            return is_page_background_video_loaded && video_background_url !== undefined;
         }
 
         /**
@@ -309,8 +396,13 @@
             video_element.autoplay = true;
 
             const response = new Promise((resolve, reject) => {
-                video_element.onloadeddata = () => {
-                    resolve(video_element);
+                video_element.oncanplay = () => {
+                    // resolve(video_element);
+
+                    // Test cover transition by simulating delay
+                    setTimeout(() => {
+                        resolve(video_element);
+                    }, 300);
                 }
 
                 video_element.onerror = () => {
@@ -328,6 +420,28 @@
         const resetComponentState = () => {
             flushCurrentPageBackground();
         }
+
+        /**
+         * Updates the value of the video background transition frame from the current video background.
+         * @returns {Promise<void>}
+         */
+        const updateTransitionFrame = async () => {
+            if (!isVideoBackgroundURLDefined()) {
+                console.error(`In @components/PageBackground/PageBackground.${updateTransitionFrame.name}: Video background is not defined.`);
+                return;
+            }
+
+            const new_transition_frame_url = await captureVideoFrame();
+
+            if (new_transition_frame_url === null) {
+                console.error(`In @components/PageBackground/PageBackground.${updateTransitionFrame.name}: Failed to capture video frame.`);
+                return;
+            }
+
+            if (video_transition_frame !== undefined) {
+                URL.revokeObjectURL(video_transition_frame);
+            }
+        }
     
     /*=====  End of Methods  ======*/
     
@@ -336,16 +450,29 @@
 
 <div id="page-bg-billboard">
     <div id="pbgbill-underlay" class="pbgbill-content">
-        {#if cover_image_url !== undefined && !(is_page_background_video_loaded && video_background_url != null)}
-            <div class="pbgbill-underlay-cover pbgbill-underlay-wrapper">
+        {#if video_transition_frame}
+            <div class="pbgbill-underlay-transition-frame pbgbill-underlay-wrapper">
+                <img id="txcbill-transition-frame" 
+                    class="billboard-media"
+                    class:invisible-underlay={is_page_background_cover_loaded || is_page_background_video_loaded}
+                    src="{video_transition_frame}"
+                    alt="" 
+                >
+            </div>
+        {/if}
+        {#if cover_image_url !== undefined}
+            <div class="pbgbill-underlay-cover pbgbill-underlay-wrapper"
+                class:invisible-underlay={is_page_background_video_loaded && video_background_url != null}
+            >
                 <img 
                     class="billboard-media"
                     src="{cover_image_url}"
                     alt=""
                     onload={handleCoverImageLoad}
-                >
+                />
             </div>
-        {:else if video_background_url !== undefined && is_page_background_video_loaded}
+        {/if}
+        {#if video_background_url !== undefined && is_page_background_video_loaded}
             <div class="pbgbill-underlay-video pbgbill-underlay-wrapper">
                 <video 
                     id="txcbill-video-background"
@@ -355,7 +482,6 @@
                     autoplay
                     loop
                 >
-
                 </video>
             </div>
         {/if}
@@ -374,7 +500,7 @@
         }
 
         & #pbgbill-veneer {
-            z-index: var(--z-index-b-4);
+            z-index: var(--z-index-b-1);
         }
     }
 
@@ -392,11 +518,36 @@
         inset: 0;
         width: 100cqw;
         height: 100dvh;
+
+        & .pbgbill-underlay-cover {
+            z-index: var(--z-index-b-3);
+        }
+
+        & .pbgbill-underlay-video {
+            z-index: var(--z-index-b-4);
+        }
     }
 
     .pbgbill-content > .pbgbill-underlay-wrapper {
+        /**
+            Position absolute works by positioing the element
+            on it's closest relative positioned ancestor(the common pattern).
+            but if none is present, it positions itself on its closest 'conaining block'
+            @see: https://developer.mozilla.org/en-US/docs/Web/CSS/position
+            @see: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_display/Containing_block#identifying_the_containing_block
+
+            Long story short, position absolute will, in this case, position the element on #pbgbill-underlay.pbgbill-content because
+            that element is the closest containing block, and thats
+            because is a container(container: inline-size).
+        */
+        position: absolute;
         height: 100%;
         width: 100%;
+
+        &.invisible-underlay {
+            transition: opacity 0.5s ease-out;
+            opacity: 0;
+        }
 
         & .billboard-media {
             width: 100%;
