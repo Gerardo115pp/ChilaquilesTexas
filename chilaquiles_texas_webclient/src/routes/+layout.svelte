@@ -254,16 +254,36 @@
     /*=============================================
     =            Responsive            =
     =============================================*/
-/*     
-        @media only screen and (max-width: 950px) {
+    
+        @media only screen and (max-width: 1080px) {
             #txc-video-background-page-layout {
                 display: flex;
                 flex-direction: column;
                 column-gap: normal;
                 row-gap: 114px;
             }
+
+            #txc-vbpl-side-content {
+                place-items: center start;
+                & #txc-vbpl-sc-logo-wrapper {
+                    width: 40.1951dvw;
+                }
+            }
+
+            #txc-vbpl-main-content {
+                
+                & > #txc-vbpl-mc-with-common-copy, & > #txc-vbpl-mc-with-common-copy--full-main-content {
+                    grid-template-columns: 1fr;
+                }
+            }
+
+            :global(#txc-video-background-page-layout #txc-vbpl-page--main-content:has(main:empty)) {
+                display: none;
+            }
+
+
         }
-     */
+    
     /*=====  End of Responsive  ======*/
     
     
