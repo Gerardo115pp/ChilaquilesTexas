@@ -484,60 +484,85 @@
             z-index: var(--z-index-b-1);
         }
     }
+    
+    /*=============================================
+    =            Underlay            =
+    =============================================*/
+    
+    
+        #pbgbill-underlay {
+            container-type: size;
 
-    #pbgbill-underlay {
-        container-type: size;
-
-        & img, video {
-            width: 100cqw;
-            height: 100cqh;
+            & img, video {
+                width: 100cqw;
+                height: 100cqh;
+            }
         }
-    }
 
-    .pbgbill-content {
+        .pbgbill-content {
+            position: fixed;
+            inset: 0;
+            width: 100cqw;
+            height: 100dvh;
+
+            & .pbgbill-underlay-cover {
+                z-index: var(--z-index-b-3);
+            }
+
+            & .pbgbill-underlay-video {
+                z-index: var(--z-index-b-4);
+            }
+        }
+
+        .pbgbill-content > .pbgbill-underlay-wrapper {
+            /**
+                Position absolute works by positioing the element
+                on it's closest relative positioned ancestor(the common pattern).
+                but if none is present, it positions itself on its closest 'conaining block'
+                @see: https://developer.mozilla.org/en-US/docs/Web/CSS/position
+                @see: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_display/Containing_block#identifying_the_containing_block
+
+                Long story short, position absolute will, in this case, position the element on #pbgbill-underlay.pbgbill-content because
+                that element is the closest containing block, and thats
+                because is a container(container: inline-size).
+            */
+            position: absolute;
+            height: 100%;
+            width: 100%;
+
+            &.invisible-underlay {
+                transition: opacity 0.5s ease-out;
+                opacity: 0;
+            }
+
+            & .billboard-media {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .invisible-underlay:has(#txcbill-video-background) {
+            transition: opacity 0s linear;
+        }
+        
+    /*=====  End of Underlay  ======*/
+
+    
+    /*=============================================
+    =            Veneer            =
+    =============================================*/
+
+    #pbgbill-veneer {
         position: fixed;
         inset: 0;
         width: 100cqw;
         height: 100dvh;
-
-        & .pbgbill-underlay-cover {
-            z-index: var(--z-index-b-3);
-        }
-
-        & .pbgbill-underlay-video {
-            z-index: var(--z-index-b-4);
-        }
+        z-index: var(--z-index-b-1);
+        background-color: var(--color-vbpl-veneer-color);
     }
 
-    .pbgbill-content > .pbgbill-underlay-wrapper {
-        /**
-            Position absolute works by positioing the element
-            on it's closest relative positioned ancestor(the common pattern).
-            but if none is present, it positions itself on its closest 'conaining block'
-            @see: https://developer.mozilla.org/en-US/docs/Web/CSS/position
-            @see: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_display/Containing_block#identifying_the_containing_block
-
-            Long story short, position absolute will, in this case, position the element on #pbgbill-underlay.pbgbill-content because
-            that element is the closest containing block, and thats
-            because is a container(container: inline-size).
-        */
-        position: absolute;
-        height: 100%;
-        width: 100%;
-
-        &.invisible-underlay {
-            transition: opacity 0.5s ease-out;
-            opacity: 0;
-        }
-
-        & .billboard-media {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    }
-
-    .invisible-underlay:has(#txcbill-video-background) {
-        transition: opacity 0s linear;
-    }
+    /*=====  End of Veneer  ======*/
+    
+    
 </style>

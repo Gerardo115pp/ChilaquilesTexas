@@ -118,6 +118,8 @@
         --padding--video-background-page--inline: 68px;
         --padding--video-background-page--block: 46px;
         --padding--video-background-page: var(--padding--video-background-page--block) var(--padding--video-background-page--inline);
+    /* Component colors */
+        --color-vbpl-veneer-color: hsl(from var(--grey) h s l / 0.14);
 }
 
 /*=============================================
