@@ -115,7 +115,6 @@
             transition: color 0.3s ease-out;
         }
     }
-
     
     /*=============================================
     =            Header            =
@@ -142,5 +141,14 @@
     
     /*=====  End of Header  ======*/
     
-    
+    @container mobile-vertical-cc (width <= 1080px)  {
+        article#txc-vbpl-common-copy--breakfast {
+            font-size: 7.2494cqw;
+            row-gap: 10.4874cqh;
+        }
+
+        header#txc-vbpl-ccb-header {
+            font-size: 11.0782cqw;
+        }
+    }
 </style>

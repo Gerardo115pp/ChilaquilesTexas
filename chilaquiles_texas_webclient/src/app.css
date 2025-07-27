@@ -250,3 +250,13 @@
 
 /*=====  End of Buttons  ======*/
 
+@media (max-aspect-ratio: 0.98) {
+    :root {
+        --font-size-1: 0.833dvh;
+        --font-size-h1: 5.833dvh;
+
+        --padding--video-background-page--inline: 5.277dvw;
+        --padding--video-background-page--block: 2.96dvh;
+        --navbar-height: 3.8514dvh;
+    }
+}

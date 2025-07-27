@@ -151,7 +151,10 @@
                         </div>
                     </div>
                 {/if}
-                <Footer />
+                {#if !$layout_properties.IS_MOBILE}
+                     <!-- TODO: make the footer reactive. -->
+                     <Footer />
+                {/if}
             </div>
         </div>
     {/if}
@@ -260,18 +263,27 @@
                 display: flex;
                 flex-direction: column;
                 column-gap: normal;
-                row-gap: 114px;
+                row-gap: 5.2dvh;
+
+                & #txc-vbpl-side-content, & #txc-vbpl-main-content > :first-child {
+                    padding-inline: 12.5dvw;
+                }
             }
 
-            #txc-vbpl-side-content {
+            /* 
+             Same as #txc-vbpl-side-content but with double specificity.
+            */
+            #txc-vbpl-side-content:not(#something-else) {
+                height: max-content;
+                margin-top: 4.8437dvh;
                 place-items: center start;
+
                 & #txc-vbpl-sc-logo-wrapper {
                     width: 40.1951dvw;
                 }
             }
 
-            #txc-vbpl-main-content {
-                
+            #txc-vbpl-main-content {                
                 & > #txc-vbpl-mc-with-common-copy, & > #txc-vbpl-mc-with-common-copy--full-main-content {
                     grid-template-columns: 1fr;
                 }
@@ -280,8 +292,16 @@
             :global(#txc-video-background-page-layout #txc-vbpl-page--main-content:has(main:empty)) {
                 display: none;
             }
+            :global(#txc-video-background-page-layout #txc-vbpl-page--common-content:has(+ #txc-vbpl-page--main-content main:not(:empty))) {
+                display: none;
+            }
 
-
+            #txc-vbpl-page--common-content {
+                container-type: size;
+                width: 43.4259dvw;
+                height: 35.2604dvh;
+                container-name: mobile-vertical-cc;
+            }
         }
     
     /*=====  End of Responsive  ======*/
