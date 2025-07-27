@@ -1,7 +1,7 @@
 <script>
     import { browser } from '$app/environment';
     import { page } from '$app/state';
-    import { onMount, untrack } from 'svelte';
+    import { onMount, tick, untrack } from 'svelte';
     
     /*=============================================
     =            Properties            =
@@ -142,6 +142,7 @@
                     console.log(`is_page_background_video_loaded: ${is_page_background_video_loaded}`);
                     console.log(`cover_image_url: ${cover_image_url}`);
                     console.log(`video_background_url: ${video_background_url}`);
+                    console.log(`video_transition_frame: ${video_transition_frame}`);
                     console.groupEnd();
                 }
 
@@ -195,6 +196,8 @@
             if (video_element === null) {
                 return null;
             }
+
+            video_element.pause();
 
             let canvas = document.createElement("canvas");
 
@@ -294,6 +297,14 @@
         }
 
         /**
+         * Handles the load event of the video background.
+         * @param {Event} event
+         */
+        const handleVideoBackgroundLoad = event => {
+            is_page_background_video_loaded = true;
+        }
+
+        /**
          * Handles the `page_background` prop change effect.
          * @returns {void}
          */
@@ -318,6 +329,8 @@
             await updateTransitionFrame();
 
             flushCurrentPageBackground();
+
+            await tick();
 
             loadCoverImage(page_background);
         }
@@ -369,48 +382,9 @@
                 return;
             }
 
-            const video_element = await prefetchVideoElement(resource_url);
+            video_background_url = resource_url;
 
-            if (video_element == null) {
-                console.error(`In @components/PageBackground/PageBackground.${loadVideoBackground.constructor.name}: failed to prefetch video element for url: %O`, resource_url);
-                return;
-            }
-
-            video_background_url = video_element.src;
-            is_page_background_video_loaded = true;
-
-            console.debug(`In @components/PageBackground/PageBackground.${loadVideoBackground.constructor.name}: video element(${resource_url}) loaded: %O`, video_element);
-        }
-
-        /**
-         * Fetches the given video url into a video element and returns it when the load event is triggered.
-         * returns null if there is an error while loading the video.
-         * @param {string} video_url
-         * @returns {Promise<HTMLVideoElement | null>}
-         */
-        const prefetchVideoElement = video_url => {
-            const video_element = document.createElement('video');
-
-            video_element.src = video_url;
-            video_element.muted = true;
-            video_element.autoplay = true;
-
-            const response = new Promise((resolve, reject) => {
-                video_element.oncanplay = () => {
-                    // resolve(video_element);
-
-                    // Test cover transition by simulating delay
-                    setTimeout(() => {
-                        resolve(video_element);
-                    }, 300);
-                }
-
-                video_element.onerror = () => {
-                    resolve(null);
-                }
-            });
-
-            return response;
+            console.debug(`In @components/PageBackground/PageBackground.${loadVideoBackground.constructor.name}: video url (${resource_url}) changed`);
         }
 
         /**
@@ -441,6 +415,9 @@
             if (video_transition_frame !== undefined) {
                 URL.revokeObjectURL(video_transition_frame);
             }
+
+            video_transition_frame = new_transition_frame_url;
+            console.debug(`In @components/PageBackground/PageBackground.${updateTransitionFrame.name}: video transition frame updated to: ${video_transition_frame}`);
         }
     
     /*=====  End of Methods  ======*/
@@ -451,10 +428,11 @@
 <div id="page-bg-billboard">
     <div id="pbgbill-underlay" class="pbgbill-content">
         {#if video_transition_frame}
-            <div class="pbgbill-underlay-transition-frame pbgbill-underlay-wrapper">
+            <div class="pbgbill-underlay-transition-frame pbgbill-underlay-wrapper"
+                class:invisible-underlay={is_page_background_cover_loaded} 
+            >
                 <img id="txcbill-transition-frame" 
                     class="billboard-media"
-                    class:invisible-underlay={is_page_background_cover_loaded || is_page_background_video_loaded}
                     src="{video_transition_frame}"
                     alt="" 
                 >
@@ -472,11 +450,14 @@
                 />
             </div>
         {/if}
-        {#if video_background_url !== undefined && is_page_background_video_loaded}
-            <div class="pbgbill-underlay-video pbgbill-underlay-wrapper">
+        {#if video_background_url !== undefined}
+            <div class="pbgbill-underlay-video pbgbill-underlay-wrapper"
+                class:invisible-underlay={!is_page_background_video_loaded}
+            >
                 <video 
                     id="txcbill-video-background"
                     class="billboard-media"
+                    oncanplay={handleVideoBackgroundLoad}
                     src="{video_background_url}"
                     muted
                     autoplay
@@ -554,5 +535,9 @@
             height: 100%;
             object-fit: cover;
         }
+    }
+
+    .invisible-underlay:has(#txcbill-video-background) {
+        transition: opacity 0s linear;
     }
 </style>
