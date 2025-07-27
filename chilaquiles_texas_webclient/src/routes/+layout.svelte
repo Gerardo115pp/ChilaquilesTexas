@@ -9,8 +9,10 @@
     import LosChilaquilesLogo from '@components/icons/LosChilaquilesLogo.svelte';
     import Navbar from '@components/Navbar/Navbar.svelte';
     import PageBackground from '@components/PageBackground/PageBackground.svelte';
-    import { onMount } from 'svelte';
+    import { onMount, onDestroy } from 'svelte';
     import { website_page_paths } from '@app/common/page_paths';
+    import layout_properties, { setupLayout, dismissLayout } from '@stores/layout/layout';
+    import { browser } from '$app/environment';
 
     
     /*=============================================
@@ -39,7 +41,15 @@
     /*=====  End of Properties  ======*/
     
     onMount(() => {
+        setupLayout();
+
         determinePageBackground(page.url.pathname);
+    });
+
+    onDestroy(() => {
+        if (browser) {
+            dismissLayout();
+        }
     });
 
     afterNavigate(() => {
