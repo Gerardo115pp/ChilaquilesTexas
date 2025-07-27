@@ -124,6 +124,9 @@
     {/if}
     {#if current_page_layout === page_layouts.VBPL_DEFAULT || current_page_layout === page_layouts.VBPL_FULL_MAIN_CONTENT}
         <div id="txc-video-background-page-layout">
+            <div id="txc-vbpl-navbar-wrapper">
+                <Navbar />
+            </div>
             <div id="txc-vbpl-side-content">
                 <div id="txc-vbpl-sc-logo-wrapper">
                     <a href="{website_page_paths.HOME.path}">
@@ -132,7 +135,6 @@
                 </div>
             </div>
             <div id="txc-vbpl-main-content">
-                <Navbar />
                 {#if current_page_layout === page_layouts.VBPL_DEFAULT}
                     <div id="txc-vbpl-mc-with-common-copy">
                         <div id="txc-vbpl-page--common-content">
@@ -156,15 +158,21 @@
 </div>
 
 <style>
+
+    #libery-website-content {
+        width: 100dvw;
+        display: grid;
+        place-items: center;
+
+        &.page-layout-VBPL {
+            height: 100dvh;
+        }
+    }
+
     
     /*=============================================
     =       VBPL(Video Background Page Layout)    =
     =============================================*/
-
-        #libery-website-content:has(> #txc-video-background-page-layout) {
-            display: grid;
-            place-items: center;
-        }
     
         #txc-video-background-page-layout {
             box-sizing: border-box;
@@ -178,6 +186,20 @@
 
             & > #txc-vbpl-side-content, & > #txc-vbpl-main-content {
                 height: 100%;
+            }
+
+            & > #txc-vbpl-side-content {
+                grid-row: 1 / span 2;
+            }
+
+            & > #txc-vbpl-main-content {
+                grid-column: 2;
+                grid-row:  2 / span 1;
+            }
+
+            & > #txc-vbpl-navbar-wrapper {
+                grid-column: 2 / span 1;
+                grid-row: 1;
             }
         }
 
@@ -227,6 +249,22 @@
             }
     
     /*=====  End of VBPL layout  ======*/
+    
+    
+    /*=============================================
+    =            Responsive            =
+    =============================================*/
+/*     
+        @media only screen and (max-width: 950px) {
+            #txc-video-background-page-layout {
+                display: flex;
+                flex-direction: column;
+                column-gap: normal;
+                row-gap: 114px;
+            }
+        }
+     */
+    /*=====  End of Responsive  ======*/
     
     
 </style>
