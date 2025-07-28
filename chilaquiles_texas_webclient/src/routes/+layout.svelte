@@ -151,10 +151,7 @@
                         </div>
                     </div>
                 {/if}
-                {#if !$layout_properties.IS_MOBILE}
-                     <!-- TODO: make the footer reactive. -->
-                     <Footer />
-                {/if}
+                <Footer />
             </div>
         </div>
     {/if}

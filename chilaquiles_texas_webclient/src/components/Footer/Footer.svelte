@@ -1,5 +1,6 @@
 <script>
     import { external_links } from "@app/common/page_paths";
+    import InstagramIcon from "@components/icons/InstagramIcon.svelte";
 </script>
 
 <footer id="txc-vbpl-footer">
@@ -26,6 +27,15 @@
             class="txc-vbpl-footer-contact-item"
         >
             hola@loschilaquiles.com
+        </a>
+        <a 
+            id="txc-vbpl-footer-instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="{external_links.INSTAGRAM}" 
+            class="txc-nv-cl-socials-item-icon-wrapper"
+        >
+            <InstagramIcon />
         </a>
         <a 
             id="txc-vbpl-footer-contact-phone"
@@ -80,5 +90,69 @@
     a#txc-vbpl-footer-contact-email, a#txc-vbpl-footer-contact-phone {
         font-family: var(--font-titles);
     }
+
+    a#txc-vbpl-footer-instagram {
+        display: none;
+    }
+
+    /*=============================================
+    =            Responsiveness            =
+    =============================================*/
+    
+        @media (max-aspect-ratio: 0.98) {
+            footer#txc-vbpl-footer {
+                height: 9.7395dvh;
+                font-size: calc(var(--font-size-4) * 1.169);
+
+                & a, h4 {
+                    font-size: 1em;
+                }
+            }
+
+            address#txc-vbpl-footer-content {
+                display: grid;
+                grid-template-columns: 54.9171% 5.6353% 28.8397%;
+                row-gap: normal;
+                
+                & hgroup#txc-vbpl-footer-open-days {
+                    grid-column: 1 / -1;
+                    grid-row: 1;
+                    display: flex;
+                    justify-content: center;
+                    align-self: auto;
+                    padding-inline: 0;
+                    padding: calc(var(--spacing-3) * 0.90625) 0;
+                }
+
+                & hgroup#txc-vbpl-footer-open-days h4 {
+                    font-size: 1.4285em;
+                }
+
+                & a#txc-vbpl-footer-contact-address {
+                    grid-column: 1 / span 1;
+                    grid-row: 2;
+                }
+
+                & a#txc-vbpl-footer-instagram {
+                    grid-column: 2 / span 1;
+                    display: block;
+                    aspect-ratio: 1 / 1;
+                    grid-row: 2;
+                }
+
+                & a#txc-vbpl-footer-contact-phone {
+                    grid-column: 3 / span 1;
+                    grid-row: 2;
+                }
+
+                & a#txc-vbpl-footer-contact-email {
+                    display: none;
+                }
+            }
+        }
+    
+    /*=====  End of Responsiveness  ======*/
+    
+    
 
 </style>
