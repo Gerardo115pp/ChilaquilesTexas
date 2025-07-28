@@ -11,7 +11,9 @@
 
     - Mortarion, The Pale king. Doom of tyrants.
 -->
-<main id="txc-cover-menu-page">
+<main id="txc-cover-menu-page"
+    class="vbpl-page"
+>
     <article id="txc-cm-content" class="txc-common-main-content-layout">
         <p class="txc-cm-content-p main-content-paragraph">
             We named the place<br/>

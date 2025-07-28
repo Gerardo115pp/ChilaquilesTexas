@@ -114,10 +114,6 @@
     class="page-layout-{current_page_layout}"
 >
     {#if page_background != null} 
-        <!-- 
-            FIXME: This solution for recalculating the page background is far from ideal. 
-            Make PageBackground handle it
-        -->
         <PageBackground 
             page_background={page_background}
         />
@@ -255,7 +251,7 @@
     =            Responsive            =
     =============================================*/
     
-        @media only screen and (max-width: 1080px) {
+        @media only screen and (max-width: 1081px) {
             #txc-video-background-page-layout {
                 display: flex;
                 flex-direction: column;
@@ -298,6 +294,13 @@
                 width: 43.4259dvw;
                 height: 35.2604dvh;
                 container-name: mobile-vertical-cc;
+            }
+            
+            #txc-vbpl-page--main-content {
+                container-type: size;
+                width: 64.2592dvw;
+                height: 49.2187dvh;
+                container-name: vbpl-vertical-cc;
             }
         }
     

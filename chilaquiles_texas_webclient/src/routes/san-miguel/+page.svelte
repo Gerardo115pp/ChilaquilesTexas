@@ -11,7 +11,9 @@
 
     - Mortarion, The Pale king. Doom of tyrants.
 -->
-<main id="txc-san-miguel-page">
+<main id="txc-san-miguel-page"
+    class="vbpl-page"
+>
     <article id="txc-smp-content" class="txc-common-main-content-layout">
         <p class="txc-smp-content-p main-content-paragraph">
             Los Chilaquiles was born in San Miguel Cuyutlán,<br/>

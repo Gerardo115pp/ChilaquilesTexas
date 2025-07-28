@@ -1,4 +1,6 @@
-<main id="txc-coffee-page">
+<main id="txc-coffee-page"
+    class="vbpl-page"
+>
     <article id="txc-cofp-content" class="txc-common-main-content-layout">
         <p class="txc-cofp-content-p main-content-paragraph">
             Where we come from,<br/>

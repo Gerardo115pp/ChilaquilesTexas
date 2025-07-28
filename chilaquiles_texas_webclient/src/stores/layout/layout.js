@@ -8,6 +8,7 @@ import { isMobile } from "./layout_utils";
 * @typedef {Object} LayoutProperties
  * @property {boolean} IS_MOBILE - Whether the current layout is mobile or not.
  * @property {number} VIEWPORT_WIDTH - The current viewport width.
+ * @property {boolean} ORIENTATION_LANDSCAPE
 */
 
 /**
@@ -17,6 +18,7 @@ import { isMobile } from "./layout_utils";
 let local_layout_properties = {
     IS_MOBILE: isMobileByDefault(),
     VIEWPORT_WIDTH: isMobileByDefault() ? VIEWPORT_SIZES.MOBILE.WIDTH : VIEWPORT_SIZES.DESKTOP.WIDTH,
+    ORIENTATION_LANDSCAPE: !isMobileByDefault(),
 }
 
 /**
@@ -65,9 +67,12 @@ export const dismissLayout = () => {
 function defineLayoutProperties() {
     const is_mobile = isMobile();
     let viewport_width = is_mobile ? VIEWPORT_SIZES.MOBILE.WIDTH : VIEWPORT_SIZES.DESKTOP.WIDTH;
+    let is_orientation_landscape = !is_mobile;
 
     if (isBrowser()) {
         viewport_width = globalThis.innerWidth;
+
+        is_orientation_landscape = globalThis.innerHeight < globalThis.innerWidth;
     }
 
     /**
@@ -76,6 +81,7 @@ function defineLayoutProperties() {
     const new_layout_properties = {
         IS_MOBILE: is_mobile,
         VIEWPORT_WIDTH: viewport_width,
+        ORIENTATION_LANDSCAPE: is_orientation_landscape,
     }
 
     local_layout_properties = new_layout_properties;

@@ -40,7 +40,9 @@
     
 </script>
 
-<main id="txc-our-history-page">
+<main id="txc-our-history-page"
+    class="vbpl-page"
+>
     <article id="txc-ouhis-content" class="txc-common-main-content-layout">
         <header id="txc-ouhis-content-header">
             <h1 id="txc-ouhis-ch-title">
