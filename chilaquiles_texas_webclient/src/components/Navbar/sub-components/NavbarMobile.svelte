@@ -54,7 +54,7 @@
             </li>
         </ul>
         <button id="txc-mnv-order-online-btn" class="txc-button">
-            Order Online
+            ORDER ONLINE
         </button>
     </div>
 </nav>
@@ -104,6 +104,7 @@
                 white-space: nowrap;
             }
         }
+
     
     /*=====  End of NavOptions  ======*/
 
@@ -169,5 +170,20 @@
         display: flex;
         column-gap: 5.528cqw;
     }
+
+    
+    /*=============================================
+    =            Responsive            =
+    =============================================*/
+
+        @container (width <= 1080px) {
+            menu#txc-mnv-cr-navoptions {
+                font-size: 2.8cqw;
+            }
+        }
+    
+    /*=====  End of Responsive  ======*/
+    
+    
 
 </style>
