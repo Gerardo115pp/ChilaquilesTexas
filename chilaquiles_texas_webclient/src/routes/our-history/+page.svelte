@@ -83,35 +83,31 @@
         width: 100%;
         justify-content: space-between;
     }
-
     
     /*=============================================
     =            Article content            =
     =============================================*/
     
-    main#txc-our-history-page article#txc-ouhis-content {
-        align-items: flex-start;
-        text-align: left;
+        main#txc-our-history-page article#txc-ouhis-content {
+            align-items: flex-start;
+            text-align: left;
 
-        & h1, p.main-content-paragraph {
-            text-align: inherit;
+            & h1, p.main-content-paragraph {
+                text-align: inherit;
+            }
         }
-    }
-    
-    main#txc-our-history-page article#txc-ouhis-content header {
-        & h1 {
-            font-size: calc(var(--font-size-h3) * 0.97826);
-        }
+        
+        main#txc-our-history-page article#txc-ouhis-content header {
+            & h1 {
+                font-size: calc(var(--font-size-h3) * 0.97826);
+            }
 
-        & h1 strong {
-            color: var(--theme-color);
+            & h1 strong {
+                color: var(--theme-color);
+            }
         }
-    }
     
     /*=====  End of Article content  ======*/
-    
-    
-
 
     aside#txc-ouhis-restaurant-image-wrapper {
         translate: var(--padding--video-background-page--inline);
@@ -121,6 +117,20 @@
             aspect-ratio: 408 / 263;
             max-height: 49dvh;
             object-fit: cover;
+        }
+    }
+
+    @container (width <= 700px) {
+        main#txc-our-history-page {
+            align-items: center;
+        }
+        main#txc-our-history-page article#txc-ouhis-content {
+            width: 70%;
+        }
+
+        aside#txc-ouhis-restaurant-image-wrapper {
+            width: 25%;
+            translate: 0;
         }
     }
 </style>

@@ -246,7 +246,6 @@
     
     /*=====  End of VBPL layout  ======*/
     
-    
     /*=============================================
     =            Responsive            =
     =============================================*/
@@ -296,7 +295,7 @@
                 container-name: mobile-vertical-cc;
             }
             
-            #txc-vbpl-page--main-content {
+            #txc-vbpl-page--main-content, #txc-vbpl-page--main-content.txc-vbpl-full-main-content {
                 container-type: size;
                 width: 64.2592dvw;
                 height: 49.2187dvh;
@@ -305,6 +304,5 @@
         }
     
     /*=====  End of Responsive  ======*/
-    
     
 </style>
