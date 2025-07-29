@@ -44,7 +44,7 @@
             <NavBurgerButton />
         </div>
         <ul id="txc-mnv-cl-socials">
-            <li class="txc-mnv-cl-socials-item">
+            <li id="txc-mnv-cl-si-spotify" class="txc-mnv-cl-socials-item">
                 <span class="txc-mnv-cl-socials-item-icon-wrapper">
                     <SpotifyIcon />
                 </span>
@@ -63,10 +63,9 @@
 
     nav#txc-mobile-navbar {
         display: flex;
-        container-type: inline-size;
+        container-type: size;
         width: 100%;
-        min-height: var(--navbar-height);
-        height: max-content;
+        height: var(--navbar-height);
         justify-content: space-between;   
     }
 
@@ -141,25 +140,25 @@
             align-self: stretch;
             gap: 0.8095rem;
             border: 1px solid var(--grey-1);
-            padding-inline: 1.83em;
+            padding-inline: 1.2em;
             margin: 0;
         }
 
-        li.txc-mnv-cl-socials-item {
+        li#txc-mnv-cl-si-spotify.txc-mnv-cl-socials-item {
             display: flex;
-            height: 26px;
+            height: 100cqh;
             column-gap: calc(var(--font-size-1) * .75);
             align-items: center;
 
             & h3 {
                 color: var(--grey-1);
-                font-size: var(--font-size-1);
+                font-size: calc(1.5 * var(--font-size-1));
                 font-weight: normal;
                 text-transform: none;
             }
 
             .txc-mnv-cl-socials-item-icon-wrapper {
-                height: 100%;
+                height: 52.7927%;
                 aspect-ratio: 1 / 1;
             }
         }
