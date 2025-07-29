@@ -220,10 +220,16 @@
             menu#txc-mnv-cr-navoptions {
                 font-size: 2.8cqw;
             }
+
+            button#txc-mnv-order-online-btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: calc(0.35 * var(--navbar-height));
+                padding-block: 0;
+            }
         }
     
     /*=====  End of Responsive  ======*/
-    
-    
 
 </style>
