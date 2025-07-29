@@ -111,7 +111,9 @@
 
             address#txc-vbpl-footer-content {
                 display: grid;
-                grid-template-columns: 54.9171% 5.6353% 28.8397%;
+                width: 100%;
+                grid-template-columns: auto 5.6353% 28.8397%;
+                column-gap: 3%;
                 row-gap: normal;
                 
                 & hgroup#txc-vbpl-footer-open-days {

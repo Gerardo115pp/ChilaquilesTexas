@@ -1,9 +1,11 @@
 <script>
     import { page } from '$app/state';
-    import { external_links, website_page_paths } from '@app/common/page_paths.js';
-    import InstagramIcon from '@components/icons/InstagramIcon.svelte';
+    import { website_page_paths } from '@app/common/page_paths.js';
     import SpotifyIcon from '@components/icons/SpotifyIcon.svelte';
     import NavBurgerButton from './NavBurgerButton.svelte';
+    import MobileNavDialog from './MobileNavDialog.svelte';
+    import { writable } from 'svelte/store';
+    import { afterNavigate } from '$app/navigation';
 
     
     /*=============================================
@@ -19,12 +21,47 @@
          * @type {DesktopNavbarProps}
          */
         let { nav_options } = $props();
+
+        /**
+         * Whether the navigation dialog should be visible
+         * @type {import('svelte/store').Writable<boolean>}
+         */
+        let display_nav_dialog = writable(false);
     
     /*=====  End of Properties  ======*/
     
+    afterNavigate(() => {
+        defineNavigationDialogOpened(false);
+    })
+    
+    /*=============================================
+    =            Methods            =
+    =============================================*/
+    
+        /**
+         * Handles the click event on the mobile navbar burger button.
+         * @param {MouseEvent} event
+         */
+        const handleBurgerButtonClick = event => {
+            display_nav_dialog.set(true);
+        }
+
+        /**
+         * Sets the open state of the navigation menu dialog.
+         * @param {boolean} is_open
+         */
+        const defineNavigationDialogOpened = is_open => {
+            display_nav_dialog.set(is_open);
+        }
+    
+    /*=====  End of Methods  ======*/
     
 </script>
 
+<MobileNavDialog 
+    nav_options={nav_options}
+    open_state={display_nav_dialog}
+/>
 <nav id="txc-mobile-navbar"
     class:is-home-page={page.url.pathname === website_page_paths.HOME.path}
 >
@@ -40,9 +77,11 @@
         </menu>
     </div>
     <div id="txc-mnv-content-left">
-        <div id="txc-mnv-burger-wrapper">
+        <button id="txc-mnv-burger-wrapper"
+            onclick={handleBurgerButtonClick}
+        >
             <NavBurgerButton />
-        </div>
+        </button>
         <ul id="txc-mnv-cl-socials">
             <li id="txc-mnv-cl-si-spotify" class="txc-mnv-cl-socials-item">
                 <span class="txc-mnv-cl-socials-item-icon-wrapper">
@@ -69,8 +108,10 @@
         justify-content: space-between;   
     }
 
-    #txc-mnv-burger-wrapper {
+    button#txc-mnv-burger-wrapper {
         display: none;
+        padding: 0;
+        border: none;
     }
     
     /*=============================================

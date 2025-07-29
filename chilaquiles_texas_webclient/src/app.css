@@ -154,7 +154,7 @@
         font-size: var(--font-size-h2);
     }
 
-    ul, ol {
+    ul, ol, menu, li {
         list-style: none;
         padding: 0;
         margin: 0;
