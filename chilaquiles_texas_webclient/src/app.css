@@ -252,6 +252,42 @@
 
 
 /*=============================================
+=            Debug            =
+=============================================*/
+
+    .debug{
+        border: 1px solid red;
+    }
+
+    .adebug{
+        border: 1px solid rgb(255, 72, 72);
+    }
+
+    .debug > * {
+        border: 1px solid red;
+    }
+
+    .adebug *{
+        border: 1px solid rgb(107, 107, 255);
+    }
+
+    .dtwo{
+        border: 1px solid blue !important;
+    }
+
+    .dthree{
+        border: 1px solid green !important;
+    }
+
+    .dfour{
+        border: 1px solid yellow !important;
+    }
+
+/*=====  End of Debug  ======*/
+
+
+
+/*=============================================
 =            Responsive            =
 =============================================*/
 
