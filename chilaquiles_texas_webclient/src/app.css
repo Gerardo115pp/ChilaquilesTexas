@@ -262,7 +262,7 @@
             font-size: 3.5978cqh;
 
             & .main-content-paragraph {
-                font-size: 3.5978cqh;
+                font-size: inherit;
             }
         }
 
@@ -292,10 +292,12 @@
         }
 
         button, .txc-button {
+            --btn-border-width: min(4px, 0.3svh);
+
             font-size: var(--font-size-4);
             padding: 1.2em 1em;
             text-transform: none;
-            border: 4px solid var(--theme-color);
+            border: var(--btn-border-width) solid var(--theme-color);
             background-color: transparent;
 
             &.discourage-btn {

@@ -122,6 +122,7 @@
             & #txc-mnd-actions-wrapper {
                 height: 5cqh;
             }
+
             & #txc-mnd-actions-wrapper button {
                 height: 100%;
                 aspect-ratio: 1 / 1;
@@ -132,12 +133,11 @@
     
     /*=====  End of Header  ======*/
     
-    
     /*=============================================
     =            Navigation Wrapper            =
     =============================================*/
     
-    #txc-mnd-navigation-wrapper {
+        #txc-mnd-navigation-wrapper {
             overflow: auto;
             width: 100%;
             height: 45.78cqh;
@@ -157,7 +157,7 @@
             }
 
             & > li.txc-mnd-nm-nav-option {
-                border-bottom: 6px solid var(--grey-1);
+                border-bottom: 0.5cqh solid var(--grey-1);
             }
 
             & > li.txc-mnd-nm-nav-option a {
@@ -188,7 +188,6 @@
                 font-size: 0.5334em;
             }
         }
-
     
     /*=====  End of Navigation Wrapper  ======*/
 
@@ -207,6 +206,5 @@
             border-color: var(--grey-1);
         }
     }
-
     
 </style>
