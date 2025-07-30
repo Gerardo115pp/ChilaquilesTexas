@@ -84,6 +84,7 @@
 </dialog>
 
 <style>
+
     dialog#txc-mobile-nav-dialog {
         position: fixed;
         inset: 0;
@@ -95,6 +96,17 @@
         color: var(--grey-1);
         border: none;
         z-index: var(--z-index-t-5);
+        transform-origin: center 0;
+        scale: 1 0;
+        transition: scale 0.1s ease-out;
+    }
+
+    dialog#txc-mobile-nav-dialog[open] {
+        scale: 1;
+
+        @starting-style {
+            scale: 1 0;
+        }
     }
 
     #txc-mnd-content-wrapper {

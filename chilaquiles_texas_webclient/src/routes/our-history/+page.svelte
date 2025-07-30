@@ -120,17 +120,37 @@
         }
     }
 
-    @container (width <= 700px) {
+    @container (width <= 900px) {
         main#txc-our-history-page {
+            position: relative;
             align-items: center;
         }
+
         main#txc-our-history-page article#txc-ouhis-content {
             width: 70%;
         }
 
-        aside#txc-ouhis-restaurant-image-wrapper {
-            width: 25%;
+        main#txc-our-history-page aside#txc-ouhis-restaurant-image-wrapper {
+            position: absolute;
+            left: 80%;
             translate: 0;
+            z-index: var(--z-index-b-1);
+
+            & img {
+                width: 70cqw;
+            }
+        }
+    }
+
+
+    @container (width <= 400px) {
+        main#txc-our-history-page {
+            align-items: center;
+        }
+
+        main#txc-our-history-page aside#txc-ouhis-restaurant-image-wrapper {
+            translate: 0;
+            top: 40%;
         }
     }
 </style>

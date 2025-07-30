@@ -98,23 +98,21 @@
     /*=============================================
     =            Responsiveness            =
     =============================================*/
-    
-        @media (max-aspect-ratio: 0.98) {
-            footer#txc-vbpl-footer {
-                height: 9.7395dvh;
-                font-size: calc(var(--font-size-4) * 1.169);
 
-                & a, h4 {
-                    font-size: 1em;
-                }
+        @media (max-width: 1300px) {
+            footer#txc-vbpl-footer {
+                font-size: min(var(--font-size-3), 1.5svh);
             }
+        }
+
+        @container (width <= 1400px) {
 
             address#txc-vbpl-footer-content {
                 display: grid;
                 width: 100%;
-                grid-template-columns: auto 5.6353% 28.8397%;
+                grid-template-columns: auto min(26px, 5.6353%) 28.8397%;
                 column-gap: 3%;
-                row-gap: normal;
+                row-gap: min(10px, 0.5em);
                 
                 & hgroup#txc-vbpl-footer-open-days {
                     grid-column: 1 / -1;
@@ -123,7 +121,7 @@
                     justify-content: center;
                     align-self: auto;
                     padding-inline: 0;
-                    padding: calc(var(--spacing-3) * 0.90625) 0;
+                    padding: min(13px, calc(var(--spacing-3) * 0.90625)) 0;
                 }
 
                 & hgroup#txc-vbpl-footer-open-days h4 {
@@ -145,6 +143,7 @@
                 & a#txc-vbpl-footer-contact-phone {
                     grid-column: 3 / span 1;
                     grid-row: 2;
+                    text-align: right;
                 }
 
                 & a#txc-vbpl-footer-contact-email {
@@ -152,9 +151,20 @@
                 }
             }
         }
+
+        /* @ */
+    
+        @media (max-aspect-ratio: 0.98) {
+            footer#txc-vbpl-footer {
+                height: 9.7395dvh;
+                font-size: calc(var(--font-size-4) * 1.169);
+
+                & a, h4 {
+                    font-size: 1em;
+                }
+            }
+        }
     
     /*=====  End of Responsiveness  ======*/
-    
-    
 
 </style>

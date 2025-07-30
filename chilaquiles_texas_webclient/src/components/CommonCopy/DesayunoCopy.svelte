@@ -94,7 +94,7 @@
         display: flex;
         flex-direction: column;
         color: var(--copy-color);
-        font-size: var(--font-size-p);
+        font-size: min(var(--font-size-p), 2svh);
         row-gap: 2.09em;
 
         & a {
@@ -140,15 +140,16 @@
         }
     
     /*=====  End of Header  ======*/
+
     
     @container mobile-vertical-cc (width <= 1080px)  {
         article#txc-vbpl-common-copy--breakfast {
-            font-size: 7.2494cqw;
+            font-size: 4.2494cqh;
             row-gap: 10.4874cqh;
         }
 
         header#txc-vbpl-ccb-header {
-            font-size: 11.0782cqw;
+            font-size: 11.0782cqh;
         }
     }
 </style>

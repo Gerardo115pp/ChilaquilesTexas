@@ -142,7 +142,19 @@
         }
 
     /*=====  End of Socials  ======*/
+   
     
+    /*=============================================
+    =            Responsiveness            =
+    =============================================*/
+    
+        @container (width < 1200px) {
+            li.txc-nv-cl-socials-item h3.txc-nv-cl-socials-item-text {
+                display: none;
+            }
+        }
+    
+    /*=====  End of Responsiveness  ======*/
     
     
 </style>

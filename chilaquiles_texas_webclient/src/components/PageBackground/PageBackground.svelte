@@ -457,6 +457,8 @@
                 <video 
                     id="txcbill-video-background"
                     class="billboard-media"
+                    preload="metadata"
+                    poster="{cover_image_url}"
                     oncanplay={handleVideoBackgroundLoad}
                     src="{video_background_url}"
                     muted

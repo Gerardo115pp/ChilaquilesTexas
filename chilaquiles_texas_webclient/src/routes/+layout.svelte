@@ -112,6 +112,7 @@
 
 <div id="libery-website-content"
     class="page-layout-{current_page_layout}"
+    class:adebug={false}
 >
     {#if page_background != null} 
         <PageBackground 

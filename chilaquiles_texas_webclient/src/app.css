@@ -342,6 +342,35 @@
         }
     }
 
+    @media (max-aspect-ratio: 0.98) and (width < 400px) {
+        :root {
+            --font-size-1: 0.633dvh;
+            --font-size-h1: 5.033dvh;
+    
+            --spacing-base: 0.31667dvh;
+    
+            --padding--video-background-page--inline: 5.277dvw;
+            --padding--video-background-page--block: 2.96dvh;
+            --navbar-height: 3.8514dvh;
+        }
+
+        button, .txc-button {
+            --btn-border-width: min(4px, 0.3svh);
+
+            font-size: var(--font-size-4);
+            padding: 1.2em 1em;
+            text-transform: none;
+            border: var(--btn-border-width) solid var(--theme-color);
+            background-color: transparent;
+
+            &.discourage-btn {
+                border-color: var(--grey-1);
+            }
+        }
+    }
+
+    
+
 /*=====  End of Responsive  ======*/
 
 

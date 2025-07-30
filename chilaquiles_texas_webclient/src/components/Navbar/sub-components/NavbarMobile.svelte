@@ -223,6 +223,7 @@
 
             button#txc-mnv-order-online-btn {
                 display: flex;
+                align-self: stretch;
                 justify-content: center;
                 align-items: center;
                 font-size: calc(0.35 * var(--navbar-height));
@@ -230,6 +231,11 @@
             }
         }
     
+        @container (width <= 400px) {
+            menu#txc-mnv-cr-navoptions {
+                font-size: 2.4cqw;
+            }
+        }
     /*=====  End of Responsive  ======*/
 
 </style>
