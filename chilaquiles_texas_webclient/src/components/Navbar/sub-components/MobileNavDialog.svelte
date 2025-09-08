@@ -1,5 +1,6 @@
 <script>
-    import Footer from "@components/Footer/Footer.svelte";
+    import { external_links } from "@app/common/page_paths.js";
+import Footer from "@components/Footer/Footer.svelte";
     import CloseButton from "@components/icons/CloseButton.svelte";
     import LosChilaquilesLogo from "@components/icons/LosChilaquilesLogo.svelte";
     import SpotifyIcon from "@components/icons/SpotifyIcon.svelte";
@@ -63,7 +64,7 @@
                     </li> 
                 {/each}
                 <li class="txc-mnd-social-link">
-                    <a href="#">
+                    <a href="{external_links.SPOTIFY}" target="_blank" rel="noopener noreferrer">
                         <span class="txc-mnd-sl-socials-item-icon-wrapper">
                             <SpotifyIcon />
                         </span>

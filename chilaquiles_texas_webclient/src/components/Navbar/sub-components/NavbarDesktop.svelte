@@ -38,12 +38,14 @@
     <div id="txc-nv-content-left">
         <ul id="txc-nv-cl-socials">
             <li class="txc-nv-cl-socials-item">
-                <h3 class="txc-nv-cl-socials-item-text">
-                    Let our playlist ease you into the day
-                </h3>
-                <span class="txc-nv-cl-socials-item-icon-wrapper">
-                    <SpotifyIcon />
-                </span>
+                <a target="_blank" rel="noopener noreferrer" href="{external_links.SPOTIFY}">
+                    <h3 class="txc-nv-cl-socials-item-text">
+                        Let our playlist ease you into the day
+                    </h3>
+                    <span class="txc-nv-cl-socials-item-icon-wrapper">
+                        <SpotifyIcon />
+                    </span>
+                </a>
             </li>
             <li class="txc-nv-cl-socials-item">
                 <a 
@@ -128,11 +130,20 @@
             column-gap: calc(var(--font-size-1) * .75);
             align-items: center;
 
+            & > a {
+                display: flex;
+                height: 100%;
+                column-gap: inherit;
+                align-items: center;
+                text-decoration: none;
+            }
+
             & h3 {
                 color: var(--grey-1);
                 font-size: var(--font-size-1);
                 font-weight: normal;
                 text-transform: none;
+                text-decoration: none;
             }
 
             .txc-nv-cl-socials-item-icon-wrapper {

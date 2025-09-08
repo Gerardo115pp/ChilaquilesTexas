@@ -1,6 +1,6 @@
 <script>
     import { page } from '$app/state';
-    import { website_page_paths } from '@app/common/page_paths.js';
+    import { external_links, website_page_paths } from '@app/common/page_paths.js';
     import SpotifyIcon from '@components/icons/SpotifyIcon.svelte';
     import NavBurgerButton from './NavBurgerButton.svelte';
     import MobileNavDialog from './MobileNavDialog.svelte';
@@ -84,12 +84,14 @@
         </button>
         <ul id="txc-mnv-cl-socials">
             <li id="txc-mnv-cl-si-spotify" class="txc-mnv-cl-socials-item">
-                <span class="txc-mnv-cl-socials-item-icon-wrapper">
-                    <SpotifyIcon />
-                </span>
-                <h3 class="txc-mnv-cl-socials-item-text">
-                    Let our playlist ease you into the day
-                </h3>
+                <a href="{external_links.SPOTIFY}" target="_blank" rel="noopener noreferrer">
+                    <span class="txc-mnv-cl-socials-item-icon-wrapper">
+                        <SpotifyIcon />
+                    </span>
+                    <h3 class="txc-mnv-cl-socials-item-text">
+                        Let our playlist ease you into the day
+                    </h3>
+                </a>
             </li>
         </ul>
         <button id="txc-mnv-order-online-btn" class="txc-button">
@@ -190,6 +192,14 @@
             height: 100cqh;
             column-gap: calc(var(--font-size-1) * .75);
             align-items: center;
+
+            & > a {
+                display: flex;
+                height: 100%;
+                column-gap: inherit;
+                align-items: center;
+                text-decoration: none;
+            }
 
             & h3 {
                 color: var(--grey-1);

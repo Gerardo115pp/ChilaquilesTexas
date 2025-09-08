@@ -16,7 +16,7 @@
         </a>
         <hgroup id="txc-vbpl-footer-open-days">
             <h4>
-                SEVEN DAYS A WEEK / <strong>FROM 7AM TO 7PM</strong>
+                SEVEN DAYS A WEEK / <strong>FROM 7AM TO 3PM</strong>
             </h4>
         </hgroup>
         <a 

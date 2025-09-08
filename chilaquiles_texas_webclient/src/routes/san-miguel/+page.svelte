@@ -1,3 +1,7 @@
+<script>
+    import { website_page_paths } from "@app/common/page_paths";
+
+</script>
 <!-- 
     'The blade must never be restrained.’He spoke the next sentence like a vow. ‘We shall always be the scythe.’
 
@@ -28,9 +32,11 @@
             Bienvenido. There's always room at our table.
         </p>
         <ul class="txc-ctas-container">
-            <button class="txc-button discourage-btn">
-                Los Chilaquiles Houston
-            </button>
+            <a href="{website_page_paths.ABOUT_US_PAGE.path}">
+                <button class="txc-button discourage-btn">
+                    Los Chilaquiles Houston
+                </button>
+            </a>
             <button class="txc-button">
                 Menu & Order Online
             </button>

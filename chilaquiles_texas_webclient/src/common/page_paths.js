@@ -71,5 +71,6 @@ export const external_links = {
     ADDRESS: "https://g.co/kgs/BzDK3Hu",
     EMAIL: "mailto: hola@loschilaquiles.com",
     PHONE: "tel: +18324697664",
-    INSTAGRAM: "https://instagram.com/loschilaquiles"
+    INSTAGRAM: "https://instagram.com/loschilaquiles",
+    SPOTIFY: "https://open.spotify.com/playlist/3KNS6keFi8j2YLiQqPsuiX?pi=oqGSNiKfTtCFk"
 }

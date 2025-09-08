@@ -561,7 +561,7 @@
         width: 100cqw;
         height: 100dvh;
         z-index: var(--z-index-b-1);
-        background-color: var(--color-vbpl-veneer-color);
+        background-color: hsl(from hsl(0, 0%, 0%)  h s l / 0.5);
     }
 
     /*=====  End of Veneer  ======*/

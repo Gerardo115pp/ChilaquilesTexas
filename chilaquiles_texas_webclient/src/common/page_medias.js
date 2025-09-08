@@ -42,10 +42,6 @@ const toImageResourceURI = (filename, sub_folder="") => {
     const HOME_PAGE_BACKGROUND = new PageBackground(
         new ReactiveMediaList(toCoverURI("home-original.webp"), [
             {
-                breakpoint: breakpoints.XL,
-                media_resource_uri: toCoverURI("home-XL.webp"),
-            },
-            {
                 breakpoint: breakpoints.L,
                 media_resource_uri: toCoverURI("home-L.webp"),
             },
@@ -61,7 +57,7 @@ const toImageResourceURI = (filename, sub_folder="") => {
         new ReactiveMediaList(toVideoURI("home_page/home_mobile_av1_small.mp4"), [
                 {
                     breakpoint: breakpoints.L,
-                    media_resource_uri: toVideoURI("home_page/home_av1.mp4"),
+                    media_resource_uri: toVideoURI("home_page/home_h264.fixed.mp4"),
                 }
             ]
         )
