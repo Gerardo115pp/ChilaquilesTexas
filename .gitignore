@@ -40,3 +40,4 @@ action_scripts/
 databases/qdrant/
 
 /**/secretfile_*
+dev_scripts/

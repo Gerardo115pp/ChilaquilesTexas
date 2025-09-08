@@ -15,6 +15,9 @@ server {
         proxy_method $request_method;
         # Development server
         proxy_pass https://texas.loschilaquiles.com:1367;
+
+        # Production server
+        # proxy_pass http://localhost:1367;
     }
 
     location /resources {
