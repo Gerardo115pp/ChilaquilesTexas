@@ -1,0 +1,154 @@
+{
+    "title": "Bebidas sin alcohol",
+    "item_list_title": "Bebidas",
+    "items": [
+        {
+            "title": "Coca cola de dieta",
+            "price": 3.9,
+            "description": "En lata.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-1",
+            "warnings": []
+        },
+        {
+            "title": "Sprite",
+            "price": 3.9,
+            "description": "En lata.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-2",
+            "warnings": []
+        },
+        {
+            "title": "Coca cola",
+            "price": 5.75,
+            "description": "En botella.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-3",
+            "warnings": []
+        },
+        {
+            "title": "Topo chico",
+            "price": 4.3,
+            "description": "En botella.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-4",
+            "warnings": []
+        },
+        {
+            "title": "Agua de piedra 355ml",
+            "price": 2.9,
+            "description": "Botella 355ml.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-5",
+            "warnings": []
+        },
+        {
+            "title": "Agua de piedra 650ml",
+            "price": 5.9,
+            "description": "Botella 650ml.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-6",
+            "warnings": []
+        },
+        {
+            "title": "Agua de horchata",
+            "price": 4.9,
+            "description": "Agua fresca.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-7",
+            "warnings": []
+        },
+        {
+            "title": "Agua de jamaica",
+            "price": 4.9,
+            "description": "Agua fresca.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-8",
+            "warnings": []
+        },
+        {
+            "title": "Agua de hierbabuena con piña",
+            "price": 4.9,
+            "description": "Agua fresca.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-9",
+            "warnings": []
+        },
+        {
+            "title": "Té helado",
+            "price": 4.9,
+            "description": "Refresco.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-10",
+            "warnings": []
+        },
+        {
+            "title": "Jugo de naranja",
+            "price": 6.4,
+            "description": "Jugo natural.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-11",
+            "warnings": []
+        },
+        {
+            "title": "Jugo de zanahoria",
+            "price": 5.9,
+            "description": "Jugo natural.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-12",
+            "warnings": []
+        },
+        {
+            "title": "Jugo de piña",
+            "price": 6.9,
+            "description": "Jugo natural.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-13",
+            "warnings": []
+        }
+    ],
+    "modifiers": [],
+    "extras": [],
+    "teaser_image_url": "",
+    "html_classes": [],
+    "section_uuid": "1e333138-4606-5559-a82e-77e12f58df13"
+}

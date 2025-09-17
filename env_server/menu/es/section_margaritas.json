@@ -1,0 +1,55 @@
+{
+    "title": "Las Margaritas",
+    "item_list_title": "Margaritas (1.5oz)",
+    "items": [
+        {
+            "title": "Margarita clásica",
+            "price": 16.0,
+            "description": "Margarita clásica.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "d622d742-bb85-5f20-a3d2-095da1ee97c8-1",
+            "warnings": []
+        },
+        {
+            "title": "Margarita jamaica",
+            "price": 16.0,
+            "description": "Margarita de jamaica.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "d622d742-bb85-5f20-a3d2-095da1ee97c8-2",
+            "warnings": []
+        },
+        {
+            "title": "Margarita paloma",
+            "price": 16.0,
+            "description": "Margarita estilo paloma.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "d622d742-bb85-5f20-a3d2-095da1ee97c8-3",
+            "warnings": []
+        },
+        {
+            "title": "Margarita habanero toronja & tajín",
+            "price": 16.0,
+            "description": "Habanero y toronja con borde de tajín.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "d622d742-bb85-5f20-a3d2-095da1ee97c8-4",
+            "warnings": []
+        }
+    ],
+    "modifiers": [],
+    "extras": [],
+    "teaser_image_url": "",
+    "html_classes": [],
+    "section_uuid": "d622d742-bb85-5f20-a3d2-095da1ee97c8"
+}

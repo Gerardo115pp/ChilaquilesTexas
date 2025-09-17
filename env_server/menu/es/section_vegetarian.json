@@ -1,0 +1,39 @@
+{
+    "title": "Para quienes quieren verse como Varita de Nardo",
+    "item_list_title": "Para las y los que quieren estar como 'varita de nardo'",
+    "items": [
+        {
+            "title": "Orden de fruta de la estación",
+            "price": 5.4,
+            "description": "Melón, fresa y piña, o pregunte por la fruta de temporada.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "263c9ea8-fe0a-536e-9b2e-4992e67c4e7a-1",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Parfait de frutos rojos",
+            "price": 13.9,
+            "description": "Frutos rojos, granola artesanal, yoghurt y miel.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "263c9ea8-fe0a-536e-9b2e-4992e67c4e7a-2",
+            "warnings": []
+        }
+    ],
+    "modifiers": [],
+    "extras": [],
+    "teaser_image_url": "",
+    "html_classes": [],
+    "section_uuid": "263c9ea8-fe0a-536e-9b2e-4992e67c4e7a"
+}

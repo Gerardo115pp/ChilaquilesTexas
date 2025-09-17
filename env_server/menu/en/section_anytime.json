@@ -1,0 +1,169 @@
+{
+    "title": "Any time",
+    "item_list_title": "Starters & Mains",
+    "items": [
+        {
+            "title": "Tortilla soup 'Jalisco Es México' Style",
+            "price": 14.9,
+            "description": "Straight from Diana Kennedy's cookbook. Our take on this traditional recipe comes with shredded chicken, creamy avocado, fried pasilla chile strips, and fresh panela cheese.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b-1",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                },
+                {
+                    "text": "SPICY 1",
+                    "danger_level": 1,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Garden salad",
+            "price": 10.9,
+            "description": "Mixed lettuces, asparagus, red onion, grape tomatoes, and shaved radish.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b-2",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Houston, we have ensalada!",
+            "price": 10.9,
+            "description": "Crisp romaine hearts, fresh avocado, crispy bacon, red onion, grape tomatoes, and our homemade ranch.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b-3",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "César salad",
+            "price": 10.9,
+            "description": "Romaine hearts dressed in our house Caesar, finished with a dusting of aged Cotija.",
+            "item_modifiers": [],
+            "item_extras": [
+                {
+                    "text": "Marinated grilled chicken",
+                    "price": 6.9,
+                    "parentheses_label": "(GF)",
+                    "html_classes": []
+                },
+                {
+                    "text": "Oven baked salmon",
+                    "price": 13.9,
+                    "parentheses_label": "(GF)",
+                    "html_classes": []
+                },
+                {
+                    "text": "Sauteed shrimp marinated in our adobo",
+                    "price": 8.9,
+                    "parentheses_label": "(GF)",
+                    "html_classes": []
+                }
+            ],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b-4",
+            "warnings": []
+        },
+        {
+            "title": "Birria tatemada 'Los Chilaquiles'",
+            "price": 22.9,
+            "description": "This is the birria recipe from San Miguel, and as every local will tell you, San Miguel is where the world's best birria is born.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b-5",
+            "warnings": []
+        },
+        {
+            "title": "Al ajillo shrimp",
+            "price": 26.9,
+            "description": "Sautéed shrimp on our savory garlic-chile oil with mushrooms and just the right touch of pasilla chile. Served with white rice.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b-6",
+            "warnings": []
+        },
+        {
+            "title": "A la diabla shrimp",
+            "price": 26.9,
+            "description": "Straight from the coast of southern Jalisco: shrimp sautéed in a spicy sauce with butter and mushrooms. Served with white rice.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b-7",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                },
+                {
+                    "text": "SPICY 3",
+                    "danger_level": 3,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Salmon al ajillo",
+            "price": 29.9,
+            "description": "8 oz center-cut salmon from Northern Norway, mounted on a bed of asparagus and sautéed mushrooms.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b-8",
+            "warnings": []
+        },
+        {
+            "title": "Pollo a la talla",
+            "price": 22.9,
+            "description": "Juicy grilled adobado chicken breast with rice, refried beans and pico de gallo.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b-9",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
+        }
+    ],
+    "modifiers": [],
+    "extras": [],
+    "teaser_image_url": "",
+    "html_classes": [],
+    "section_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b"
+}

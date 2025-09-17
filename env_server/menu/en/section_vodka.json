@@ -1,0 +1,55 @@
+{
+    "title": "Vodka",
+    "item_list_title": "Vodka",
+    "items": [
+        {
+            "title": "Titos Handmade Vodka",
+            "price": 7.0,
+            "description": "",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "1.5oz",
+            "html_classes": [],
+            "item_uuid": "395782e7-f9e7-521a-a756-943f9c3775f0-1",
+            "warnings": []
+        },
+        {
+            "title": "Grey Goose",
+            "price": 10.0,
+            "description": "",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "1.5oz",
+            "html_classes": [],
+            "item_uuid": "395782e7-f9e7-521a-a756-943f9c3775f0-2",
+            "warnings": []
+        },
+        {
+            "title": "Ketel One",
+            "price": 8.0,
+            "description": "",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "1.5oz",
+            "html_classes": [],
+            "item_uuid": "395782e7-f9e7-521a-a756-943f9c3775f0-3",
+            "warnings": []
+        },
+        {
+            "title": "Absolut",
+            "price": 7.0,
+            "description": "",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "1.5oz",
+            "html_classes": [],
+            "item_uuid": "395782e7-f9e7-521a-a756-943f9c3775f0-4",
+            "warnings": []
+        }
+    ],
+    "modifiers": [],
+    "extras": [],
+    "teaser_image_url": "",
+    "html_classes": [],
+    "section_uuid": "395782e7-f9e7-521a-a756-943f9c3775f0"
+}

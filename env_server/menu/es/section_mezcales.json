@@ -1,0 +1,44 @@
+{
+    "title": "Mezcales",
+    "item_list_title": "Mezcales (1.5oz)",
+    "items": [
+        {
+            "title": "Del Maguey Vida",
+            "price": 8.9,
+            "description": "",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "0fa20ead-7150-5f53-8cb7-324d03336924-1",
+            "warnings": []
+        },
+        {
+            "title": "Ilegal Mezcal Joven",
+            "price": 8.3,
+            "description": "",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "0fa20ead-7150-5f53-8cb7-324d03336924-2",
+            "warnings": []
+        },
+        {
+            "title": "400 conejos",
+            "price": 8.1,
+            "description": "",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "0fa20ead-7150-5f53-8cb7-324d03336924-3",
+            "warnings": []
+        }
+    ],
+    "modifiers": [],
+    "extras": [],
+    "teaser_image_url": "",
+    "html_classes": [],
+    "section_uuid": "0fa20ead-7150-5f53-8cb7-324d03336924"
+}

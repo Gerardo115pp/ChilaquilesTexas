@@ -1,0 +1,212 @@
+{
+    "title": "Nuestros chilaquiles",
+    "item_list_title": "Chilaquiles",
+    "items": [
+        {
+            "title": "Coloraos",
+            "price": 13.9,
+            "description": "Sarteneaditos en nuestra salsita Roma, que, modestamente, es la salsa para chilaquiles más vendida desde San Miguel hasta el Polo Norte. El blanquillo revueltito o estrellado no puede faltar",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "GF",
+            "html_classes": [],
+            "item_uuid": "050c0f1f-09f4-5773-a294-6dd4a80149b8-1",
+            "warnings": []
+        },
+        {
+            "title": "Verdis",
+            "price": 13.9,
+            "description": "Una receta que honra el legado de Doña Diana Kennedy (La mejor investigadora de cocina auténtica de México) con ingredientes muy de antaño. El Blanquillo Revueltito o Estrellado no puede faltar.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "GF",
+            "html_classes": [],
+            "item_uuid": "050c0f1f-09f4-5773-a294-6dd4a80149b8-2",
+            "warnings": [
+                {
+                    "text": "SPICY",
+                    "danger_level": 1,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Picantes’n",
+            "price": 13.9,
+            "description": "Para aquellos a quienes les gustan las emociones fuertes, o que se desvelaron en la fiesta un día antes… o ambos. El blanquillo revueltito o estrellado no puede faltar.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "GF",
+            "html_classes": [],
+            "item_uuid": "050c0f1f-09f4-5773-a294-6dd4a80149b8-3",
+            "warnings": [
+                {
+                    "text": "SPICY",
+                    "danger_level": 5,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "En mole artesanal",
+            "price": 13.9,
+            "description": "Esta receta se ha heredado durante tres generaciones, conservando los mismos 36 ingredientes, un claro ejemplo de un platillo preparado bajo la filosofía “slow food”. El blanquillo revueltito o estrellado no puede faltar.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "050c0f1f-09f4-5773-a294-6dd4a80149b8-4",
+            "warnings": []
+        },
+        {
+            "title": "De la sierra",
+            "price": 13.9,
+            "description": "Su nombre proviene de la tradición de los pueblitos pintorescos de la Sierra de Mazamitla, que acostumbran ser muy generosos en el uso de lácteos como la crema y el queso. Además, vienen aderezados con unas rajas de poblano que hacen el “match” perfecto. El blanquillo revueltito o estrellado no puede faltar.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "GF",
+            "html_classes": [],
+            "item_uuid": "050c0f1f-09f4-5773-a294-6dd4a80149b8-5",
+            "warnings": []
+        },
+        {
+            "title": "Poblanos",
+            "price": 13.9,
+            "description": "Para los que gustan de disfrutar sus chilaquiles con sabor pero sin sufrir el picante. Chiles poblanos, crema y sal. Así de simple, así de sabrosos, muy populares en nuestras sucursales en Jalisco. El blanquillo revueltito o estrellado no puede faltar.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "GF",
+            "html_classes": [],
+            "item_uuid": "050c0f1f-09f4-5773-a294-6dd4a80149b8-6",
+            "warnings": [
+                {
+                    "text": "SPICY",
+                    "danger_level": 1,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "De la bisabuela Matiana",
+            "price": 13.9,
+            "description": "Totopos revueltitos con blanquillos y aderezados con miel de abeja pura al gusto. Si quiere ir completamente hacia la receta original de la bisabuela Matiana, agregue una porción de queso Cotija. El blanquillo revueltito o estrellado no puede faltar.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "GF",
+            "html_classes": [],
+            "item_uuid": "050c0f1f-09f4-5773-a294-6dd4a80149b8-7",
+            "warnings": []
+        },
+        {
+            "title": "Chilaquiles bandera",
+            "price": 13.9,
+            "description": "Definitivamente los más populares de nuestro menú. Tres salsas que forman un ensamble tricolor espectacular: coloraos, de la sierra y poblanos, acompañados de los frijolitos refritos de la casa que son ya una referencia. El blanquillo revueltito o estrellado no puede faltar.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "GF",
+            "html_classes": [],
+            "item_uuid": "050c0f1f-09f4-5773-a294-6dd4a80149b8-8",
+            "warnings": []
+        },
+        {
+            "title": "Chilaquiles yucatecos",
+            "price": 21.9,
+            "description": "A esta exquisita variedad le añadimos nuestra jugosa carnita de cerdo cocinada a fuego lento al estilo tradicional yucateco. Van acompañados de cebollita roja encurtida con chilito habanero. No pueden faltar los frijolitos refritos de la casa.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "GF",
+            "html_classes": [],
+            "item_uuid": "050c0f1f-09f4-5773-a294-6dd4a80149b8-9",
+            "warnings": [
+                {
+                    "text": "SPICY",
+                    "danger_level": 4,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Tex Mex",
+            "price": 24.9,
+            "description": "Chilaquiles de su elección (se sugieren coloraos o verdis) sarteneaditos con jugosas fajitas de arrachera texana con cebollita blanca a la parrilla, brotes de microcilantro y un chile jalapeño toreado. Yes sir!",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "GF",
+            "html_classes": [],
+            "item_uuid": "050c0f1f-09f4-5773-a294-6dd4a80149b8-10",
+            "warnings": [
+                {
+                    "text": "SPICY",
+                    "danger_level": 1,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Toro de lidia",
+            "price": 24.9,
+            "description": "Estos chilaquiles son como los toros bravos, decía Don Nabor García: “si se saben torear con una cervecita o un café de olla, no te pican tanto”. La salsa martajadita en que se sartenean les da un picor muy sabroso y, además, vienen con trozos de arrachera texana al grill… ¡chulada! El blanquillo revueltito o estrellado no puede faltar.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "GF",
+            "html_classes": [],
+            "item_uuid": "050c0f1f-09f4-5773-a294-6dd4a80149b8-11",
+            "warnings": [
+                {
+                    "text": "SPICY",
+                    "danger_level": 5,
+                    "html_classes": []
+                }
+            ]
+        }
+    ],
+    "modifiers": [
+        {
+            "text": "Nevados",
+            "price": 3.5,
+            "parentheses_label": "",
+            "html_classes": []
+        }
+    ],
+    "extras": [
+        {
+            "text": "Queso Cotija añejo",
+            "price": 2.9,
+            "parentheses_label": "70 gramos",
+            "html_classes": []
+        },
+        {
+            "text": "Abanico de aguacate",
+            "price": 3.5,
+            "parentheses_label": "120 gramos",
+            "html_classes": []
+        },
+        {
+            "text": "Guacamole de la casa",
+            "price": 6.9,
+            "parentheses_label": "120 gramos",
+            "html_classes": []
+        },
+        {
+            "text": "Un blanquillo extra",
+            "price": 1.5,
+            "parentheses_label": "",
+            "html_classes": []
+        },
+        {
+            "text": "Pollito deshebrado",
+            "price": 5.5,
+            "parentheses_label": "120 gramos",
+            "html_classes": []
+        },
+        {
+            "text": "Fajitas de pollo",
+            "price": 6.9,
+            "parentheses_label": "120 gramos",
+            "html_classes": []
+        }
+    ],
+    "teaser_image_url": "",
+    "html_classes": [],
+    "section_uuid": "050c0f1f-09f4-5773-a294-6dd4a80149b8"
+}

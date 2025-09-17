@@ -1,0 +1,50 @@
+{
+    "title": "Sopes",
+    "item_list_title": "Sopes (3 pieces)",
+    "items": [
+        {
+            "title": "De frijolitos'n",
+            "price": 9.9,
+            "description": "Topped with our classic homemade refried beans.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "454328ec-94bc-5d3f-b1bc-86000533f115-1",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Rajas con panela",
+            "price": 11.9,
+            "description": "Roasted poblano strips cooked with panela cheese.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "454328ec-94bc-5d3f-b1bc-86000533f115-2",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                },
+                {
+                    "text": "SPICY 1",
+                    "danger_level": 1,
+                    "html_classes": []
+                }
+            ]
+        }
+    ],
+    "modifiers": [],
+    "extras": [],
+    "teaser_image_url": "",
+    "html_classes": [],
+    "section_uuid": "454328ec-94bc-5d3f-b1bc-86000533f115"
+}

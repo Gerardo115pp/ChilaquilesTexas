@@ -1,0 +1,132 @@
+{
+    "title": "Tequilas Selection",
+    "item_list_title": "Tequilas",
+    "items": [
+        {
+            "title": "Espolón",
+            "price": 7.9,
+            "description": "",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "1.5oz",
+            "html_classes": [],
+            "item_uuid": "8e38f43f-b45a-5e99-981e-7055f9338142-1",
+            "warnings": []
+        },
+        {
+            "title": "José Cuervo Tradicional",
+            "price": 8.9,
+            "description": "",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "1.5oz",
+            "html_classes": [],
+            "item_uuid": "8e38f43f-b45a-5e99-981e-7055f9338142-2",
+            "warnings": []
+        },
+        {
+            "title": "818",
+            "price": 9.3,
+            "description": "",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "1.5oz",
+            "html_classes": [],
+            "item_uuid": "8e38f43f-b45a-5e99-981e-7055f9338142-3",
+            "warnings": []
+        },
+        {
+            "title": "Herradura Reposado",
+            "price": 9.9,
+            "description": "",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "1.5oz",
+            "html_classes": [],
+            "item_uuid": "8e38f43f-b45a-5e99-981e-7055f9338142-4",
+            "warnings": []
+        },
+        {
+            "title": "Tierra Noble Blanco",
+            "price": 10.2,
+            "description": "",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "1.5oz",
+            "html_classes": [],
+            "item_uuid": "8e38f43f-b45a-5e99-981e-7055f9338142-5",
+            "warnings": []
+        },
+        {
+            "title": "Casa Amigos Blanco",
+            "price": 11.9,
+            "description": "",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "1.5oz",
+            "html_classes": [],
+            "item_uuid": "8e38f43f-b45a-5e99-981e-7055f9338142-6",
+            "warnings": []
+        },
+        {
+            "title": "Tequila Patrón Reposado",
+            "price": 13.9,
+            "description": "",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "1.5oz",
+            "html_classes": [],
+            "item_uuid": "8e38f43f-b45a-5e99-981e-7055f9338142-7",
+            "warnings": []
+        },
+        {
+            "title": "Tierra Noble Añejo",
+            "price": 13.5,
+            "description": "",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "1.5oz",
+            "html_classes": [],
+            "item_uuid": "8e38f43f-b45a-5e99-981e-7055f9338142-8",
+            "warnings": []
+        },
+        {
+            "title": "Patrón Silver",
+            "price": 11.9,
+            "description": "",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "1.5oz",
+            "html_classes": [],
+            "item_uuid": "8e38f43f-b45a-5e99-981e-7055f9338142-9",
+            "warnings": []
+        },
+        {
+            "title": "Don Julio Reposado",
+            "price": 14.6,
+            "description": "",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "1.5oz",
+            "html_classes": [],
+            "item_uuid": "8e38f43f-b45a-5e99-981e-7055f9338142-10",
+            "warnings": []
+        },
+        {
+            "title": "Clase Azul Reposado",
+            "price": 33.9,
+            "description": "",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "1.5oz",
+            "html_classes": [],
+            "item_uuid": "8e38f43f-b45a-5e99-981e-7055f9338142-11",
+            "warnings": []
+        }
+    ],
+    "modifiers": [],
+    "extras": [],
+    "teaser_image_url": "",
+    "html_classes": [],
+    "section_uuid": "8e38f43f-b45a-5e99-981e-7055f9338142"
+}

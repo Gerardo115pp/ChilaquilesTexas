@@ -1,0 +1,33 @@
+{
+    "title": "Bourbon",
+    "item_list_title": "Bourbon",
+    "items": [
+        {
+            "title": "Buffalo Trace",
+            "price": 8.0,
+            "description": "",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "1.5oz",
+            "html_classes": [],
+            "item_uuid": "08f5bc95-5c7c-5a52-bb06-c75299e87c7f-1",
+            "warnings": []
+        },
+        {
+            "title": "Maker's Mark",
+            "price": 8.0,
+            "description": "",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "1.5oz",
+            "html_classes": [],
+            "item_uuid": "08f5bc95-5c7c-5a52-bb06-c75299e87c7f-2",
+            "warnings": []
+        }
+    ],
+    "modifiers": [],
+    "extras": [],
+    "teaser_image_url": "",
+    "html_classes": [],
+    "section_uuid": "08f5bc95-5c7c-5a52-bb06-c75299e87c7f"
+}

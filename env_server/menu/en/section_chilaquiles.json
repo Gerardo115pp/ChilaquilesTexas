@@ -1,0 +1,207 @@
+{
+    "title": "Our Chilaquiles",
+    "item_list_title": "Chilaquiles",
+    "items": [
+        {
+            "title": "Coloraos (coh-loh-RAH-ohs)",
+            "price": 13.9,
+            "description": "Sautéed in our homemade Roma salsa (not to brag but we’ve been told it’s the most beloved chilaquiles sauce from San Miguel all the way to the North Pole). Topped with blanquillos -that’s what we call eggs in San Miguel- fried or scrambled, as you like.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "GF",
+            "html_classes": [],
+            "item_uuid": "050c0f1f-09f4-5773-a294-6dd4a80149b8-1",
+            "warnings": []
+        },
+        {
+            "title": "Verdis (VEHR-dees)",
+            "price": 13.9,
+            "description": "A tribute to Doña Diana Kennedy, guardian of Mexico’s true flavors. Made with old-soul ingredients that still speak loud. Served with blanquillos, of course, because some things just belong together.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "GF",
+            "html_classes": [],
+            "item_uuid": "050c0f1f-09f4-5773-a294-6dd4a80149b8-2",
+            "warnings": [
+                {
+                    "text": "SPICY",
+                    "danger_level": 1,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Picantes’n (pee-CAHN-tess-en)",
+            "price": 13.9,
+            "description": "For the bold. The hungover. The heartbroken. The hopeful. This one bites back in the best way. Comes with blanquillos, because that’s how mornings begin around here.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "GF",
+            "html_classes": [],
+            "item_uuid": "050c0f1f-09f4-5773-a294-6dd4a80149b8-3",
+            "warnings": [
+                {
+                    "text": "SPICY",
+                    "danger_level": 5,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "De la sierra (day-lah-SYEHR-rah)",
+            "price": 13.9,
+            "description": "Named for the mountain towns of Mazamitla, where cream and cheese abound - not as side notes, but as love letters. Finished with poblano strips that hit just right. And yes, your blanquillos are on the plate, like always.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "GF",
+            "html_classes": [],
+            "item_uuid": "050c0f1f-09f4-5773-a294-6dd4a80149b8-4",
+            "warnings": []
+        },
+        {
+            "title": "Poblanos (Poh-BLAH-nos)",
+            "price": 13.9,
+            "description": "For those who love flavor without the fire. Creamy poblano peppers, a touch of salt, nothing more. A favorite in our Jalisco kitchen, and always served with your choice of blanquillos.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "GF",
+            "html_classes": [],
+            "item_uuid": "050c0f1f-09f4-5773-a294-6dd4a80149b8-5",
+            "warnings": [
+                {
+                    "text": "SPICY",
+                    "danger_level": 1,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "De La Bisabuela Matiana (great-grandmother Matiana’s way)",
+            "price": 13.9,
+            "description": "A family heirloom: tortilla chips scrambled with eggs (blanquillos) and drizzled with pure honey. Want to go full tradition? Add Cotija cheese and don’t look back.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "GF",
+            "html_classes": [],
+            "item_uuid": "050c0f1f-09f4-5773-a294-6dd4a80149b8-6",
+            "warnings": []
+        },
+        {
+            "title": "Chilaquiles Bandera (The Mexican flag)",
+            "price": 13.9,
+            "description": "The people’s favorite. A tricolor of sauces - Coloraos, De la Sierra, and Poblanos - served with our house refried beans that have earned their own fan base. Blanquillos complete the picture.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "GF",
+            "html_classes": [],
+            "item_uuid": "050c0f1f-09f4-5773-a294-6dd4a80149b8-7",
+            "warnings": []
+        },
+        {
+            "title": "Chilaquiles yucatecos (Yooh-cah-TEH-cohs)",
+            "price": 21.9,
+            "description": "This dreamy version comes loaded with our juicy, slow-cooked pork, done the traditional Yucatán way, and topped with pickled red onions and just the right kiss of habanero heat. Our house refried beans, of course, ride shotgun.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "GF",
+            "html_classes": [],
+            "item_uuid": "050c0f1f-09f4-5773-a294-6dd4a80149b8-8",
+            "warnings": [
+                {
+                    "text": "SPICY",
+                    "danger_level": 4,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Tex Mex",
+            "price": 24.9,
+            "description": "Your choice of Verdis or Coloraos, upgraded with grilled Texan arrachera, sweet onions, micro-cilantro, and a bold jalapeño toreadito. ¡Yes sir! Blanquillos included, no need to ask.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "GF",
+            "html_classes": [],
+            "item_uuid": "050c0f1f-09f4-5773-a294-6dd4a80149b8-9",
+            "warnings": [
+                {
+                    "text": "SPICY",
+                    "danger_level": 1,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Toro de lidia (bullfighter’s style)",
+            "price": 24.9,
+            "description": "As Don Nicanor García used to say, “These chilaquiles are like fighting bulls: fierce, proud, and worth taming with café de olla or a cold beer.” Grilled Texan arrachera and a fire-roasted salsa martajada make it sing. With blanquillos, always.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "GF",
+            "html_classes": [],
+            "item_uuid": "050c0f1f-09f4-5773-a294-6dd4a80149b8-10",
+            "warnings": [
+                {
+                    "text": "SPICY",
+                    "danger_level": 5,
+                    "html_classes": []
+                }
+            ]
+        }
+    ],
+    "modifiers": [
+        {
+            "text": "Nevados",
+            "price": 3.5,
+            "parentheses_label": "",
+            "html_classes": []
+        },
+        {
+            "text": "A generous, sizzling cheese gratin",
+            "price": -1.0,
+            "parentheses_label": "120 grams",
+            "html_classes": []
+        }
+    ],
+    "extras": [
+        {
+            "text": "Aged Cotija cheese",
+            "price": 2.9,
+            "parentheses_label": "70g",
+            "html_classes": []
+        },
+        {
+            "text": "Sliced avocado fan",
+            "price": 3.5,
+            "parentheses_label": "120g",
+            "html_classes": []
+        },
+        {
+            "text": "Homemade guacamole",
+            "price": 6.9,
+            "parentheses_label": "",
+            "html_classes": []
+        },
+        {
+            "text": "One extra egg",
+            "price": 1.5,
+            "parentheses_label": "",
+            "html_classes": []
+        },
+        {
+            "text": "Shredded chicken",
+            "price": 5.5,
+            "parentheses_label": "120g",
+            "html_classes": []
+        },
+        {
+            "text": "Chicken fajitas",
+            "price": 6.9,
+            "parentheses_label": "120g",
+            "html_classes": []
+        }
+    ],
+    "teaser_image_url": "",
+    "html_classes": [],
+    "section_uuid": "050c0f1f-09f4-5773-a294-6dd4a80149b8"
+}

@@ -1,0 +1,169 @@
+{
+    "title": "A cualquier hora",
+    "item_list_title": "Entradas y platos",
+    "items": [
+        {
+            "title": "Sopa de tortilla estilo 'Jalisco es México'",
+            "price": 14.9,
+            "description": "Directo del recetario de Doña Diana Kennedy. Nuestra versión tradicional con su toque de aguacatito, pollo deshebrado, unas tiritas de chilito pasilla dorado y quesito panela fresco.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b-1",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                },
+                {
+                    "text": "SPICY 1",
+                    "danger_level": 1,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Ensalada del jardín",
+            "price": 10.9,
+            "description": "Combinación de lechugas, espárragos, cebolla morada, grape tomates y rabanitos rallados.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b-2",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Houston, we have ensalada!",
+            "price": 10.9,
+            "description": "Crujientes corazones de lechuga romana, aguacate fresco, tocino doradito y bien crunchy, tiritas de cebolla morada, dulces tomatitos uva y nuestro aderezo Ranch casero.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b-3",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Ensalada César",
+            "price": 10.9,
+            "description": "Corazones de lechuga en nuestro aderezo de la casa, crotones, y ese toque especial que le da nuestro queso Cotija.",
+            "item_modifiers": [],
+            "item_extras": [
+                {
+                    "text": "Pollo adobado a la parrilla",
+                    "price": 6.9,
+                    "parentheses_label": "(GF)",
+                    "html_classes": []
+                },
+                {
+                    "text": "Salmón al horno",
+                    "price": 13.9,
+                    "parentheses_label": "(GF)",
+                    "html_classes": []
+                },
+                {
+                    "text": "Camarones adobados al sartén",
+                    "price": 8.9,
+                    "parentheses_label": "(GF)",
+                    "html_classes": []
+                }
+            ],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b-4",
+            "warnings": []
+        },
+        {
+            "title": "Birria tatemada 'Los Chilaquiles'",
+            "price": 22.9,
+            "description": "Es la mejor receta de birria de San Miguel, y como en San Miguel se cocina la mejor birria del mundo… ¡Imagínese!",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b-5",
+            "warnings": []
+        },
+        {
+            "title": "Camarones al ajillo",
+            "price": 26.9,
+            "description": "Camarones sarteneados en nuestra receta de sabroso ajillo, con champiñones y un toque de chile pasilla. De guarnición lo acompañamos con nuestro arroz blanco.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b-6",
+            "warnings": []
+        },
+        {
+            "title": "Camarones a la diabla",
+            "price": 26.9,
+            "description": "Esta receta viene desde la costa Sur de Jalisco. Camarones sarteneados en una salsa ligeramente picante con mantequilla y champiñones. De guarnición lo acompañamos con nuestro arroz blanco.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b-7",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                },
+                {
+                    "text": "SPICY 3",
+                    "danger_level": 3,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Salmón al ajillo",
+            "price": 29.9,
+            "description": "8 onzas de Corte de Centro de Salmón del Norte de Noruega, montado sobre una cama de espárragos y champiñones sarteneaditos.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b-8",
+            "warnings": []
+        },
+        {
+            "title": "Pollo a la talla",
+            "price": 22.9,
+            "description": "Jugosa pechuga de pollo adobaditta al grill con arroz, frijolitos refritos y pico de gallo.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b-9",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
+        }
+    ],
+    "modifiers": [],
+    "extras": [],
+    "teaser_image_url": "",
+    "html_classes": [],
+    "section_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b"
+}

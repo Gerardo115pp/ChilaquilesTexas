@@ -1,0 +1,44 @@
+{
+    "title": "Café con piquete",
+    "item_list_title": "Café con piquete (1.5oz)",
+    "items": [
+        {
+            "title": "Café lechero con rompope",
+            "price": 7.9,
+            "description": "Café lechero con rompope.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "5de413cd-4003-5f36-ab3c-ef674068a4dd-1",
+            "warnings": []
+        },
+        {
+            "title": "Capuchino con Baileys",
+            "price": 11.9,
+            "description": "Capuchino con Baileys.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "5de413cd-4003-5f36-ab3c-ef674068a4dd-2",
+            "warnings": []
+        },
+        {
+            "title": "Capuchino con Kahlua",
+            "price": 11.9,
+            "description": "Capuchino con Kahlua.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "5de413cd-4003-5f36-ab3c-ef674068a4dd-3",
+            "warnings": []
+        }
+    ],
+    "modifiers": [],
+    "extras": [],
+    "teaser_image_url": "",
+    "html_classes": [],
+    "section_uuid": "5de413cd-4003-5f36-ab3c-ef674068a4dd"
+}

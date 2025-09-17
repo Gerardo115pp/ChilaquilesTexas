@@ -1,0 +1,118 @@
+{
+    "title": "Opciones para los más pequeños",
+    "item_list_title": "Para niños",
+    "items": [
+        {
+            "title": "Chilaquiles infantiles",
+            "price": 6.9,
+            "description": "Media orden de chilaquiles coloraos, bisabuela Maty (sin picante), acompañados de un blanquillo revuelto y frijolitos.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "fdb0926a-dbcf-59ee-85f3-a7f7edc9d31a-1",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Blanquillo revuelto",
+            "price": 9.9,
+            "description": "Con jamoncito o con tocinito y frijolitos.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "fdb0926a-dbcf-59ee-85f3-a7f7edc9d31a-2",
+            "warnings": []
+        },
+        {
+            "title": "Quesadillitas",
+            "price": 9.3,
+            "description": "Dos piezas de quesadillitas con nuestro queso gratin y acompañadas de frijolitos de la casa. Y papas a la francesa o fruta natural.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "fdb0926a-dbcf-59ee-85f3-a7f7edc9d31a-3",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Waffles",
+            "price": 10.9,
+            "description": "Hechos desde cero con nuestra receta de la casa y acompañados de frutos rojos y crema batida.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "fdb0926a-dbcf-59ee-85f3-a7f7edc9d31a-4",
+            "warnings": []
+        },
+        {
+            "title": "Chicken tenders",
+            "price": 12.9,
+            "description": "Jugosos trocitos de pollo empanizados en hojuelas de maíz y fritos al momento acompañados de una porción de papas a la francesa.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "fdb0926a-dbcf-59ee-85f3-a7f7edc9d31a-5",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Orden de papas a la francesa",
+            "price": 7.9,
+            "description": "Vienen con cátsup!",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "fdb0926a-dbcf-59ee-85f3-a7f7edc9d31a-6",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Papas fritas en aceite de trufa con queso cotija",
+            "price": 12.9,
+            "description": "Papas fritas con aceite de trufa y queso cotija.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "fdb0926a-dbcf-59ee-85f3-a7f7edc9d31a-7",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
+        }
+    ],
+    "modifiers": [],
+    "extras": [],
+    "teaser_image_url": "",
+    "html_classes": [],
+    "section_uuid": "fdb0926a-dbcf-59ee-85f3-a7f7edc9d31a"
+}

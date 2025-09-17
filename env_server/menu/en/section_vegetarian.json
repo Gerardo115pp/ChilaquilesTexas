@@ -1,0 +1,39 @@
+{
+    "title": "Light & Vegetables",
+    "item_list_title": "For those who want to look like a Varita de Nardo",
+    "items": [
+        {
+            "title": "Seasonal fruit plate",
+            "price": 5.4,
+            "description": "Melon, strawberry and pineapple (or ask for seasonal fruit).",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "263c9ea8-fe0a-536e-9b2e-4992e67c4e7a-1",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Red berry parfait with granola and honey",
+            "price": 13.9,
+            "description": "Fresh red berries, artisanal granola, yogurt and honey.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "263c9ea8-fe0a-536e-9b2e-4992e67c4e7a-2",
+            "warnings": []
+        }
+    ],
+    "modifiers": [],
+    "extras": [],
+    "teaser_image_url": "",
+    "html_classes": [],
+    "section_uuid": "263c9ea8-fe0a-536e-9b2e-4992e67c4e7a"
+}

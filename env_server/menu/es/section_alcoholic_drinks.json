@@ -1,0 +1,88 @@
+{
+    "title": "Bebidas espirituosas y digestivos",
+    "item_list_title": "Bebidas espirituosas y digestivos",
+    "items": [
+        {
+            "title": "Tónico Cien Años",
+            "price": 11.0,
+            "description": "Digestivo con miel de abeja, aloe vera y tequila blanco.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "29045a2f-5023-577d-965f-dc4828836a2a-1",
+            "warnings": []
+        },
+        {
+            "title": "Cazuela de cítricos (con alcohol)",
+            "price": 19.0,
+            "description": "Refresco de toronja con tequila reposado.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "29045a2f-5023-577d-965f-dc4828836a2a-2",
+            "warnings": []
+        },
+        {
+            "title": "Cazuela de cítricos (sin alcohol)",
+            "price": 16.0,
+            "description": "Misma receta sin tequila.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "29045a2f-5023-577d-965f-dc4828836a2a-3",
+            "warnings": []
+        },
+        {
+            "title": "Carajillo",
+            "price": 14.0,
+            "description": "Licor 43 con espresso y hielo.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "29045a2f-5023-577d-965f-dc4828836a2a-4",
+            "warnings": []
+        },
+        {
+            "title": "Aperol",
+            "price": 6.0,
+            "description": "Aperitivo a base de Aperol.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "29045a2f-5023-577d-965f-dc4828836a2a-5",
+            "warnings": []
+        },
+        {
+            "title": "Kahlua",
+            "price": 6.0,
+            "description": "Licor de café.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "29045a2f-5023-577d-965f-dc4828836a2a-6",
+            "warnings": []
+        },
+        {
+            "title": "Baileys",
+            "price": 7.0,
+            "description": "Crema irlandesa.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "29045a2f-5023-577d-965f-dc4828836a2a-7",
+            "warnings": []
+        }
+    ],
+    "modifiers": [],
+    "extras": [],
+    "teaser_image_url": "",
+    "html_classes": [],
+    "section_uuid": "29045a2f-5023-577d-965f-dc4828836a2a"
+}

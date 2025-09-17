@@ -1,0 +1,44 @@
+{
+    "title": "Ginebra",
+    "item_list_title": "Ginebra",
+    "items": [
+        {
+            "title": "Tanqueray",
+            "price": 7.0,
+            "description": "",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "1.5oz",
+            "html_classes": [],
+            "item_uuid": "78bb7a5f-95d6-583f-8e6d-2956968e4c55-1",
+            "warnings": []
+        },
+        {
+            "title": "Bombay",
+            "price": 8.0,
+            "description": "",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "1.5oz",
+            "html_classes": [],
+            "item_uuid": "78bb7a5f-95d6-583f-8e6d-2956968e4c55-2",
+            "warnings": []
+        },
+        {
+            "title": "Hendricks",
+            "price": 10.0,
+            "description": "",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "1.5oz",
+            "html_classes": [],
+            "item_uuid": "78bb7a5f-95d6-583f-8e6d-2956968e4c55-3",
+            "warnings": []
+        }
+    ],
+    "modifiers": [],
+    "extras": [],
+    "teaser_image_url": "",
+    "html_classes": [],
+    "section_uuid": "78bb7a5f-95d6-583f-8e6d-2956968e4c55"
+}

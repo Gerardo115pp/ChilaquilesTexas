@@ -1,0 +1,118 @@
+{
+    "title": "Options for the little ones",
+    "item_list_title": "Kids",
+    "items": [
+        {
+            "title": "Kids chilaquiles",
+            "price": 6.9,
+            "description": "Half order of red chilaquiles, bisabuela Maty (no spice), served with a scrambled egg and refried beans.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "fdb0926a-dbcf-59ee-85f3-a7f7edc9d31a-1",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Scrambled egg",
+            "price": 9.9,
+            "description": "With ham or bacon and refried beans.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "fdb0926a-dbcf-59ee-85f3-a7f7edc9d31a-2",
+            "warnings": []
+        },
+        {
+            "title": "Quesadillitas",
+            "price": 9.3,
+            "description": "Two pieces of quesadillitas with our melted cheese, served with house refried beans and choice of fries or fresh fruit.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "fdb0926a-dbcf-59ee-85f3-a7f7edc9d31a-3",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Waffles",
+            "price": 10.9,
+            "description": "Made from scratch with our house recipe, served with fresh berries and whipped cream.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "fdb0926a-dbcf-59ee-85f3-a7f7edc9d31a-4",
+            "warnings": []
+        },
+        {
+            "title": "Chicken tenders",
+            "price": 12.9,
+            "description": "Juicy breaded chicken pieces in corn flake crust, fried to order and served with fries.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "fdb0926a-dbcf-59ee-85f3-a7f7edc9d31a-5",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Order of fries",
+            "price": 7.9,
+            "description": "Served with ketchup.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "fdb0926a-dbcf-59ee-85f3-a7f7edc9d31a-6",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Truffle fries with Cotija",
+            "price": 12.9,
+            "description": "Fries tossed in truffle oil with Cotija cheese.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "fdb0926a-dbcf-59ee-85f3-a7f7edc9d31a-7",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
+        }
+    ],
+    "modifiers": [],
+    "extras": [],
+    "teaser_image_url": "",
+    "html_classes": [],
+    "section_uuid": "fdb0926a-dbcf-59ee-85f3-a7f7edc9d31a"
+}

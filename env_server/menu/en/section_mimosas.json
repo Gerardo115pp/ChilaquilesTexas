@@ -1,0 +1,44 @@
+{
+    "title": "Mimosas",
+    "item_list_title": "Mimosas (1.5oz)",
+    "items": [
+        {
+            "title": "Classic mimosa",
+            "price": 11.0,
+            "description": "Classic mimosa.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "c8901de8-b7fd-51c0-b1ed-0c626033a209-1",
+            "warnings": []
+        },
+        {
+            "title": "Strawberry mimosa",
+            "price": 11.0,
+            "description": "Strawberry mimosa.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "c8901de8-b7fd-51c0-b1ed-0c626033a209-2",
+            "warnings": []
+        },
+        {
+            "title": "Cranberry mimosa",
+            "price": 11.0,
+            "description": "Cranberry mimosa.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "c8901de8-b7fd-51c0-b1ed-0c626033a209-3",
+            "warnings": []
+        }
+    ],
+    "modifiers": [],
+    "extras": [],
+    "teaser_image_url": "",
+    "html_classes": [],
+    "section_uuid": "c8901de8-b7fd-51c0-b1ed-0c626033a209"
+}

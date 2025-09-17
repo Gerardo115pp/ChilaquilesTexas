@@ -1,0 +1,72 @@
+{
+    "title": "Los blanquillos",
+    "item_list_title": "Blanquillos",
+    "items": [
+        {
+            "title": "A la mexicana",
+            "price": 9.9,
+            "description": "Con pico de gallo y guarnición de frijolitos refritos o ensalada del jardín.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "55f0aee4-9d43-5387-a8ac-0db6418a26eb-1",
+            "warnings": []
+        },
+        {
+            "title": "Con steak de jamón o tocino",
+            "price": 12.9,
+            "description": "y guarnición de frijolitos refritos o ensalada del jardín.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "55f0aee4-9d43-5387-a8ac-0db6418a26eb-2",
+            "warnings": []
+        },
+        {
+            "title": "Con chorizo",
+            "price": 12.9,
+            "description": "y guarnición de frijolitos refritos o ensalada del jardín.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "55f0aee4-9d43-5387-a8ac-0db6418a26eb-3",
+            "warnings": []
+        },
+        {
+            "title": "Con nopalitos a la mexicana",
+            "price": 9.9,
+            "description": "Mexican tasty Cactus. Con guarnición de frijolitos refritos o ensalada del jardin.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "55f0aee4-9d43-5387-a8ac-0db6418a26eb-4",
+            "warnings": []
+        },
+        {
+            "title": "Divorciados",
+            "price": 9.9,
+            "description": "Ahora que son divorciados estos blanquillos se llevan re bien. Un blanquillo estrellado bañado en salsa colorada y otro bañado en salsa verdi sobre nuestras tostaditas raspadas artesanales untadas de frijolitos refritos.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "55f0aee4-9d43-5387-a8ac-0db6418a26eb-5",
+            "warnings": [
+                {
+                    "text": "SPICY",
+                    "danger_level": 1,
+                    "html_classes": []
+                }
+            ]
+        }
+    ],
+    "modifiers": [],
+    "extras": [],
+    "teaser_image_url": "",
+    "html_classes": [],
+    "section_uuid": "55f0aee4-9d43-5387-a8ac-0db6418a26eb"
+}

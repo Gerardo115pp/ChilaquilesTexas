@@ -1,0 +1,165 @@
+{
+    "title": "To share",
+    "item_list_title": "For sharing",
+    "items": [
+        {
+            "title": "Order of cochinita pibil",
+            "price": 22.9,
+            "description": "Juicy slow-cooked pork in Yucatecan style. Served on a vástago leaf with pickled red onion and habanero. Comes with house refried beans.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "0accc071-d3be-55c4-9921-df2bae6a248e-1",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                },
+                {
+                    "text": "SPICY 4",
+                    "danger_level": 4,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Panela quesadillas on cilantro tortillas",
+            "price": 9.9,
+            "description": "Two cilantro-infused corn tortillas filled with fresh panela cheese and served with house refried beans.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "0accc071-d3be-55c4-9921-df2bae6a248e-2",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Chile poblano 'Los Chilaquiles'",
+            "price": 10.9,
+            "description": "Stuffed with our cheese gratin mixture, mounted on a bed of our house red salsa.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "0accc071-d3be-55c4-9921-df2bae6a248e-3",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                },
+                {
+                    "text": "SPICY 1",
+                    "danger_level": 1,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Plantain empanada",
+            "price": 11.9,
+            "description": "Filled with chicken and cheese, bathed in our 36-ingredient mole.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "0accc071-d3be-55c4-9921-df2bae6a248e-4",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                },
+                {
+                    "text": "SPICY 1",
+                    "danger_level": 1,
+                    "html_classes": []
+                },
+                {
+                    "text": "NUTS",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Queso fundido",
+            "price": 17.9,
+            "description": "Our exceptional melted cheese blend made with top-quality milk from Colorado.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "0accc071-d3be-55c4-9921-df2bae6a248e-5",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                },
+                {
+                    "text": "SPICY 1",
+                    "danger_level": 1,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Guacamole San Miguel",
+            "price": 19.9,
+            "description": "Prepared with a light touch of green chile, served with pieces of panelita and our hand-pressed tostadas.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "0accc071-d3be-55c4-9921-df2bae6a248e-6",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                },
+                {
+                    "text": "SPICY 1",
+                    "danger_level": 1,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Strawberry quesadillas",
+            "price": 10.9,
+            "description": "Two sweet quesadillas filled with our melted cheeses, served with house refried beans and morita salsa.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "0accc071-d3be-55c4-9921-df2bae6a248e-7",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                },
+                {
+                    "text": "SPICY 2",
+                    "danger_level": 2,
+                    "html_classes": []
+                }
+            ]
+        }
+    ],
+    "modifiers": [],
+    "extras": [],
+    "teaser_image_url": "",
+    "html_classes": [],
+    "section_uuid": "0accc071-d3be-55c4-9921-df2bae6a248e"
+}

@@ -1,0 +1,50 @@
+{
+    "title": "Postres",
+    "item_list_title": "Dulces",
+    "items": [
+        {
+            "title": "Molletes con nata y mermelada",
+            "price": 18.9,
+            "description": "Pan chapata tipo bolillo con nata de leche casera, y mermelada de fresa o piña hecha en nuestra cocina.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "1c4caa74-3148-599e-9572-3927ebdf07f0-1",
+            "warnings": []
+        },
+        {
+            "title": "Pastel de tres leches",
+            "price": 13.9,
+            "description": "Nuestra receta especial heredada de la Tía Mariquita.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "1c4caa74-3148-599e-9572-3927ebdf07f0-2",
+            "warnings": []
+        },
+        {
+            "title": "Flan de Carajillo",
+            "price": 13.9,
+            "description": "Tomando como base la bebida carajillo, nuestros chefs han creado un postre excepcional.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "1c4caa74-3148-599e-9572-3927ebdf07f0-3",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
+        }
+    ],
+    "modifiers": [],
+    "extras": [],
+    "teaser_image_url": "",
+    "html_classes": [],
+    "section_uuid": "1c4caa74-3148-599e-9572-3927ebdf07f0"
+}

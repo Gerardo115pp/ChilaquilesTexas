@@ -1,0 +1,132 @@
+{
+    "title": "Hot Drinks",
+    "item_list_title": "Hot Drinks",
+    "items": [
+        {
+            "title": "Decaf coffee",
+            "price": 3.9,
+            "description": "Gentle in caffeine, rich in flavor.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "d7cf75c9-fbfa-5ccb-9c3a-4211e6d0c3a7-1",
+            "warnings": []
+        },
+        {
+            "title": "Latte Coffee",
+            "price": 5.1,
+            "description": "Rich espresso with silky milk.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "d7cf75c9-fbfa-5ccb-9c3a-4211e6d0c3a7-2",
+            "warnings": []
+        },
+        {
+            "title": "Machine-brewed americano",
+            "price": 5.9,
+            "description": "A long espresso, bold and satisfying.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "d7cf75c9-fbfa-5ccb-9c3a-4211e6d0c3a7-3",
+            "warnings": []
+        },
+        {
+            "title": "Café de olla",
+            "price": 3.9,
+            "description": "Traditional Mexican cinnamon-and-piloncillo brewed coffee.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "d7cf75c9-fbfa-5ccb-9c3a-4211e6d0c3a7-4",
+            "warnings": []
+        },
+        {
+            "title": "Black coffee",
+            "price": 3.9,
+            "description": "Bold, strong, and proud.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "d7cf75c9-fbfa-5ccb-9c3a-4211e6d0c3a7-5",
+            "warnings": []
+        },
+        {
+            "title": "Café Puerto Vallarta",
+            "price": 6.9,
+            "description": "Espresso with coconut cream and steamed milk.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "d7cf75c9-fbfa-5ccb-9c3a-4211e6d0c3a7-6",
+            "warnings": []
+        },
+        {
+            "title": "Café lechero",
+            "price": 4.9,
+            "description": "Steamed milk poured over espresso.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "d7cf75c9-fbfa-5ccb-9c3a-4211e6d0c3a7-7",
+            "warnings": []
+        },
+        {
+            "title": "Espresso",
+            "price": 3.9,
+            "description": "Extraordinary beans, extraordinary extraction.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "d7cf75c9-fbfa-5ccb-9c3a-4211e6d0c3a7-8",
+            "warnings": []
+        },
+        {
+            "title": "Capuchino",
+            "price": 4.85,
+            "description": "A delicious balance of coffee and milk.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "d7cf75c9-fbfa-5ccb-9c3a-4211e6d0c3a7-9",
+            "warnings": []
+        },
+        {
+            "title": "Hot chocolate",
+            "price": 4.2,
+            "description": "Made with a Tapatío chocolate recipe passed down generations.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "d7cf75c9-fbfa-5ccb-9c3a-4211e6d0c3a7-10",
+            "warnings": []
+        },
+        {
+            "title": "Atole Doña Mary",
+            "price": 4.9,
+            "description": "A traditional warm corn-based drink ideal for dunking gorditas.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "d7cf75c9-fbfa-5ccb-9c3a-4211e6d0c3a7-11",
+            "warnings": []
+        }
+    ],
+    "modifiers": [],
+    "extras": [],
+    "teaser_image_url": "",
+    "html_classes": [],
+    "section_uuid": "d7cf75c9-fbfa-5ccb-9c3a-4211e6d0c3a7"
+}

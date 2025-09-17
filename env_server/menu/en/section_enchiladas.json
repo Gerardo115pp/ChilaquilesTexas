@@ -1,0 +1,126 @@
+{
+    "title": "Our enchilada variety",
+    "item_list_title": "Enchiladas",
+    "items": [
+        {
+            "title": "Tex Mex",
+            "price": 24.9,
+            "description": "Filled with Texan arrachera fajitas and bathed in a house red sauce. Served with refried beans.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "d1de94e0-e99d-5325-a431-8713d9a2dfe4-1",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                },
+                {
+                    "text": "SPICY 1",
+                    "danger_level": 1,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "In mole artesanal",
+            "price": 15.0,
+            "description": "Batched in our 36-ingredient mole. Options: Cheese $15.00 / Chicken $15.50 / Pork $15.90.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "d1de94e0-e99d-5325-a431-8713d9a2dfe4-2",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                },
+                {
+                    "text": "SPICY 1",
+                    "danger_level": 1,
+                    "html_classes": []
+                },
+                {
+                    "text": "NUT",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Adobadas’n",
+            "price": 15.0,
+            "description": "A market favorite across many small towns in Jalisco. Served with refried beans.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "d1de94e0-e99d-5325-a431-8713d9a2dfe4-3",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Surtiditas’n",
+            "price": 15.9,
+            "description": "One mole stuffed with chicken, one green filled with pork and one tex-mex filled with fresh cheese.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "d1de94e0-e99d-5325-a431-8713d9a2dfe4-4",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                },
+                {
+                    "text": "SPICY 1",
+                    "danger_level": 1,
+                    "html_classes": []
+                },
+                {
+                    "text": "NUT",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Suizas",
+            "price": 16.9,
+            "description": "Chicken filled enchiladas bathed in our verde sauce with gratined cheese.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "d1de94e0-e99d-5325-a431-8713d9a2dfe4-5",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                },
+                {
+                    "text": "SPICY 1",
+                    "danger_level": 1,
+                    "html_classes": []
+                }
+            ]
+        }
+    ],
+    "modifiers": [],
+    "extras": [],
+    "teaser_image_url": "",
+    "html_classes": [],
+    "section_uuid": "d1de94e0-e99d-5325-a431-8713d9a2dfe4"
+}

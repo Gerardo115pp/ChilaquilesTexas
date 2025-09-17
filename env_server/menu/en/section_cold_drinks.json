@@ -1,0 +1,154 @@
+{
+    "title": "Non-alcoholic beverages",
+    "item_list_title": "Beverages",
+    "items": [
+        {
+            "title": "Diet Coke (can)",
+            "price": 3.9,
+            "description": "",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-1",
+            "warnings": []
+        },
+        {
+            "title": "Sprite (can)",
+            "price": 3.9,
+            "description": "",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-2",
+            "warnings": []
+        },
+        {
+            "title": "Coca Cola (bottle)",
+            "price": 5.75,
+            "description": "",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-3",
+            "warnings": []
+        },
+        {
+            "title": "Topo Chico (bottle)",
+            "price": 4.3,
+            "description": "",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-4",
+            "warnings": []
+        },
+        {
+            "title": "Agua de piedra 355ml",
+            "price": 2.9,
+            "description": "",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-5",
+            "warnings": []
+        },
+        {
+            "title": "Agua de piedra 650ml",
+            "price": 5.9,
+            "description": "",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-6",
+            "warnings": []
+        },
+        {
+            "title": "Horchata",
+            "price": 4.9,
+            "description": "",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-7",
+            "warnings": []
+        },
+        {
+            "title": "Hibiscus agua fresca",
+            "price": 4.9,
+            "description": "",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-8",
+            "warnings": []
+        },
+        {
+            "title": "Mint & pineapple agua fresca",
+            "price": 4.9,
+            "description": "",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-9",
+            "warnings": []
+        },
+        {
+            "title": "Iced tea",
+            "price": 4.9,
+            "description": "",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-10",
+            "warnings": []
+        },
+        {
+            "title": "Orange juice",
+            "price": 6.4,
+            "description": "",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-11",
+            "warnings": []
+        },
+        {
+            "title": "Carrot juice",
+            "price": 5.9,
+            "description": "",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-12",
+            "warnings": []
+        },
+        {
+            "title": "Pineapple juice",
+            "price": 6.9,
+            "description": "",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-13",
+            "warnings": []
+        }
+    ],
+    "modifiers": [],
+    "extras": [],
+    "teaser_image_url": "",
+    "html_classes": [],
+    "section_uuid": "1e333138-4606-5559-a82e-77e12f58df13"
+}

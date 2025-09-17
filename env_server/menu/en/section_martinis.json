@@ -1,0 +1,55 @@
+{
+    "title": "Martinis",
+    "item_list_title": "Martinis (1.5oz)",
+    "items": [
+        {
+            "title": "Classic Martini",
+            "price": 16.0,
+            "description": "Classic Martini.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "a11fcc0d-2123-5ea0-b78c-d9c512551f79-1",
+            "warnings": []
+        },
+        {
+            "title": "Espresso Martini",
+            "price": 16.0,
+            "description": "Espresso Martini.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "a11fcc0d-2123-5ea0-b78c-d9c512551f79-2",
+            "warnings": []
+        },
+        {
+            "title": "Cosmopolitan",
+            "price": 16.0,
+            "description": "Cosmopolitan.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "a11fcc0d-2123-5ea0-b78c-d9c512551f79-3",
+            "warnings": []
+        },
+        {
+            "title": "Lemon drop",
+            "price": 16.0,
+            "description": "Lemon drop.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "a11fcc0d-2123-5ea0-b78c-d9c512551f79-4",
+            "warnings": []
+        }
+    ],
+    "modifiers": [],
+    "extras": [],
+    "teaser_image_url": "",
+    "html_classes": [],
+    "section_uuid": "a11fcc0d-2123-5ea0-b78c-d9c512551f79"
+}

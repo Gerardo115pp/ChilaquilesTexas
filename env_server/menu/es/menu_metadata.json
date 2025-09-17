@@ -1,0 +1,86 @@
+{
+    "load_order": [
+        "section_chilaquiles.json",
+        "section_blanquillos.json",
+        "section_gorditas.json",
+        "section_sopes.json",
+        "section_for_kids.json",
+        "section_vegetarian.json",
+        "section_anytime.json",
+        "section_to_share.json",
+        "section_enchiladas.json",
+        "section_tacos.json",
+        "section_desserts.json",
+        "section_hot_drinks.json",
+        "section_cold_drinks.json",
+        "section_alcoholic_drinks.json",
+        "section_margaritas.json",
+        "section_bourbon.json",
+        "section_gin.json",
+        "section_martinis.json",
+        "section_mezcales.json",
+        "section_mimosas.json",
+        "section_tequilas.json",
+        "section_alcoholic_coffee.json",
+        "section_vodka.json",
+        "section_whisky.json"
+    ],
+    "menu_listing": [
+        {
+            "section_name": "Chilaquiles",
+            "section_file": "section_chilaquiles.json"
+        },
+        {
+            "section_name": "Los Blanquillos",
+            "section_file": "section_blanquillos.json"
+        }, 
+        {
+            "section_name": "Enchiladas",
+            "section_file": "section_enchiladas.json"
+        },
+        {
+            "section_name": "Gorditas'n",
+            "section_file": "section_gorditas.json"
+        },
+        {
+            "section_name": "Sopes's",
+            "section_file": "section_sopes.json"            
+        },
+        {
+            "section_name": "For Kids",
+            "section_file": "section_for_kids.json"
+        },
+        {
+            "section_name": "To Share",
+            "section_file": "section_to_share.json"
+        },
+        {
+            "section_name": "Vegetarian",
+            "section_file": "section_vegetarian.json"
+        },
+        {
+            "section_name": "Anytime",
+            "section_file": "section_anytime.json"
+        },
+        {
+            "section_name": "Tacos",
+            "section_file": "section_tacos.json"
+        },
+        {
+            "section_name": "Desserts",
+            "section_file": "section_desserts.json"
+        },
+        {
+            "section_name": "Hot Drinks",
+            "section_file": "section_hot_drinks.json"
+        },
+        {
+            "section_name": "Cold Drinks",
+            "section_file": "section_cold_drinks.json"
+        },
+        {
+            "section_name": "Alcoholic Drinks",
+            "section_file": "section_alcoholic_drinks.json"
+        }
+    ]
+}

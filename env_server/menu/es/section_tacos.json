@@ -1,0 +1,128 @@
+{
+    "title": "Tacos Gourmet",
+    "item_list_title": "Tacos (por pieza)",
+    "items": [
+        {
+            "title": "Tacos de birria",
+            "price": 6.9,
+            "description": "Van acompañados de consomé y su guarnición de cebollita morada, cilantro y limón.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "e7cdd3f8-f690-5f28-871d-c7913ae9f9be-1",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                },
+                {
+                    "text": "SPICY 1",
+                    "danger_level": 1,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Tacos de cochinita pibil",
+            "price": 5.9,
+            "description": "Jugos a carnita de cerdo cocinada a fuego lento al estilo tradicional yucateco, servida sobre una hoja de vástago y acompañada de cebollita roja encurtida con chilito habanero.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "e7cdd3f8-f690-5f28-871d-c7913ae9f9be-2",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                },
+                {
+                    "text": "SPICY 4",
+                    "danger_level": 4,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Taco de fajita",
+            "price": 6.9,
+            "description": "Nuestra deliciosa carne texana, añejada no por menos de 35 dias, jugosamente blanda.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "e7cdd3f8-f690-5f28-871d-c7913ae9f9be-3",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Tacos de rib eye",
+            "price": 9.9,
+            "description": "Jugosos tacos de rib eye seleccionado.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "e7cdd3f8-f690-5f28-871d-c7913ae9f9be-4",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Quesabirria",
+            "price": 7.9,
+            "description": "Birria con una porción de nuestro queso gratinado.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "e7cdd3f8-f690-5f28-871d-c7913ae9f9be-5",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                },
+                {
+                    "text": "SPICY 1",
+                    "danger_level": 1,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Tacos de lengua",
+            "price": 7.9,
+            "description": "Tacos de lengua de res (fines de semana).",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "e7cdd3f8-f690-5f28-871d-c7913ae9f9be-6",
+            "warnings": [
+                {
+                    "text": "GF",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
+        }
+    ],
+    "modifiers": [],
+    "extras": [],
+    "teaser_image_url": "",
+    "html_classes": [],
+    "section_uuid": "e7cdd3f8-f690-5f28-871d-c7913ae9f9be"
+}
