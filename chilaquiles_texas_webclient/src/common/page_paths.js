@@ -56,6 +56,14 @@
         path: '/pan-dulce'
     }
 
+    /**
+     * @type {WebsitePagePath}
+     */
+    const menu_page = {
+        name: "Menu",
+        path: '/menu'
+    }
+
 /*=====  End of Website pages definitions  ======*/
 
 export const website_page_paths = {
@@ -64,7 +72,8 @@ export const website_page_paths = {
     COVER_MENU_PAGE: cover_menu_page,
     SAN_MIGUEL_PAGE: san_miguel_page,
     COFFEE_PAGE: coffee_page,
-    PAN_DULCE_PAGE: pan_dulce_page
+    PAN_DULCE_PAGE: pan_dulce_page,
+    MENU_PAGE: menu_page
 }
 
 export const external_links = {

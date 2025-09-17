@@ -114,43 +114,47 @@
     class="page-layout-{current_page_layout}"
     class:adebug={false}
 >
-    {#if page_background != null} 
-        <PageBackground 
-            page_background={page_background}
-        />
-    {/if}
-    {#if current_page_layout === page_layouts.VBPL_DEFAULT || current_page_layout === page_layouts.VBPL_FULL_MAIN_CONTENT}
-        <div id="txc-video-background-page-layout">
-            <div id="txc-vbpl-navbar-wrapper">
-                <Navbar />
-            </div>
-            <div id="txc-vbpl-side-content">
-                <div id="txc-vbpl-sc-logo-wrapper">
-                    <a href="{website_page_paths.HOME.path}">
-                        <LosChilaquilesLogo />
-                    </a>
+    {#if current_page_layout === page_layouts.INDEPENDENT_CONTENT}
+        {@render children()}
+    {:else}
+        {#if page_background != null} 
+            <PageBackground 
+                page_background={page_background}
+            />
+        {/if}
+        {#if current_page_layout === page_layouts.VBPL_DEFAULT || current_page_layout === page_layouts.VBPL_FULL_MAIN_CONTENT}
+            <div id="txc-video-background-page-layout">
+                <div id="txc-vbpl-navbar-wrapper">
+                    <Navbar />
+                </div>
+                <div id="txc-vbpl-side-content">
+                    <div id="txc-vbpl-sc-logo-wrapper">
+                        <a href="{website_page_paths.HOME.path}">
+                            <LosChilaquilesLogo />
+                        </a>
+                    </div>
+                </div>
+                <div id="txc-vbpl-main-content">
+                    {#if current_page_layout === page_layouts.VBPL_DEFAULT}
+                        <div id="txc-vbpl-mc-with-common-copy">
+                            <div id="txc-vbpl-page--common-content">
+                                <DesayunoCopy />
+                            </div>
+                            <div id="txc-vbpl-page--main-content">
+                                {@render children()}
+                            </div>
+                        </div>
+                    {:else}
+                        <div id="txc-vbpl-mc-with-common-copy--full-main-content">
+                            <div id="txc-vbpl-page--main-content" class="txc-vbpl-full-main-content">
+                                {@render children()}
+                            </div>
+                        </div>
+                    {/if}
+                    <Footer />
                 </div>
             </div>
-            <div id="txc-vbpl-main-content">
-                {#if current_page_layout === page_layouts.VBPL_DEFAULT}
-                    <div id="txc-vbpl-mc-with-common-copy">
-                        <div id="txc-vbpl-page--common-content">
-                            <DesayunoCopy />
-                        </div>
-                        <div id="txc-vbpl-page--main-content">
-                            {@render children()}
-                        </div>
-                    </div>
-                {:else}
-                    <div id="txc-vbpl-mc-with-common-copy--full-main-content">
-                        <div id="txc-vbpl-page--main-content" class="txc-vbpl-full-main-content">
-                            {@render children()}
-                        </div>
-                    </div>
-                {/if}
-                <Footer />
-            </div>
-        </div>
+        {/if}
     {/if}
 </div>
 
@@ -247,6 +251,22 @@
     
     /*=====  End of VBPL layout  ======*/
     
+    /*=============================================
+    =            IC(Independent Content Layout)            =
+    =============================================*/
+    
+        :global(:root:has(#libery-website-content.page-layout-IC)) {
+            --body-bg-color: white;
+            --body-text-color: var(--grey);
+
+            & main {
+                padding: 0;
+            }
+        }
+    
+    /*=====  End of IC  ======*/
+    
+
     /*=============================================
     =            Responsive            =
     =============================================*/

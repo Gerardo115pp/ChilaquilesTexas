@@ -9,10 +9,13 @@
         /* Grey */
         --grey-1: #ffffff;
         --grey-2: #d9d9d9;
-        --grey-6: hsla(0, 0%, 13%, 0.2);
+        --grey-3: hsl(from var(--grey-1) h s calc(l * .8));
+        --grey-4: hsl(from var(--grey-1) h s calc(l * .7));
+        --grey-5: hsl(from var(--grey-1) h s calc(l * .6));
+        --grey-9: hsl(0, 0%, 0%);
+        --grey-8: hsl(from var(--grey-9) h s calc(l + 0.05));
         --grey-7: hsl(0, 0%, 100%, 0.4);
-        --grey-8: hsl(0, 0%, 13%, 0.5);
-        --grey-9: #000000;
+        --grey-6: hsla(0, 0%, 13%, 0.2);
         --grey: var(--grey-9);
 
         --grey-1-hover: hsl(from var(--theme-color) h calc(s * .6) l / .8);
@@ -113,12 +116,12 @@
         --design-width: 1920px;
         --design-content-width: calc(var(--design-width) * 0.9218);
         --border-radius: 0px;
-        --body-bg-color: var(--grey);
-        --body-text-color: var(--grey-1);
         --padding--video-background-page--inline: 68px;
         --padding--video-background-page--block: 46px;
         --padding--video-background-page: var(--padding--video-background-page--block) var(--padding--video-background-page--inline);
     /* Component colors */
+        --body-bg-color: var(--grey);
+        --body-text-color: var(--grey-1);
         --color-vbpl-veneer-color: hsl(from var(--grey) h s l / 0.14);
 }
 
@@ -225,6 +228,17 @@
         &.discourage-btn:hover {
             background-color: hsl(from var(--theme-color) h s l / .8);
             transition: background-color .3s ease-out;
+        }
+    }
+
+    a.txc-button {
+        text-decoration: none;
+        transition: color .3s ease-out, background-color 300ms cubic-bezier(0.215, 0.610, 0.355, 1);
+
+        &:hover {
+            /* background-color: hsl(from var(--theme-color) h 10% 92%); */
+            background-color: var(--grey-1);
+            color: color-mix(in hsl, currentColor 20%, var(--theme-color));
         }
     }
 

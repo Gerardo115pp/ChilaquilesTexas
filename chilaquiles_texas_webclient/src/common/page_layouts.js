@@ -3,6 +3,7 @@ import { website_page_paths } from "./page_paths";
 const page_layouts = Object.freeze({
     VBPL_DEFAULT: "VBPL", // Video Background Page Layout
     VBPL_FULL_MAIN_CONTENT: "FMC",
+    INDEPENDENT_CONTENT: "IC"
 });
 
 /**
@@ -24,6 +25,10 @@ export const DEFAULT_LAYOUT = /** @type {PageLayout} */ (page_layouts.VBPL_DEFAU
         website_page_paths.ABOUT_US_PAGE.path
     ]);
 
+    const independent_content_pages = new Set([
+        website_page_paths.MENU_PAGE.path
+    ])
+
     /**
      * returns the layout assinged for the given page pathname.
      * @param {string} pathname
@@ -34,6 +39,8 @@ export const DEFAULT_LAYOUT = /** @type {PageLayout} */ (page_layouts.VBPL_DEFAU
 
         if (vbpl_full_main_content_pages.has(pathname)) { // check: VBPL_FULL_MAIN_CONTENT
             page_layout = page_layouts.VBPL_FULL_MAIN_CONTENT;
+        } else if (independent_content_pages.has(pathname)) { // check: INDEPENDENT_CONTENT
+            page_layout = page_layouts.INDEPENDENT_CONTENT;
         }
 
         return page_layout;

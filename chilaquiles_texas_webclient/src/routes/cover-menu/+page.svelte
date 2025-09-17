@@ -1,3 +1,7 @@
+<script>
+    import { website_page_paths } from "@app/common/page_paths";
+
+</script>
 <!-- 
     'The blade must never be restrained.’He spoke the next sentence like a vow. ‘We shall always be the scythe.’
 
@@ -29,9 +33,9 @@
             and a little beautiful chaos.
         </p>
         <ul class="txc-ctas-container">
-            <button class="txc-button">
+            <a href="{website_page_paths.MENU_PAGE.path}" class="txc-button">
                 Menu & Order Online
-            </button>
+            </a>
         </ul>
     </article>
 </main>
