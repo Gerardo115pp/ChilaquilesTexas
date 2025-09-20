@@ -82,5 +82,6 @@
             "section_name": "Alcoholic Drinks",
             "section_file": "section_alcoholic_drinks.json"
         }
-    ]
+    ],
+    "lang": "en"
 }
