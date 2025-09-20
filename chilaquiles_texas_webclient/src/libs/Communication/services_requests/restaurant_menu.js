@@ -1,0 +1,100 @@
+import { HttpResponse, arrayToParam, attributesToJson } from "../base";
+import { menu_service } from "../services";
+
+/**
+ * Returns the metadata of the menu for the requested lang identifier
+ */
+export class GetMenuMetadataRequest {
+
+    static endpoint = menu_service;
+
+    /**
+     * @param {string} lang_iso_639 - example: en = English
+     */
+    constructor(lang_iso_639) {
+        this.lang_iso = lang_iso_639;
+    }
+
+    toJson = attributesToJson.bind(this);
+
+    /**
+     * @returns {Promise<HttpResponse<import("@models/RestaurantMenu").MenuMetadata | null>>}
+     */
+    do = async () => {
+        const url = `${GetMenuMetadataRequest.endpoint}/${this.lang_iso}/menu_metadata.json`;
+
+        /**
+         * @type {import("@models/RestaurantMenu").MenuMetadata | null}
+         */
+        let menu_metadata = null;
+
+        /**
+         * @type {Response}
+         */
+        let response;
+
+        try {
+            response = await fetch(url);
+
+            if (response.ok) {
+                menu_metadata = await response.json();
+            }
+        } catch (error) {
+            console.error(`In @libs/Communication/services_requests/restaurant_menu.GetMenuMetadata.do: failed to fetch menu metadata for ${this.lang_iso}`, error);
+
+            throw error;
+        }
+
+        return new HttpResponse(response, menu_metadata);
+    }
+}
+
+/**
+ * Returns the requested menu section by the file and lang identifiers
+ */
+export class GetMenuSectionRequest {
+
+    static endpoint = menu_service;
+
+    /**
+     * @param {string} lang_iso_639 - example: en = English
+     * @param {string} section_file - example: appetizers = appetizers.json
+     */
+    constructor(lang_iso_639, section_file) {
+        this.lang_iso = lang_iso_639;
+        this.section_file = section_file;
+    }
+
+    toJson = attributesToJson.bind(this);
+
+    /**
+     * @returns {Promise<HttpResponse<import("@models/RestaurantMenu").MenuSectionParams | null>>}
+     */
+    do = async () => {
+        const url = `${GetMenuSectionRequest.endpoint}/${this.lang_iso}/${this.section_file}`;
+
+        /**
+         * @type {import("@models/RestaurantMenu").MenuSectionParams | null}
+         */
+        let menu_section = null;
+
+        /**
+         * @type {Response}
+         */
+        let response;
+
+        try {
+            response = await fetch(url);
+
+            if (response.ok) {
+                menu_section = await response.json();
+            }
+        } catch (error) {
+            console.error(`In @libs/Communication/services_requests/restaurant_menu.GetMenuSection.do: failed to fetch menu section ${this.section_file} for ${this.lang_iso}`, error);
+
+            throw error;
+        }
+
+        return new HttpResponse(response, menu_section);
+    }
+}
