@@ -46,8 +46,6 @@
     /*=====  End of Properties  ======*/
 </script>
 
-
-
 <div id={menu_section_id} class="txc-menu--menu-section-wrapper">
     <header class="txc-menu-msw--header">
         <h3 class="txc-menu-msw--section-title">
@@ -89,7 +87,9 @@
     .txc-menu--menu-section-wrapper { 
         width: 100%;
         display: grid;
-        grid-template-columns: 30% auto;
+        grid-template-columns: 25% auto;
+        column-gap: var(--spacing-3);
+        padding-left: var(--spacing-4);
     }
 
     /*=============================================
@@ -97,17 +97,22 @@
     =============================================*/
     
         header.txc-menu-msw--header {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-2);
             font-size: var(--font-size-1)
         }
 
         h3.txc-menu-msw--section-title {
-            font-size: 1em;
+            font-family: var(--font-read);
+            font-weight: normal;
+            font-size: 2.4em;
         }
 
         /* .txc-menu-msw--top-description {} */
 
         .txc-menu-msw--image-wrapper {
-            width: 100%;
+            width: 70%;
 
             & img {
                 max-width: 100%;
@@ -122,14 +127,15 @@
     ul.txc-menu-msw--section-items { 
         display: flex;
         width: 100%;
+        container-type: inline-size;
         flex-wrap: wrap;
+        gap: var(--spacing-2) var(--spacing-4);
 
         & li.txc-menu-msw--section-item { 
-            width: 40%;
+            width: 39cqw;
             container-type: inline-size;
         }
     }
-
 
     /* footer.txc-menu-msw--about-footer { } */
 </style>
