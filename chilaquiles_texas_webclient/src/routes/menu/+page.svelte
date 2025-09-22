@@ -5,6 +5,7 @@
         getMenuMetadata,
         getMenuSection
     } from "@models/RestaurantMenu";
+    import MenuSectionComponent from "@pages/Menu/Menu__MenuSection.svelte";
     import MenuNavbar from "@pages/Menu/Menu__Navbar.svelte";
     import { onMount } from "svelte";
     
@@ -31,8 +32,15 @@
 
         /**
          * @type {import('@models/RestaurantMenu').MenuSection | null}
+         * @deprecated
          */
         let current_menu_section = $state(null);
+
+        /**
+         * The list of loaded menu sections.
+         * @type {import('@models/RestaurantMenu').MenuSection[]}
+         */
+        let loaded_menu_sections = $state([]);
 
         /**
          * Enables the debug mode for the component.
@@ -202,6 +210,8 @@
                 }
 
                 current_menu_section = first_section;
+
+                loaded_menu_sections = [first_section];
             }
         
         /*=====  End of Setup  ======*/
@@ -249,63 +259,91 @@
         <header id="txc-rmp--navbar" class="txc-rmp-content-area">
             <MenuNavbar />
         </header>
-        <div id="txc-rmp--menu-listing" class="txc-rmp-content-area"><article class="txc-common-main-content-layout" id="rmp-ml--san-miguel-copy">
-            <header id="rmp-ml-smc--header">
-                <h2>
-                    FROM SAN MIGUEL,<br>WITH FLAVOR
-                </h2>
-                <p class="main-content-paragraph">
-                    Oursisa kitchen born inthe<br> highlands ofSan Miguel Cuyutlán,<br>
-                    wherecows still have names and<br> every recipehasa reason.<br>
-                    Wedon’t rush.We simmer, steep,<br> stirwithmemory,notmanuals,<br>
-                    becausebreakfast hasno rules.
-                </p>
-                <h1>
-                    Welcome to<br>Los Chilaquiles.
-                </h1>
-            </header>
-        </article></div>
-        <div id="txc-rmp--menu-content" class="txc-rmp-content-area">
-            {#if current_menu_section !== null}
-                menu content: {current_menu_section.Title}
-            {/if}
+        <div id="txc-rmp--menu-listing" class="txc-rmp-content-area">
+            <article id="rmp-ml--san-miguel-copy">
+                <header id="rmp-ml-smc--header">
+                    <h2>
+                        FROM SAN MIGUEL,<br>WITH FLAVOR
+                    </h2>
+                    <p class="main-content-paragraph">
+                        Ours is a kitchen born in the<br> highlands of San Miguel Cuyutlán,<br>
+                        where cows still have names and<br> every recipe has a reason.<br>
+                        We don’t rush. We simmer, steep,<br> stir with memory, not manuals,<br>
+                        because breakfast has no rules.
+                    </p>
+                    <h1>
+                        Welcome to<br>Los Chilaquiles.
+                    </h1>
+                </header>
+            </article>
+            <div id="txc-rmp-ml-calls-to-action">
+                <button class="discourage-btn">
+                    Download
+                </button>
+                <button >
+                    Order Online
+                </button>
+            </div>
+            <ol id="txc-rmp-ml--sections-list">
+                {#if menu_metadata}
+                    {#each menu_metadata.menu_listing as section_item}
+                        <li class="txc-rmp-ml--listing-section-item" data-section-file={section_item.section_file}>
+                            {section_item.section_name}
+                        </li>
+                    {/each}
+                {/if}
+            </ol>
         </div>
+        <article id="txc-rmp--menu-content" class="txc-rmp-content-area">
+            <section class="txc-rmp-menu-section-wrapper">
+                {#if menu_metadata}
+                    {#each loaded_menu_sections as menu_section}
+                        <MenuSectionComponent
+                            the_section={menu_section}
+                        />
+                    {/each}
+                {/if}
+            </section>
+        </article>
     </div>
 </main>
 
 <style>
     main#txc-restaurant-menu-page {
-        width: 100%;
-        min-height: 100dvh;
+        width: 100svw;
+        height: 100svh;
+        container-type: size;
+        overflow: hidden;
     }
     
     #txc-rmp-content-wrapper {
         --content-separation-border: 1px solid var(--grey-5);
         
         display: grid;
+        width: 100cqw;
+        height: 100cqh;
         grid-template-columns: minmax(250px, 30%) repeat(2, 1fr);
         row-gap: var(--spacing-3);
-        grid-template-rows: minmax(100px, 18%) 1fr;
+        grid-template-rows: minmax(100px, 10cqh) 1fr;
         padding-block: var(--spacing-1);
         padding-inline: var(--spacing-2);
 
     }
+
+    .txc-rmp-content-area {
+        width: 100%;
+        height: 100%;
+    }
     
     /*=============================================
-    =            Menu content            =
+    =            Menu layout grid            =
     =============================================*/
 
-        .txc-rmp-content-area {
-            width: 100%;
-            height: 100%;
-        }
-        
         /*----------  Menu navbar  ----------*/
         
             header#txc-rmp--navbar {
                 grid-column: 1 / -1;
                 grid-row: 1 / 2;
-                border-bottom: var(--content-separation-border);
             }
         
         /*----------  Listing  ----------*/
@@ -313,20 +351,113 @@
             #txc-rmp--menu-listing {
                 grid-column: 1 / span 1;
                 grid-row: 2 / span 1;
-                border-right: var(--content-separation-border);
-            }
-
-            article#rmp-ml--san-miguel-copy {
-                color: var(--theme-color);
             }
         
         /*----------  Content  ----------*/
 
             #txc-rmp--menu-content {
-                grid-column: 2 / span 1;
+                grid-column: 2 / span 2;
                 grid-row: 2 / span 1
             }
+    
+    /*=====  End of Menu content  ======*/
+
 
     
+    /*=============================================
+    =            Menu navbar            =
+    =============================================*/
+    
+        header#txc-rmp--navbar {
+            border-bottom: var(--content-separation-border);
+        }
+    
+    /*=====  End of Menu navbar  ======*/
+
+    /*=============================================
+    =            Menu Listing            =
+    =============================================*/
+    
+        #txc-rmp--menu-listing {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-3);
+            padding: var(--spacing-1) var(--spacing-4);
+            border-right: var(--content-separation-border);
+        }
+
+        /*----------  Header article  ----------*/
+        
+            article#rmp-ml--san-miguel-copy {
+                color: var(--theme-color);
+                font-size: calc(var(--font-size-1) * 0.8);
+                text-align: left;
+            } 
+
+            header#rmp-ml-smc--header {
+                display: flex;
+                flex-direction: column;
+                gap: calc(var(--spacing-2) * 1);
+
+                & h1, & h2 {
+                    font-size: 2em;
+                }
+
+                & > p.main-content-paragraph {
+                    font-size: 1.2em;
+                    color: var(--body-fg-color);
+                    line-height: 1.3;
+                    font-weight: lighter;
+                    text-align: inherit;
+                    margin: 0;
+                }
+            }
+        
+        /*----------  Calls to action  ----------*/
+
+            #txc-rmp-ml-calls-to-action {
+                display: flex;
+                column-gap: var(--spacing-2);
+
+                & > button {
+                    text-transform: none;
+                    padding-block: calc(var(--spacing-1) * 1.5);
+                }
+
+                & > button.discourage-btn {
+                    color: var(--theme-color);
+                }
+            }
+        
+        
+        /*----------  Sections list  ----------*/
+        
+            ol#txc-rmp-ml--sections-list {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: grid;
+                font-size: var(--font-size-1);
+                row-gap: calc(var(--spacing-2) * 1.1);
+                grid-template-columns: repeat(2, 1fr);
+
+                & > li.txc-rmp-ml--listing-section-item {
+                    width: 100%;
+                    text-align: left;
+                }
+            }
+    
+    /*=====  End of Menu Listing  ======*/
+    
+    /*=============================================
+    =            Menu content            =
+    =============================================*/
+
+            article#txc-rmp--menu-content {
+                width: 100%;
+                height: 100%;
+                overflow-y: auto;
+            }
+
     /*=====  End of Menu content  ======*/
 </style>

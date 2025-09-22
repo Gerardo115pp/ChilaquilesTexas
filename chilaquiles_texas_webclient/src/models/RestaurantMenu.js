@@ -46,7 +46,7 @@ const menu_languages = new Set([
      * @property {string[]} html_classes
     */
 
-    class MenuItemMod {
+    export class MenuItemMod {
 
         /**
          * the text of the menu modifier
@@ -123,7 +123,7 @@ const menu_languages = new Set([
      * @property {string[]} html_classes
     */
 
-    class WarningTag {
+    export class WarningTag {
 
         /**
          * The text of the warning tag.
@@ -191,7 +191,7 @@ const menu_languages = new Set([
      * @property {string[]} html_classes
     */
 
-    class MenuItem {
+    export class MenuItem {
         /**
          * @type {string}
          */

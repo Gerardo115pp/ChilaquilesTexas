@@ -23,6 +23,7 @@
 
     #rmp-mn-logo-wrapper {
         width: min(200px, 9.5%);
+        height: max-content;
 
         & > a {
             width: 100%;

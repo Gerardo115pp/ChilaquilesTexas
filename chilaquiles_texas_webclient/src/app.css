@@ -122,6 +122,7 @@
     /* Component colors */
         --body-bg-color: var(--grey);
         --body-text-color: var(--grey-1);
+        --body-fg-color: var(--body-text-color);
         --color-vbpl-veneer-color: hsl(from var(--grey) h s l / 0.14);
 }
 
@@ -221,7 +222,7 @@
         &.discourage-btn {
             font-family: var(--font-read);
             background-color: transparent;
-            color: var(--grey-1); /* TODO: This has terribe contrast but it's how the button appears in the figma design. Confirm this was intentional */
+            color: var(--body-text-color); /* TODO: This has terribe contrast but it's how the button appears in the figma design. Confirm this was intentional */
             border: 1px solid var(--theme-color);
             text-transform: none;
         }
