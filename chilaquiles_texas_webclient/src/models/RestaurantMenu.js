@@ -1,6 +1,7 @@
 import { 
     GetMenuMetadataRequest,
-    GetMenuSectionRequest
+    GetMenuSectionRequest,
+    GetMenuSectionHtmlSnippetsRequest
 } from "@libs/Communication/services_requests/restaurant_menu";
 
 /**
@@ -289,6 +290,96 @@ const menu_languages = new Set([
         }
     }
 
+    /**
+     * Represents different snippet sections for menu section templates.
+     */
+    export class MenuSectionSnippets {
+
+        static about_content_id = "section-about-content";
+
+        static header_top_desc_id = "section-header-top-description";
+
+        static header_bottom_desc_id = "section-header-bottom-description";
+
+        /**
+         * the content for the "about" section of the menu section template.
+         * @type {string}
+         */
+        #about_content;
+
+        /**
+         * the content for the "header top description" section of the menu section template.
+         * @type {string}
+         */
+        #top_desc;
+
+        /**
+         * the content for the "header bottom description" section of the menu section template.
+         * @type {string}
+         */
+        #bottom_desc;
+
+        /**
+         * @param {string} html_snippets
+         */
+        constructor(html_snippets) {
+            this.#about_content = "";
+            this.#top_desc = "";
+            this.#bottom_desc = "";
+
+            const parser = new DOMParser();
+
+            const doc = parser.parseFromString(html_snippets, "text/html");
+
+            const about_content_element = doc.getElementById(MenuSectionSnippets.about_content_id);
+            if (about_content_element != null) {
+                about_content_element.removeAttribute("id");
+                about_content_element.classList.add(MenuSectionSnippets.about_content_id);
+                this.#about_content = about_content_element.outerHTML;
+            }
+
+            const top_desc_element = doc.getElementById(MenuSectionSnippets.header_top_desc_id);
+            if (top_desc_element != null) {
+                top_desc_element.removeAttribute("id");
+                top_desc_element.classList.add(MenuSectionSnippets.header_top_desc_id);
+                this.#top_desc = top_desc_element.outerHTML;
+            }
+
+            const bottom_desc_element = doc.getElementById(MenuSectionSnippets.header_bottom_desc_id);
+            if (bottom_desc_element != null) {
+                bottom_desc_element.removeAttribute("id");
+                bottom_desc_element.classList.add(MenuSectionSnippets.header_bottom_desc_id);
+                this.#bottom_desc = bottom_desc_element.outerHTML;
+            }
+
+            
+        }
+
+        /**
+         * the content for the "about" section of the menu section template.
+         * @returns {string}
+         */
+        get AboutContent() {
+            return this.#about_content;
+        }
+
+        /**
+         * the content for the "header top description" section of the menu section template.
+         * @returns {string}
+         */
+        get TopDescription() {
+            return this.#top_desc;
+        }
+
+        /**
+         * the content for the "header bottom description" section of the menu section template.
+         * @returns {string}
+         */
+        get BottomDescription() {
+            return this.#bottom_desc;
+        }
+    }
+
 
     /**
     * @typedef {Object} MenuSectionParams
@@ -299,6 +390,7 @@ const menu_languages = new Set([
      * @property {MenuItemModParams[]} modifiers
      * @property {MenuItemModParams[]} extras
      * @property {string} teaser_image_url
+     * @property {string} external_sections
      * @property {string[]} html_classes
     */
 
@@ -340,14 +432,34 @@ const menu_languages = new Set([
         #teaser_image_url;
 
         /**
+         * A url to an html file containing html snippets to be rendered at key template sections
+         * @type {string}
+         */
+        #external_sections;
+
+        /**
+         * The content snippets to be rendered in key template sections.
+         * @type {MenuSectionSnippets | null}
+         */
+        #content_snippets;
+
+        /**
          * @type {string[]}
          */
         #html_classes;
 
         /**
-         * @param {MenuSectionParams} params
+         * The language identifier of the menu section.
+         * @type {string}
          */
-        constructor(params) {
+        #section_lang;
+         
+
+        /**
+         * @param {MenuSectionParams} params
+         * @param {string} section_lang
+         */
+        constructor(params, section_lang) {
             this.#title = params.title;
             this.#section_uuid = params.section_uuid;
             this.#item_list_title = params.item_list_title || "";
@@ -355,41 +467,102 @@ const menu_languages = new Set([
             this.#modifiers = Array.isArray(params.modifiers) ? params.modifiers.map(m => new MenuItemMod(m)) : [];
             this.#extras = Array.isArray(params.extras) ? params.extras.map(e => new MenuItemMod(e)) : [];
             this.#teaser_image_url = params.teaser_image_url || "";
+            this.#external_sections = params.external_sections || "";
             this.#html_classes = Array.isArray(params.html_classes) ? params.html_classes : [];
+            this.#content_snippets = null;
+
+            this.#section_lang = section_lang;
         }
 
-        get Title() {
-            return this.#title;
-        }
-
-        get SectionUUID() {
-            return this.#section_uuid;
-        }
-
-        get ItemListTitle() {
-            return this.#item_list_title;
-        }
-
-        get Items() {
-            return this.#items;
-        }
-
-        get Modifiers() {
-            return this.#modifiers;
-        }
-
+        /**
+         * Different extras dishes that can extend the base item. e.g: Side of rice, Side of beans, etc.
+         * @returns {MenuItemMod[]} 
+         */
         get Extras() {
             return this.#extras;
         }
 
-        get TeaserImageUrl() {
-            return this.#teaser_image_url;
+        /**
+         * A url to an html file containing html snippets to be rendered at key template sections
+         * @returns {string}
+         */
+        get ExternalSections() {
+            return this.#external_sections;
         }
 
+        /**
+         * Returns the content snippets associated with the menu section.
+         * @returns {Promise<MenuSectionSnippets | null>}
+         */
+        getContentSnippets = async () => {
+            if (this.#content_snippets != null) return this.#content_snippets;
+
+            if (this.#external_sections === "") return null;
+
+            const html_snippets = await getMenuSectionHtmlSnippets(this.#external_sections, this.#section_lang);
+
+            if (html_snippets == null) return null;
+
+            this.#content_snippets = new MenuSectionSnippets(html_snippets);
+
+            return this.#content_snippets;
+        }
+
+        /**
+         * HTML classes to modify the appearance of the menu section.
+         * @returns {string[]}
+         */
         get HtmlClasses() {
             return this.#html_classes;
         }
 
+        /**
+         * A shorter version of the title to be used for list views.
+         * @returns {string}
+         */
+        get ItemListTitle() {
+            return this.#item_list_title;
+        }
+
+        /**
+         * The different dishes of this menu section.
+         * @returns {MenuItem[]}
+         */
+        get Items() {
+            return this.#items;
+        }
+
+        /**
+         * Different modifiers that can be applied to the items of this section. e.g: Extra cheese, No onions, etc.
+         * @returns {MenuItemMod[]}
+         */
+        get Modifiers() {
+            return this.#modifiers;
+        }
+
+        /**
+         * The unique identifier for the menu section.
+         * @returns {string}
+         */
+        get SectionUUID() {
+            return this.#section_uuid;
+        }
+
+        /**
+         * The title of the menu section.
+         * @returns {string}
+         */
+        get Title() {
+            return this.#title;
+        }
+
+        /**
+         * A url to an image to be used as a teaser or thumbnail for the menu section.
+         * @returns {string}
+         */
+        get TeaserImageUrl() {
+            return this.#teaser_image_url;
+        }
     }
 
 /*=====  End of Menu models  ======*/
@@ -443,11 +616,38 @@ export async function getMenuSection(section_file, lang_iso) {
         const response = await request.do();
 
         if (response.data != null) {
-            menu_section = new MenuSection(response.data);
+            menu_section = new MenuSection(response.data, valid_lang_iso);
         }
     } catch (error) {
         console.error("In @models/RestaurantMenu.getMenuSection: failed to get menu section", error);
     }
 
     return menu_section;
+}
+
+/**
+ * Returns the HTML snippets in the given snippet filename and language identifier.
+ * @param {string} snippet_file 
+ * @param {string} lang_iso 
+ * @returns {Promise<string | null>}
+ */
+export async function getMenuSectionHtmlSnippets(snippet_file, lang_iso) {
+    let valid_lang_iso = menu_languages.has(lang_iso) ? lang_iso : DEFAULT_MENU_LANG;
+
+    const request = new GetMenuSectionHtmlSnippetsRequest(valid_lang_iso, snippet_file);
+
+    /**
+     * @type {string | null}
+     */
+    let html_snippets = null;
+
+    try {
+        const response = await request.do();
+
+        html_snippets = response.data;
+    } catch (error) {
+        console.error("In @models/RestaurantMenu.getMenuSectionHtmlSnippets: failed to get menu section html snippets", error);
+    }
+
+    return html_snippets;
 }

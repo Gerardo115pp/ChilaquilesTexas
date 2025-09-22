@@ -1,5 +1,7 @@
 <script>
+    import { onMount } from 'svelte';
     import MenuSectionItem from './Menu__MenuSectionItem.svelte';
+    import '@app/menu_template_styles.css'
 
     /*=============================================
     =            Properties            =
@@ -27,23 +29,61 @@
 
             /**
              * The 'about' content some menu sections have. usually in a red box.
-             * @type {HTMLElement | null}
+             * @type {string}
              */
-            let section_about_content = null;
+            let section_about_content = $state("");
 
             /**
              * The header top description
-             * @type {HTMLElement | null}
+             * @type {string}
              */
-            let section_header_top_desc = null;
+            let section_header_top_desc = $state("");
 
             /**
              * the header bottom description
-             * @type {HTMLElement | null}
+             * @type {string}
              */
-            let section_header_bottom_desc = null;
+            let section_header_bottom_desc = $state("");
 
     /*=====  End of Properties  ======*/
+
+    onMount(() => {
+        loadMenuSectionExtraContent(the_section);
+    });
+    
+    /*=============================================
+    =            Methods            =
+    =============================================*/
+    
+        /**
+         * Loads additional content related to the section.
+         * @param {import('@models/RestaurantMenu').MenuSection} section
+         * @returns {Promise<void>}
+         */
+        async function loadMenuSectionExtraContent(section) {
+            if (section.ExternalSections !== "") {
+                await loadContentSnippets(section);
+            }
+            
+        }
+
+        /**
+         * Loads the content snippets for the section.
+         * @param {import('@models/RestaurantMenu').MenuSection} section
+         * @returns {Promise<void>}
+         */
+        async function loadContentSnippets(section) {
+            const content_snippets = await section.getContentSnippets();
+
+            if (content_snippets == null) return;
+
+            section_about_content = content_snippets.AboutContent;
+            section_header_top_desc = content_snippets.TopDescription;
+            section_header_bottom_desc = content_snippets.BottomDescription;
+        }
+    
+    /*=====  End of Methods  ======*/
+    
 </script>
 
 <div id={menu_section_id} class="txc-menu--menu-section-wrapper">
@@ -51,9 +91,9 @@
         <h3 class="txc-menu-msw--section-title">
             {the_section.Title}
         </h3>
-        {#if section_header_top_desc !== null}
+        {#if section_header_top_desc !== ""}
             <div class="txc-menu-msw--top-description">
-                {section_header_top_desc}
+                {@html section_header_top_desc}
             </div>
         {/if}
         <div class="txc-menu-msw--image-wrapper">
@@ -61,9 +101,9 @@
                 <img src="{the_section.TeaserImageUrl}" alt="depicts a dish from {the_section.Title}">
             {/if}
         </div>
-        {#if section_header_bottom_desc !== null}
+        {#if section_header_bottom_desc !== ""}
             <div class="txc-menu-msw--bottom-description">
-                {section_header_bottom_desc}
+                {@html section_header_bottom_desc}
             </div>
         {/if}
     </header>
@@ -76,11 +116,11 @@
             </li>
         {/each}
     </ul>
-    {#if section_about_content !== null}
-        <footer class="txc-menu-msw--about-footer">
-            {section_about_content}
-        </footer>
-    {/if}
+    <footer class="txc-menu-msw--about-footer">
+        {#if section_about_content !== ""}
+            {@html section_about_content}
+        {/if}
+    </footer>
 </div>
 
 <style>
@@ -89,6 +129,7 @@
         display: grid;
         grid-template-columns: 25% auto;
         column-gap: var(--spacing-3);
+        row-gap: var(--spacing-3);
         padding-left: var(--spacing-4);
     }
 
@@ -137,5 +178,12 @@
         }
     }
 
-    /* footer.txc-menu-msw--about-footer { } */
+    footer.txc-menu-msw--about-footer {
+        grid-column:  1 / -1;
+        font-size: var(--font-size-1);
+
+        &:empty {
+            display: none;
+        }
+    }
 </style>

@@ -98,3 +98,52 @@ export class GetMenuSectionRequest {
         return new HttpResponse(response, menu_section);
     }
 }
+
+/**
+ * Returns a menu's section html snippets for the requested lang identifier.
+ */
+export class GetMenuSectionHtmlSnippetsRequest {
+    static endpoint = menu_service;
+
+    /**
+     * @param {string} lang_iso_639 - example: en = English
+     * @param {string} snippet_file 
+     */
+    constructor(lang_iso_639, snippet_file) {
+        this.lang_iso = lang_iso_639;
+        this.snippet_file = snippet_file;
+    }
+
+    toJson = attributesToJson.bind(this);
+
+    /**
+     * @returns {Promise<HttpResponse<string | null>>}
+     */
+    do = async () => {
+        const url = `${GetMenuSectionHtmlSnippetsRequest.endpoint}/${this.lang_iso}/html_content/${this.snippet_file}`;
+
+        /**
+         * @type {string | null}
+         */
+        let html_snippet = null;
+
+        /**
+         * @type {Response}
+         */
+        let response;
+
+        try {
+            response = await fetch(url);
+
+            if (response.ok) {
+                html_snippet = await response.text();
+            }
+        } catch (error) {
+            console.error(`In @libs/Communication/services_requests/restaurant_menu.GetMenuSectionHtmlSnippets.do: failed to fetch menu section html snippet ${this.snippet_file} for ${this.lang_iso}`, error);
+
+            throw error;
+        }
+
+        return new HttpResponse(response, html_snippet);
+    }
+}

@@ -1,0 +1,41 @@
+.section-about-content {
+    display: flex;
+    font-size: 1em;
+    flex-direction: column;
+    align-items: center;
+    row-gap: var(--spacing-2);
+    padding: var(--spacing-3) var(--spacing-5);
+    text-align: center;
+
+    & p {
+        margin: 0;
+    }
+
+    & .about-title {
+        font-size: 1.5em;
+    }
+}
+
+.section-about-content .about-paragraph {
+    & strong {
+        font-family: var(--font-titles, sans-serif);
+        font-weight: bolder;
+    }
+
+    & b {
+        font-family: var(--font-read, sans-serif);
+        font-weight: bold;
+    }
+}
+
+.paragraph-divider-sm {
+    width: 20%;
+    height: 2px;
+    background-color: currentColor;
+    margin: 1em 0;
+}
+
+.about-content-red-box {
+    color: var(--grey-1, #fff);
+    background-color: var(--theme-color, #FF0000);
+}
