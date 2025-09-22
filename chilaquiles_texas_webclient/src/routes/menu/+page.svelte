@@ -111,7 +111,8 @@
 
                     // @ts-ignore - Internal method references.
                     meg_gallery_debug_state.Methods = {
-                        getMenuMetadata
+                        getMenuMetadata,
+                        getLoadedMenuSections: () => loaded_menu_sections,
                     }
                 }
 
@@ -212,6 +213,8 @@
                 current_menu_section = first_section;
 
                 loaded_menu_sections = [first_section];
+
+                requestIdleCallback(progressivelyLoadAllMenuSections);
             }
         
         /*=====  End of Setup  ======*/
@@ -248,6 +251,34 @@
 
             return menu_section;
         }
+
+        /**
+         * Recursive function that progressively loads all menu sections while giving the DOM time to breathe.
+         * @returns {Promise<void>}
+         */
+        const progressivelyLoadAllMenuSections = async () => {
+            if (menu_metadata === null) {
+                console.error("In @routes/menu/+page.svelte.progressivelyLoadAllMenuSections: menu metadata is not loaded yet.");
+                return;
+            }
+
+            if (loaded_menu_sections.length >= menu_metadata.load_order.length) return;
+
+            const next_section_file = menu_metadata.load_order[loaded_menu_sections.length];
+
+            const next_section = await loadMenuSection(next_section_file);
+
+            if (next_section === null) {
+                console.error(`In @routes/menu/+page.svelte.progressivelyLoadAllMenuSections: failed to load menu section: ${next_section_file}`);
+                return;
+            }
+
+            loaded_menu_sections = [...loaded_menu_sections, next_section];
+
+            requestIdleCallback(progressivelyLoadAllMenuSections)
+        }
+            
+        
     
     /*=====  End of Methods  ======*/
     
