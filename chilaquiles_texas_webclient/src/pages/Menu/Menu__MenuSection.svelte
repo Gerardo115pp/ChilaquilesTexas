@@ -130,7 +130,6 @@
         grid-template-columns: 25% auto;
         column-gap: var(--spacing-3);
         row-gap: var(--spacing-3);
-        padding-left: var(--spacing-4);
     }
 
     /*=============================================

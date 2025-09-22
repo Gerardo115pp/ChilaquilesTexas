@@ -326,15 +326,15 @@
             </ol>
         </div>
         <article id="txc-rmp--menu-content" class="txc-rmp-content-area">
-            <section class="txc-rmp-menu-section-wrapper">
                 {#if menu_metadata}
                     {#each loaded_menu_sections as menu_section}
-                        <MenuSectionComponent
-                            the_section={menu_section}
-                        />
+                        <section class="txc-rmp-menu-section-wrapper">
+                            <MenuSectionComponent
+                                the_section={menu_section}
+                            />
+                        </section>
                     {/each}
                 {/if}
-            </section>
         </article>
     </div>
 </main>
@@ -485,9 +485,22 @@
     =============================================*/
 
             article#txc-rmp--menu-content {
+                display: flex;
                 width: 100%;
                 height: 100%;
+                flex-direction: column;
+                padding-left: var(--spacing-4);
+                box-shadow: inset 8px 0 8px -8px var(--grey-3);
+                gap: var(--spacing-4);
                 overflow-y: auto;
+
+                & > section.txc-rmp-menu-section-wrapper {
+                    padding-block: var(--spacing-2);
+                }
+
+                & > section.txc-rmp-menu-section-wrapper:not(:last-child) {
+                    border-bottom: var(--content-separation-border);
+                }
             }
 
     /*=====  End of Menu content  ======*/
