@@ -1,5 +1,6 @@
 {
     "title": "Bebidas calientitas'n",
+    "section_uuid": "d7cf75c9-fbfa-5ccb-9c3a-4211e6d0c3a7",
     "item_list_title": "Bebidas calientitas",
     "items": [
         {
@@ -117,5 +118,5 @@
     "extras": [],
     "teaser_image_url": "",
     "html_classes": [],
-    "section_uuid": "d7cf75c9-fbfa-5ccb-9c3a-4211e6d0c3a7"
+    "external_sections": ""
 }

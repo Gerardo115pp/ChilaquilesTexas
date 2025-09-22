@@ -1,5 +1,6 @@
 {
     "title": "Café con piquete",
+    "section_uuid": "5de413cd-4003-5f36-ab3c-ef674068a4dd",
     "item_list_title": "Café con piquete (1.5oz)",
     "items": [
         {
@@ -40,5 +41,5 @@
     "extras": [],
     "teaser_image_url": "",
     "html_classes": [],
-    "section_uuid": "5de413cd-4003-5f36-ab3c-ef674068a4dd"
+    "external_sections": ""
 }

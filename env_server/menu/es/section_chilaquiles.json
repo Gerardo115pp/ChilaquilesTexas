@@ -1,5 +1,6 @@
 {
     "title": "Nuestros chilaquiles",
+    "section_uuid": "050c0f1f-09f4-5773-a294-6dd4a80149b8",
     "item_list_title": "Chilaquiles",
     "items": [
         {
@@ -208,5 +209,5 @@
     ],
     "teaser_image_url": "",
     "html_classes": [],
-    "section_uuid": "050c0f1f-09f4-5773-a294-6dd4a80149b8"
+    "external_sections": ""
 }

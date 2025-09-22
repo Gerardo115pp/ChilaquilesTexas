@@ -1,5 +1,6 @@
 {
     "title": "Vodka",
+    "section_uuid": "395782e7-f9e7-521a-a756-943f9c3775f0",
     "item_list_title": "Vodka",
     "items": [
         {
@@ -51,5 +52,5 @@
     "extras": [],
     "teaser_image_url": "",
     "html_classes": [],
-    "section_uuid": "395782e7-f9e7-521a-a756-943f9c3775f0"
+    "external_sections": ""
 }

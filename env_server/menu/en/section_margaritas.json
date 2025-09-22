@@ -1,5 +1,6 @@
 {
     "title": "Margaritas",
+    "section_uuid": "d622d742-bb85-5f20-a3d2-095da1ee97c8",
     "item_list_title": "Margaritas (1.5oz)",
     "items": [
         {
@@ -51,5 +52,5 @@
     "extras": [],
     "teaser_image_url": "",
     "html_classes": [],
-    "section_uuid": "d622d742-bb85-5f20-a3d2-095da1ee97c8"
+    "external_sections": ""
 }

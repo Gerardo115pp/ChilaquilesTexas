@@ -1,5 +1,6 @@
 {
     "title": "Opciones para los más pequeños",
+    "section_uuid": "fdb0926a-dbcf-59ee-85f3-a7f7edc9d31a",
     "item_list_title": "Para niños",
     "items": [
         {
@@ -114,5 +115,5 @@
     "extras": [],
     "teaser_image_url": "",
     "html_classes": [],
-    "section_uuid": "fdb0926a-dbcf-59ee-85f3-a7f7edc9d31a"
+    "external_sections": ""
 }

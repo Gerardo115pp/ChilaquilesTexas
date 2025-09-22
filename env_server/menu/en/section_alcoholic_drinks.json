@@ -1,5 +1,6 @@
 {
     "title": "Alcoholic Drinks",
+    "section_uuid": "29045a2f-5023-577d-965f-dc4828836a2a",
     "item_list_title": "Beers & Spirits",
     "items": [
         {
@@ -183,5 +184,5 @@
     "extras": [],
     "teaser_image_url": "",
     "html_classes": [],
-    "section_uuid": "29045a2f-5023-577d-965f-dc4828836a2a"
+    "external_sections": ""
 }

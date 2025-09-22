@@ -1,5 +1,6 @@
 {
     "title": "Las Gorditas’n",
+    "section_uuid": "e680cbc5-e390-53f5-a580-3df07b2f7f39",
     "item_list_title": "Gorditas",
     "items": [
         {
@@ -46,5 +47,5 @@
     "extras": [],
     "teaser_image_url": "",
     "html_classes": [],
-    "section_uuid": "e680cbc5-e390-53f5-a580-3df07b2f7f39"
+    "external_sections": ""
 }

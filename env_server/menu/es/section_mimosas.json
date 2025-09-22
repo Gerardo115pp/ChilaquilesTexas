@@ -1,5 +1,6 @@
 {
     "title": "Mimosas",
+    "section_uuid": "c8901de8-b7fd-51c0-b1ed-0c626033a209",
     "item_list_title": "Mimosas (1.5oz)",
     "items": [
         {
@@ -40,5 +41,5 @@
     "extras": [],
     "teaser_image_url": "",
     "html_classes": [],
-    "section_uuid": "c8901de8-b7fd-51c0-b1ed-0c626033a209"
+    "external_sections": ""
 }

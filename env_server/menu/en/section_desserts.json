@@ -1,5 +1,6 @@
 {
     "title": "Desserts",
+    "section_uuid": "1c4caa74-3148-599e-9572-3927ebdf07f0",
     "item_list_title": "Sweets",
     "items": [
         {
@@ -46,5 +47,5 @@
     "extras": [],
     "teaser_image_url": "",
     "html_classes": [],
-    "section_uuid": "1c4caa74-3148-599e-9572-3927ebdf07f0"
+    "external_sections": ""
 }

@@ -1,5 +1,6 @@
 {
     "title": "Sopes'n",
+    "section_uuid": "454328ec-94bc-5d3f-b1bc-86000533f115",
     "item_list_title": "Sopes (3 piezas)",
     "items": [
         {
@@ -46,5 +47,5 @@
     "extras": [],
     "teaser_image_url": "",
     "html_classes": [],
-    "section_uuid": "454328ec-94bc-5d3f-b1bc-86000533f115"
+    "external_sections": ""
 }

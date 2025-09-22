@@ -1,5 +1,6 @@
 {
     "title": "Selección tequilas",
+    "section_uuid": "8e38f43f-b45a-5e99-981e-7055f9338142",
     "item_list_title": "Tequilas",
     "items": [
         {
@@ -128,5 +129,5 @@
     "extras": [],
     "teaser_image_url": "",
     "html_classes": [],
-    "section_uuid": "8e38f43f-b45a-5e99-981e-7055f9338142"
+    "external_sections": ""
 }

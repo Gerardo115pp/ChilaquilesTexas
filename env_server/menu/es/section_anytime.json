@@ -1,5 +1,6 @@
 {
     "title": "A cualquier hora",
+    "section_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b",
     "item_list_title": "Entradas y platos",
     "items": [
         {
@@ -165,5 +166,5 @@
     "extras": [],
     "teaser_image_url": "",
     "html_classes": [],
-    "section_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b"
+    "external_sections": ""
 }

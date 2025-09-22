@@ -1,5 +1,6 @@
 {
     "title": "Bebidas espirituosas y digestivos",
+    "section_uuid": "29045a2f-5023-577d-965f-dc4828836a2a",
     "item_list_title": "Bebidas espirituosas y digestivos",
     "items": [
         {
@@ -84,5 +85,5 @@
     "extras": [],
     "teaser_image_url": "",
     "html_classes": [],
-    "section_uuid": "29045a2f-5023-577d-965f-dc4828836a2a"
+    "external_sections": ""
 }

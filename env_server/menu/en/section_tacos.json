@@ -1,5 +1,6 @@
 {
     "title": "Gourmet Tacos",
+    "section_uuid": "e7cdd3f8-f690-5f28-871d-c7913ae9f9be",
     "item_list_title": "Tacos (per piece)",
     "items": [
         {
@@ -124,5 +125,5 @@
     "extras": [],
     "teaser_image_url": "",
     "html_classes": [],
-    "section_uuid": "e7cdd3f8-f690-5f28-871d-c7913ae9f9be"
+    "external_sections": ""
 }

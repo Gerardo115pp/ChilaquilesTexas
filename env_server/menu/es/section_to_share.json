@@ -1,5 +1,6 @@
 {
     "title": "Pa' compartir",
+    "section_uuid": "0accc071-d3be-55c4-9921-df2bae6a248e",
     "item_list_title": "Para compartir",
     "items": [
         {
@@ -161,5 +162,5 @@
     "extras": [],
     "teaser_image_url": "",
     "html_classes": [],
-    "section_uuid": "0accc071-d3be-55c4-9921-df2bae6a248e"
+    "external_sections": ""
 }

@@ -1,5 +1,6 @@
 {
     "title": "Whisky",
+    "section_uuid": "843a222d-222d-5f92-b481-1318505e7a92",
     "item_list_title": "Whisky",
     "items": [
         {
@@ -51,5 +52,5 @@
     "extras": [],
     "teaser_image_url": "",
     "html_classes": [],
-    "section_uuid": "843a222d-222d-5f92-b481-1318505e7a92"
+    "external_sections": ""
 }

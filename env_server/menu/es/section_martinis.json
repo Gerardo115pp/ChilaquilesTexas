@@ -1,5 +1,6 @@
 {
     "title": "Martinis",
+    "section_uuid": "a11fcc0d-2123-5ea0-b78c-d9c512551f79",
     "item_list_title": "Martinis (1.5oz)",
     "items": [
         {
@@ -51,5 +52,5 @@
     "extras": [],
     "teaser_image_url": "",
     "html_classes": [],
-    "section_uuid": "a11fcc0d-2123-5ea0-b78c-d9c512551f79"
+    "external_sections": ""
 }

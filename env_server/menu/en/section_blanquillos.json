@@ -1,5 +1,6 @@
 {
     "title": "Los blanquillos",
+    "section_uuid": "55f0aee4-9d43-5387-a8ac-0db6418a26eb",
     "item_list_title": "Blanquillos",
     "items": [
         {
@@ -118,5 +119,5 @@
     "extras": [],
     "teaser_image_url": "",
     "html_classes": [],
-    "section_uuid": "55f0aee4-9d43-5387-a8ac-0db6418a26eb"
+    "external_sections": ""
 }

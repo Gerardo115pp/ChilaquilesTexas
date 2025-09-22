@@ -1,5 +1,6 @@
 {
     "title": "Our enchilada variety",
+    "section_uuid": "d1de94e0-e99d-5325-a431-8713d9a2dfe4",
     "item_list_title": "Enchiladas",
     "items": [
         {
@@ -122,5 +123,5 @@
     "extras": [],
     "teaser_image_url": "",
     "html_classes": [],
-    "section_uuid": "d1de94e0-e99d-5325-a431-8713d9a2dfe4"
+    "external_sections": ""
 }
