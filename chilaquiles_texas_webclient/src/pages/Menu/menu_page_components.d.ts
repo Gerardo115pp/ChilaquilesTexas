@@ -1,0 +1,1 @@
+export type MenuLocaleChangeCallback = (new_locale: string) => void;

@@ -123,7 +123,9 @@
     ],
     "modifiers": [],
     "extras": [],
-    "teaser_image_url": "",
-    "html_classes": [],
-    "external_sections": ""
+    "teaser_image_url": "/resources/images/dishes/tacos.webp",
+    "html_classes": [
+        "single-column-menu"
+    ],
+    "external_sections": "tacos_content.html"
 }

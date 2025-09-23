@@ -22,7 +22,7 @@
          * The ISO 639 language code preferred by the user.
          * @type {string}
          */
-        const user_lang = page_props.language;
+        let user_lang = $state(page_props.language);
 
         /**
          * The menu metadata.
@@ -220,6 +220,37 @@
         /*=====  End of Setup  ======*/
 
         /**
+         * Changes the locale to the give ISO 639 language code.
+         * @param {string} new_locale
+         * @returns {Promise<void>}
+         */
+        const changeLocale = async (new_locale) => {
+            if (menu_metadata === null) {
+                console.error("In @routes/menu/+page.svelte.changeLocale: menu metadata is not loaded yet.");
+                return;
+            }
+
+            if (new_locale === menu_metadata.lang) return;
+
+            resetMenuState();
+
+            user_lang = new_locale;
+
+            setupMenuData();
+        }
+
+        /**
+         * Handles the change of the menu locale from the navbar.
+         * @param {string} new_locale
+         * @return {void}
+         */
+        const handleLocaleChange = (new_locale) => {
+            console.log(`Locale change requested: ${new_locale}`);
+
+            changeLocale(new_locale);
+        }
+
+        /**
          * Loads the menu metadata for the user's preferred language if available, otherwise falls back to the default language.
          * @returns {Promise<import('@models/RestaurantMenu').MenuMetadata>}
          */
@@ -277,6 +308,16 @@
 
             requestIdleCallback(progressivelyLoadAllMenuSections)
         }
+
+        /**
+         * Resets the loaded menu state.
+         * @returns {void}
+         */
+        const resetMenuState = () => {
+            menu_metadata = null;
+            current_menu_section = null;
+            loaded_menu_sections = [];
+        }
             
         
     
@@ -288,7 +329,12 @@
 <main id="txc-restaurant-menu-page">
     <div id="txc-rmp-content-wrapper">
         <header id="txc-rmp--navbar" class="txc-rmp-content-area">
-            <MenuNavbar />
+            {#if menu_metadata != null}
+                <MenuNavbar 
+                    current_locale={menu_metadata?.lang}
+                    onLocaleChange={handleLocaleChange}
+                />
+            {/if}
         </header>
         <div id="txc-rmp--menu-listing" class="txc-rmp-content-area">
             <article id="rmp-ml--san-miguel-copy">

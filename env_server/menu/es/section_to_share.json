@@ -160,7 +160,9 @@
     ],
     "modifiers": [],
     "extras": [],
-    "teaser_image_url": "",
-    "html_classes": [],
-    "external_sections": ""
+    "teaser_image_url": "/resources/images/dishes/guacamole-M.webp",
+    "html_classes": [
+        "single-column-menu"
+    ],
+    "external_sections": "to_share_content.html"
 }
