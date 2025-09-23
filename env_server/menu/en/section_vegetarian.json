@@ -34,7 +34,9 @@
     ],
     "modifiers": [],
     "extras": [],
-    "teaser_image_url": "",
-    "html_classes": [],
-    "external_sections": ""
+    "teaser_image_url": "/resources/images/dishes/vegetariana-M.webp",
+    "html_classes": [
+        "single-column-menu"
+    ],
+    "external_sections": "vegetarian_content.html"
 }

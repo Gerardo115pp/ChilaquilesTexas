@@ -1,31 +1,106 @@
-.section-about-content {
-    display: flex;
+
+.template-content {
     font-size: 1em;
-    flex-direction: column;
-    align-items: center;
-    row-gap: var(--spacing-2);
-    padding: var(--spacing-3) var(--spacing-5);
-    text-align: center;
 
     & p {
         margin: 0;
     }
+}
 
-    & .about-title {
-        font-size: 1.5em;
+/*=============================================
+=            About content            =
+=============================================*/
+
+    .section-about-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: var(--spacing-2);
+        padding: var(--spacing-3) var(--spacing-5);
+        text-align: center;
+
+        & p {
+            margin: 0;
+        }
+
+        & .about-title {
+            font-size: 1.5em;
+        }
+    }
+
+    .about-content-red-box {
+        color: var(--grey-1, #fff);
+        background-color: var(--theme-color, #FF0000);
+    }
+
+    .about-content-clear-box {
+        color: var(--grey-9, #000);
+        background-color: transparent;
+        border: 2px solid var(--theme-color, #FF0000);
+    }
+
+    .section-about-content .about-paragraph {
+        & strong {
+            font-family: var(--font-titles, sans-serif);
+            font-weight: bolder;
+        }
+
+        & b {
+            font-family: var(--font-read, sans-serif);
+            font-weight: bold;
+        }
+    }
+
+/*=====  End of About content  ======*/
+
+
+/*=============================================
+=            Design elements            =
+=============================================*/
+
+.h5-title {
+    font-size: 1.5em;
+    line-height: 1.1;
+}
+
+.h6-title {
+    font-size: 1.2em;
+    line-height: 1.1;
+}
+
+.article-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.add-extras-list {
+    font-weight: lighter;
+
+    & > :first-child {
+        margin-bottom: 0.5em;
+    }
+
+    & ul.simple-list {
+        padding-left: .7em;
+        margin: 0;
+    }
+
+    & ul.simple-list li {
+        list-style-type: "-  ";
     }
 }
 
-.section-about-content .about-paragraph {
-    & strong {
-        font-family: var(--font-titles, sans-serif);
-        font-weight: bolder;
-    }
+.light-text {
+    font-weight: lighter;
+}
 
-    & b {
-        font-family: var(--font-read, sans-serif);
-        font-weight: bold;
-    }
+.simple-paragraph {
+    font-family: var(--font-read, sans-serif);
+}
+
+.theme-text {
+    color: var(--theme-color, #FF0000);
 }
 
 .paragraph-divider-sm {
@@ -35,7 +110,11 @@
     margin: 1em 0;
 }
 
-.about-content-red-box {
-    color: var(--grey-1, #fff);
-    background-color: var(--theme-color, #FF0000);
-}
+/*=====  End of Design elements  ======*/
+
+
+
+
+
+
+

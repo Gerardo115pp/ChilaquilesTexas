@@ -86,7 +86,7 @@
     
 </script>
 
-<div id={menu_section_id} class="txc-menu--menu-section-wrapper">
+<div id={menu_section_id} class={["txc-menu--menu-section-wrapper", the_section.HtmlClasses]}>
     <header class="txc-menu-msw--header">
         <h3 class="txc-menu-msw--section-title">
             {the_section.Title}
@@ -174,6 +174,16 @@
         & li.txc-menu-msw--section-item { 
             width: 39cqw;
             container-type: inline-size;
+        }
+    }
+    
+    :global(.txc-menu--menu-section-wrapper.single-column-menu ul.txc-menu-msw--section-items) {
+        flex-direction: column;
+        justify-content: flex-start;
+        row-gap: var(--spacing-3);
+
+        & li.txc-menu-msw--section-item {
+            width: 100%;
         }
     }
 
