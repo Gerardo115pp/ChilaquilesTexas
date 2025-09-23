@@ -91,6 +91,8 @@
 
 <style>
     article#txc-vbpl-common-copy--breakfast {
+        --desayuno-titles-font-size: calc(var(--font-size-h1) * 0.39107);
+
         display: flex;
         flex-direction: column;
         color: var(--copy-color);
@@ -114,6 +116,10 @@
         & p, h1, a {
             transition: color 0.3s ease-out;
         }
+
+        & h1, h2 {
+            font-size: var(--desayuno-titles-font-size);
+        }
     }
     
     /*=============================================
@@ -121,21 +127,21 @@
     =============================================*/
     
         header#txc-vbpl-ccb-header {
-            font-size: calc(var(--font-size-h1) * 0.49107);
+            font-size: var(--desayuno-titles-font-size);
 
             & hgroup {
                 font-size: inherit;
             }
 
             & h1 {
-                font-size: inherit;
+                font-size: 1.2em;
                 line-height: 1;
             }            
 
             & hgroup > h1 + p {
                 font-family: var(--font-titles);
                 line-height: 1;
-                font-size: 0.8em;
+                font-size: 1em;
             }
         }
     
