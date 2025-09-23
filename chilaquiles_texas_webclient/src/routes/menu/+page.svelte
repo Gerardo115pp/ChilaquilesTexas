@@ -43,6 +43,12 @@
         let loaded_menu_sections = $state([]);
 
         /**
+         * A file to MenuSection map used to scroll to sections when clicking on the menu listing.
+         * @type {Map<string, import('@models/RestaurantMenu').MenuSection>}
+         */
+        let menu_section_map = new Map();
+
+        /**
          * Enables the debug mode for the component.
          * @type {boolean}
          * @constant
@@ -240,6 +246,21 @@
         }
 
         /**
+         * Returns an html element containing the menu section with the given filename.
+         * @param {string} section_file
+         * @returns {HTMLElement | null}
+         */
+        const getMenuSectionElementByFile = (section_file) => {
+            const menu_section = menu_section_map.get(section_file);
+
+            if (menu_section === undefined) return null;
+
+            const menu_section_id = `menu-section--${menu_section.SectionUUID}`;
+
+            return document.getElementById(menu_section_id);
+        }
+
+        /**
          * Handles the change of the menu locale from the navbar.
          * @param {string} new_locale
          * @return {void}
@@ -248,6 +269,35 @@
             console.log(`Locale change requested: ${new_locale}`);
 
             changeLocale(new_locale);
+        }
+
+        /**
+         * Handles the click on a menu section from the listing.
+         * @param {MouseEvent} event
+         * @returns {void}
+         */
+        const handleMenuSectionClick = (event) => {
+            const target = event.target;
+
+            if (!(target instanceof HTMLElement)) return;
+
+            const section_file = target.dataset.sectionFile;
+
+            if (!section_file) return;
+
+            console.log(`Menu section click requested: ${section_file}`);
+
+            const section_element = getMenuSectionElementByFile(section_file);
+            
+            if (section_element === null) {
+                console.error(`In @routes/menu/+page.svelte.handleMenuSectionClick: failed to find menu section element for file: ${section_file}`);
+                return;
+            }
+
+            section_element.scrollIntoView({
+                behavior: 'instant',
+                block: 'start',
+            });
         }
 
         /**
@@ -279,6 +329,10 @@
             let menu_section = null;
 
             menu_section = await getMenuSection(section_file, menu_metadata.lang);
+
+            if (menu_section !== null) {
+                menu_section_map.set(section_file, menu_section);
+            }
 
             return menu_section;
         }
@@ -317,24 +371,20 @@
             menu_metadata = null;
             current_menu_section = null;
             loaded_menu_sections = [];
+            menu_section_map.clear();
         }
-            
-        
     
     /*=====  End of Methods  ======*/
-    
     
 </script>
 
 <main id="txc-restaurant-menu-page">
     <div id="txc-rmp-content-wrapper">
         <header id="txc-rmp--navbar" class="txc-rmp-content-area">
-            {#if menu_metadata != null}
-                <MenuNavbar 
-                    current_locale={menu_metadata?.lang}
-                    onLocaleChange={handleLocaleChange}
-                />
-            {/if}
+            <MenuNavbar 
+                current_locale={menu_metadata !== null ? menu_metadata.lang : user_lang}
+                onLocaleChange={handleLocaleChange}
+            />
         </header>
         <div id="txc-rmp--menu-listing" class="txc-rmp-content-area">
             <article id="rmp-ml--san-miguel-copy">
@@ -364,7 +414,7 @@
             <ol id="txc-rmp-ml--sections-list">
                 {#if menu_metadata}
                     {#each menu_metadata.menu_listing as section_item}
-                        <li class="txc-rmp-ml--listing-section-item" data-section-file={section_item.section_file}>
+                        <li onclick={handleMenuSectionClick} class="txc-rmp-ml--listing-section-item" data-section-file={section_item.section_file}>
                             {section_item.section_name}
                         </li>
                     {/each}
@@ -510,6 +560,7 @@
         /*----------  Sections list  ----------*/
         
             ol#txc-rmp-ml--sections-list {
+                cursor: default;
                 list-style: none;
                 margin: 0;
                 padding: 0;
@@ -517,10 +568,15 @@
                 font-size: var(--font-size-1);
                 row-gap: calc(var(--spacing-2) * 1.1);
                 grid-template-columns: repeat(2, 1fr);
-
+                
                 & > li.txc-rmp-ml--listing-section-item {
                     width: 100%;
                     text-align: left;
+                    transition: color 0.3s ease-out;
+                }
+
+                & > li.txc-rmp-ml--listing-section-item:hover {
+                    color: var(--theme-color);
                 }
             }
     
