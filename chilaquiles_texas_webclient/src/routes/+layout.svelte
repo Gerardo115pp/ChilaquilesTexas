@@ -3,7 +3,8 @@
     import { page } from '$app/state';
     import '@app/app.css';
     import { getPageBackground } from '@app/common/page_medias';
-    import page_layouts, { determinePageLayout } from '@app/common/page_layouts';
+    import { determinePageLayout } from '@app/common/page_layout_identification';
+    import { page_layouts } from '@app/common/page_layouts';
     import DesayunoCopy from '@components/CommonCopy/DesayunoCopy.svelte';
     import Footer from '@components/Footer/Footer.svelte';
     import LosChilaquilesLogo from '@components/icons/LosChilaquilesLogo.svelte';
@@ -26,7 +27,7 @@
 
         /**
          * the name of the layout used for the current page.url.pathname. affects how content is displayed.
-         * @type {import('@common/page_layouts').PageLayout}
+         * @type {import('@app/common/page_layouts').PageLayout}
          */
         let current_page_layout = $state(determinePageLayout(page.url.pathname));
 
@@ -167,6 +168,11 @@
 
         &.page-layout-VBPL {
             height: 100dvh;
+        }
+
+        &.page-layout-VBPL, &.page-layout-FMC {
+            height: 100dvh;
+            overflow: hidden;
         }
     }
 

@@ -1,5 +1,6 @@
 <script>
     import { image_resources } from "@app/common/page_medias";
+    import { website_page_paths } from "@app/common/page_paths";
     import { onMount } from "svelte";
 
     
@@ -59,9 +60,9 @@
             and that's exactly how we like it.
         </p>
         <ul class="txc-ctas-container">
-            <button class="txc-button">
+            <a href="{website_page_paths.MENU_PAGE.path}" class="txc-button">
                 Menu & Order Online
-            </button>
+            </a>
         </ul>
     </article>
     <aside id="txc-ouhis-restaurant-image-wrapper">

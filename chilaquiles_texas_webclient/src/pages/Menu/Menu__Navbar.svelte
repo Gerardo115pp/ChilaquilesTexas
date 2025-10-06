@@ -58,7 +58,7 @@
         color: hsl(from var(--theme-color) h s calc(l * 0.8) / 1);
         text-transform: none;
         font-size: var(--font-size-1);
-        transition: color 0.3s ease-out;
+        transition: color 0.3s ease-out, scale 0.1s ease-out;
         
         &.active-locale {
             font-weight: bolder;
@@ -67,7 +67,9 @@
         
         &:not(.active-locale):hover {
             cursor: pointer;
-            color: hsl(from var(--theme-color) h calc(s * 0.5) calc(l * 0.9) / 1);
+            color: hsl(from var(--theme-color) h 100% l / 1);
+            transform-origin: center;
+            scale: 1.03;
         }
     }
 
