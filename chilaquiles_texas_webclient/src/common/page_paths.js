@@ -124,5 +124,7 @@ export const external_links = {
     EMAIL: "mailto: hola@loschilaquiles.com",
     PHONE: "tel: +18324697664",
     INSTAGRAM: "https://instagram.com/loschilaquiles",
-    SPOTIFY: "https://open.spotify.com/playlist/3KNS6keFi8j2YLiQqPsuiX?pi=oqGSNiKfTtCFk"
+    SPOTIFY: "https://open.spotify.com/playlist/3KNS6keFi8j2YLiQqPsuiX?pi=oqGSNiKfTtCFk",
+    GENERIC_WORK_IN_PROGRESS: "/en/work-in-progress",
+    ORDER_ONLINE: "/en/work-in-progress"
 }

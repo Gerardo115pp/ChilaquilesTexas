@@ -1,3 +1,7 @@
+<script>
+    import { external_links } from "@app/common/page_paths";
+
+</script>
 <main id="txc-coffee-page"
     class="vbpl-page"
 >
@@ -16,9 +20,9 @@
             ¿Quieres un cafecito?
         </p>
         <ul class="txc-ctas-container">
-            <button class="txc-button">
+            <a href="{external_links.GENERIC_WORK_IN_PROGRESS}" class="txc-button">
                 Check our Coffee options
-            </button>
+            </a>
         </ul>
     </article>
 </main>

@@ -1,4 +1,5 @@
 <script>
+    import { external_links } from "@app/common/page_paths";
     import layout_properties from "@stores/layout/layout";
 </script>
 
@@ -29,9 +30,9 @@
             has no rules.
         </p>
         <ul class="txc-ctas-container">
-            <button class="txc-button">
+            <a href="{external_links.GENERIC_WORK_IN_PROGRESS}" class="txc-button">
                 Our Pan Dulce is here
-            </button>
+            </a>
         </ul>
     </article>
 </main>

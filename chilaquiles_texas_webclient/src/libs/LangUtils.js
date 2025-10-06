@@ -48,3 +48,16 @@ export const toISOLocale = locale => {
 
     return parts[0];
 }
+
+/**
+ * Returns the ISO-639 lang code from the navigator(most be called in a browser env).
+ * @param {string} default_to - a lang code to default to.
+ * @returns {string}
+ */
+export const getNavigatorLang = default_to => {
+    if (globalThis.navigator == null) return default_to;
+
+    const lang_iso = toISOLocale(globalThis.navigator.language) ?? default_to;
+
+    return lang_iso;
+}

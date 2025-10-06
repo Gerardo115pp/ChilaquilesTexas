@@ -2,6 +2,9 @@
     import { external_links } from '@app/common/page_paths.js';
     import InstagramIcon from '@components/icons/InstagramIcon.svelte';
     import SpotifyIcon from '@components/icons/SpotifyIcon.svelte';
+    import { getNavigatorLang } from '@libs/LangUtils.js';
+    import { generateWorkInProgressPath } from '@libs/NavigationUtils.js';
+    import { onMount } from 'svelte';
 
     
     /*=============================================
@@ -17,9 +20,19 @@
          * @type {DesktopNavbarProps}
          */
         let { nav_options } = $props();
+
+        /**
+         * The order online url
+         * @type {string}
+         */
+        let order_online_url = $state(generateWorkInProgressPath("en"));
     
-    /*=====  End of Properties  ======*/
-    
+    /*=====  End of Methods  ======*/
+
+    onMount(() => {
+        // @ts-ignore
+        order_online_url = generateWorkInProgressPath(getNavigatorLang("en"))
+    });
     
 </script>
 
@@ -58,9 +71,9 @@
                 </a>
             </li>
         </ul>
-        <button id="txc-nv-order-online-btn" class="txc-button">
+        <a href="{order_online_url}" id="txc-nv-order-online-btn" class="txc-button">
             Order Online
-        </button>
+        </a>
     </div>
 </nav>
 

@@ -60,7 +60,7 @@
             and that's exactly how we like it.
         </p>
         <ul class="txc-ctas-container">
-            <a href="{website_page_paths.MENU_PAGE.path}" class="txc-button">
+            <a data-sveltekit-preload-data="tap" href="{website_page_paths.MENU_PAGE.path}" class="txc-button">
                 Menu & Order Online
             </a>
         </ul>

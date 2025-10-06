@@ -6,6 +6,9 @@
     import MobileNavDialog from './MobileNavDialog.svelte';
     import { writable } from 'svelte/store';
     import { afterNavigate } from '$app/navigation';
+    import { generateWorkInProgressPath } from '@libs/NavigationUtils';
+    import { getNavigatorLang } from '@libs/LangUtils';
+    import { onMount } from 'svelte';
 
     
     /*=============================================
@@ -53,8 +56,19 @@
         const defineNavigationDialogOpened = is_open => {
             display_nav_dialog.set(is_open);
         }
+
+        /**
+         * The order online url
+         * @type {string}
+         */
+        let order_online_url = $state(generateWorkInProgressPath("en"));
     
     /*=====  End of Methods  ======*/
+
+    onMount(() => {
+        // @ts-ignore
+        order_online_url = generateWorkInProgressPath(getNavigatorLang("en"))
+    });
     
 </script>
 
@@ -94,14 +108,13 @@
                 </a>
             </li>
         </ul>
-        <button id="txc-mnv-order-online-btn" class="txc-button">
+        <a href="{order_online_url}" id="txc-mnv-order-online-btn" class="txc-button">
             ORDER ONLINE
-        </button>
+        </a>
     </div>
 </nav>
 
 <style>
-
     nav#txc-mobile-navbar {
         display: flex;
         container-type: size;
@@ -231,7 +244,7 @@
                 font-size: 2.8cqw;
             }
 
-            button#txc-mnv-order-online-btn {
+            #txc-mnv-order-online-btn {
                 display: flex;
                 align-self: stretch;
                 justify-content: center;
