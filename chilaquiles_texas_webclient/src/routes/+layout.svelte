@@ -233,6 +233,12 @@
                 grid-template-columns: auto 1fr;
             }
 
+            /* #txc-vbpl-page--common-content {
+                container-type: size;
+                width: 100%;
+                height: 100%;
+            } */
+
             #txc-vbpl-page--main-content {
                 display: grid;
                 width: 100%;

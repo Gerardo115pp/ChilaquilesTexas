@@ -91,17 +91,20 @@
 
 <style>
     article#txc-vbpl-common-copy--breakfast {
-        --desayuno-titles-font-size: calc(var(--font-size-h1) * 0.39107);
+        /* --desayuno-titles-font-size: calc(var(--font-size-h1) * 0.39107); */
+        --desayuno-titles-font-size: 4.8svh;
+        --desayuno-text-font-size: calc(var(--desayuno-titles-font-size) * 0.4166);
 
         display: flex;
         flex-direction: column;
         color: var(--copy-color);
-        font-size: min(var(--font-size-p), 2svh);
-        row-gap: 2.09em;
+        font-size: var(--desayuno-text-font-size);
+        row-gap: 1.4em;
 
         & a {
             color: inherit;
             font-family: var(--font-titles);
+            font-size: var(--desayuno-text-font-size);
         }
 
         & a.active-page {
@@ -109,6 +112,7 @@
         }
 
         & p {
+            font-size: var(--desayuno-text-font-size);
             color: inherit;
             margin: 0;
         }
@@ -134,24 +138,25 @@
             }
 
             & h1 {
-                font-size: 1.2em;
                 line-height: 1;
             }            
 
             & hgroup > h1 + p {
                 font-family: var(--font-titles);
                 line-height: 1;
-                font-size: 1em;
+                font-size: calc(var(--desayuno-titles-font-size) * 0.8);
             }
         }
     
     /*=====  End of Header  ======*/
 
+
+
     
     @container mobile-vertical-cc (width <= 1080px)  {
         article#txc-vbpl-common-copy--breakfast {
-            font-size: 4.2494cqh;
-            row-gap: 10.4874cqh;
+            --desayuno-titles-font-size: 10.2494cqh;
+            row-gap: 1.7em;
         }
 
         header#txc-vbpl-ccb-header {
