@@ -62,7 +62,7 @@
         }
 
         #wipp-navbar-logo {
-            width: min(200px, 9.5%);
+            width: min(300px, 80%);
             height: max-content;
 
             & > a {

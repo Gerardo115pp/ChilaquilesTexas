@@ -102,8 +102,8 @@
             box-sizing: border-box;
             display: flex;
             width: max-content;
-            font-size: 0.952380rem;
-            gap: 3.2857rem;
+            font-size: 1.3cqw;
+            gap: 5.5em;
             align-items: center;
             list-style: none;
             margin: 0;
@@ -121,6 +121,7 @@
     
     /*=====  End of NavOptions  ======*/
     
+    /* TODO: Fucking dyslexia conspired against me again. This is actually on the RIGHT, not left. */
     #txc-nv-content-left {
         display: flex;
         column-gap: 5.528cqw;
@@ -133,7 +134,7 @@
         ul#txc-nv-cl-socials {
             display: flex;
             align-items: center;
-            gap: 0.8095rem;
+            gap: 0.8em;
             margin: 0;
         }
 

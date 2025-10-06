@@ -38,7 +38,7 @@
                     Los Chilaquiles Houston
                 </button>
             </a>
-            <a href="{website_page_paths.MENU_PAGE.path}" class="txc-button">
+            <a href="{website_page_paths.MENU_PAGE.path}" data-sveltekit-preload-data="tap" class="txc-button">
                 Menu & Order Online
             </a>
         </ul>

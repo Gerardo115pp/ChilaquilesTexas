@@ -105,7 +105,7 @@
             }
         } */
 
-        @container vbpl-footer (width <= 1300px) {
+        @container vbpl-footer (980px < width <= 1300px) {
             address#txc-vbpl-footer-content {
                 font-size: 1.4cqw;
                 column-gap: 1.7em;
@@ -119,6 +119,7 @@
                 width: 100%;
                 grid-template-columns: auto min(26px, 5.6353%) 28.8397%;
                 column-gap: 3%;
+                font-size: 2.4cqw;
                 row-gap: min(10px, 0.5em);
                 
                 & hgroup#txc-vbpl-footer-open-days {
@@ -132,7 +133,7 @@
                 }
 
                 & hgroup#txc-vbpl-footer-open-days h4 {
-                    font-size: 1.4285em;
+                    font-size: 1.1285em;
                 }
 
                 & a#txc-vbpl-footer-contact-address {
@@ -159,7 +160,12 @@
             }
         }
 
-        /* @ */
+        @container (width <= 400px) {
+            address#txc-vbpl-footer-content {
+                font-size: 3cqw;
+            }
+        }
+
     
         @media (max-aspect-ratio: 0.98) {
             footer#txc-vbpl-footer {

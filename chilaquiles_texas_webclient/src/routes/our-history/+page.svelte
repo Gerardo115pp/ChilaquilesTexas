@@ -71,7 +71,8 @@
                 id="txc-ouhis-restaurant-image"
                 src="{restaurant_image_url}" 
                 alt="This is our magnificent restaurant" 
-            >
+                style:visibility="hidden"
+            />
         {/if}
     </aside>
 </main>
