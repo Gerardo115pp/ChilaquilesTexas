@@ -53,14 +53,14 @@
     footer#txc-vbpl-footer {
         width: 100%;
         container-type: inline-size;
+        container-name: vbpl-footer;
         font-size: var(--font-size-3);
-        height: 2.6190em;
     }
-
+    
     address#txc-vbpl-footer-content {
         display: flex;
-        height: 100%;
         align-items: center;
+        height: 2.6190em;
         gap: max(1em, 5.6826cqw);
         font-style: normal;
 
@@ -99,13 +99,20 @@
     =            Responsiveness            =
     =============================================*/
 
-        @media (max-width: 1300px) {
+        /* @media (max-width: 1300px) {
             footer#txc-vbpl-footer {
                 font-size: min(var(--font-size-3), 1.5svh);
             }
+        } */
+
+        @container vbpl-footer (width <= 1300px) {
+            address#txc-vbpl-footer-content {
+                font-size: 1.4cqw;
+                column-gap: 1.7em;
+            }
         }
 
-        @container (width <= 1400px) {
+        @container (width <= 980px) {
 
             address#txc-vbpl-footer-content {
                 display: grid;
@@ -158,10 +165,6 @@
             footer#txc-vbpl-footer {
                 height: 9.7395dvh;
                 font-size: calc(var(--font-size-4) * 1.169);
-
-                & a, h4 {
-                    font-size: 1em;
-                }
             }
         }
     
