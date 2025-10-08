@@ -4,7 +4,7 @@ import { toISOLocale } from '@libs/LangUtils';
 import { generateWorkInProgressPath } from '@libs/NavigationUtils';
 import { DEFAULT_MENU_LANG } from '@models/RestaurantMenu';
 
-const menu_page_enabled = false; // whether to redirect to work-in-progress page
+const menu_page_enabled = true; // whether to redirect to work-in-progress page
 
 /**
  * @type {import('./$types').PageLoad}

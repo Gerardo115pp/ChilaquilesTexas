@@ -14,7 +14,7 @@
         const nav_options = [
             {
                 name: "About us",
-                href: website_page_paths.ABOUT_US_PAGE.path
+                href: website_page_paths.SAN_MIGUEL_PAGE.path
             },
             {
                 name: "Menu",

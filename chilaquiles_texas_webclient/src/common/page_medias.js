@@ -78,10 +78,10 @@ const toImageResourceURI = (filename, sub_folder="") => {
                 media_resource_uri: toCoverURI('san_miguel_houston-S.webp'),
             }
         ]),
-        new ReactiveMediaList(toVideoURI('san_miguel_page/san_miguel_houston_av1_sd_small.mp4'), [
+        new ReactiveMediaList(toVideoURI('san_miguel_page/san_miguel_houston_h264_sd_small.mp4'), [
             {
                 breakpoint: breakpoints.L,
-                media_resource_uri: toVideoURI('san_miguel_page/san_miguel_houston_av1.mp4'),
+                media_resource_uri: toVideoURI('san_miguel_page/san_miguel_houston_h264.mp4'),
             }
         ])
     );
