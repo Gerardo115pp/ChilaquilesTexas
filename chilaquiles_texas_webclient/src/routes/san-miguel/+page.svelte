@@ -1,5 +1,6 @@
 <script>
     import { website_page_paths } from "@app/common/page_paths";
+    import WorkInProgressBTN from "@components/Buttons/WorkInProgressBTN.svelte";
 
 </script>
 
@@ -38,9 +39,10 @@
                     Los Chilaquiles Houston
                 </button>
             </a>
-            <a href="{website_page_paths.MENU_PAGE.path}" data-sveltekit-preload-data="tap" class="txc-button">
-                Menu & Order Online
-            </a>
+            <WorkInProgressBTN
+                href={website_page_paths.MENU_PAGE.path}
+                enabled_label="Menu & Order Online"
+            />
         </ul>
     </article>
 </main>

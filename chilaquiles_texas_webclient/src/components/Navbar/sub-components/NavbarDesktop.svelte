@@ -1,5 +1,6 @@
 <script>
     import { external_links } from '@app/common/page_paths.js';
+    import WorkInProgressBTN from '@components/Buttons/WorkInProgressBTN.svelte';
     import InstagramIcon from '@components/icons/InstagramIcon.svelte';
     import SpotifyIcon from '@components/icons/SpotifyIcon.svelte';
     import { getNavigatorLang } from '@libs/LangUtils.js';
@@ -71,9 +72,11 @@
                 </a>
             </li>
         </ul>
-        <a href="{order_online_url}" id="txc-nv-order-online-btn" class="txc-button">
-            Order Online
-        </a>
+        <WorkInProgressBTN 
+            href={order_online_url}
+            enabled_label="Order Online"
+            id_selector="txc-nv-order-online-btn"
+        />
     </div>
 </nav>
 

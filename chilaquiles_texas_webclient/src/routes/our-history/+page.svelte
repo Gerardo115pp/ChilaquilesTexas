@@ -1,6 +1,7 @@
 <script>
     import { image_resources } from "@app/common/page_medias";
     import { website_page_paths } from "@app/common/page_paths";
+    import WorkInProgressBTN from "@components/Buttons/WorkInProgressBTN.svelte";
     import { onMount } from "svelte";
 
     
@@ -60,9 +61,10 @@
             and that's exactly how we like it.
         </p>
         <ul class="txc-ctas-container">
-            <a data-sveltekit-preload-data="tap" href="{website_page_paths.MENU_PAGE.path}" class="txc-button">
-                Menu & Order Online
-            </a>
+            <WorkInProgressBTN
+                href={website_page_paths.MENU_PAGE.path}
+                enabled_label="Menu & Order Online"
+            />
         </ul>
     </article>
     <aside id="txc-ouhis-restaurant-image-wrapper">

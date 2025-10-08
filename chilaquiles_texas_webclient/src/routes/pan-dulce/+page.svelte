@@ -1,5 +1,6 @@
 <script>
     import { external_links } from "@app/common/page_paths";
+    import WorkInProgressBTN from "@components/Buttons/WorkInProgressBTN.svelte";
     import layout_properties from "@stores/layout/layout";
 </script>
 
@@ -30,9 +31,13 @@
             has no rules.
         </p>
         <ul class="txc-ctas-container">
-            <a href="{external_links.GENERIC_WORK_IN_PROGRESS}" class="txc-button">
+            <!-- <a href="{external_links.GENERIC_WORK_IN_PROGRESS}" class="txc-button">
                 Our Pan Dulce is here
-            </a>
+            </a> -->
+            <WorkInProgressBTN
+                href="{external_links.GENERIC_WORK_IN_PROGRESS}"
+                enabled_label="Our Pan Dulce is here"
+            />
         </ul>
     </article>
 </main>

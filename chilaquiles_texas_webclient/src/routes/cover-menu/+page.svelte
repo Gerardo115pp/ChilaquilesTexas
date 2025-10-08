@@ -1,5 +1,6 @@
 <script>
     import { website_page_paths } from "@app/common/page_paths";
+    import WorkInProgressBTN from "@components/Buttons/WorkInProgressBTN.svelte";
 
 </script>
 <!-- 
@@ -33,9 +34,10 @@
             and a little beautiful chaos.
         </p>
         <ul class="txc-ctas-container">
-            <a data-sveltekit-preload-data="tap" href="{website_page_paths.MENU_PAGE.path}" class="txc-button">
-                Menu & Order Online
-            </a>
+            <WorkInProgressBTN 
+                href={website_page_paths.MENU_PAGE.path}
+                enabled_label="Menu & Order Online"
+            />
         </ul>
     </article>
 </main>

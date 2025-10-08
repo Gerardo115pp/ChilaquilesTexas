@@ -1,7 +1,8 @@
 <script>
     import { external_links } from "@app/common/page_paths";
-
+    import WorkInProgressBTN from "@components/Buttons/WorkInProgressBTN.svelte";
 </script>
+
 <main id="txc-coffee-page"
     class="vbpl-page"
 >
@@ -20,9 +21,10 @@
             ¿Quieres un cafecito?
         </p>
         <ul class="txc-ctas-container">
-            <a href="{external_links.GENERIC_WORK_IN_PROGRESS}" class="txc-button">
-                Check our Coffee options
-            </a>
+            <WorkInProgressBTN 
+                enabled_label="Check our Coffee options"
+                href="{external_links.GENERIC_WORK_IN_PROGRESS}"
+            />
         </ul>
     </article>
 </main>
