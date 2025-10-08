@@ -464,6 +464,9 @@
                     muted
                     autoplay
                     loop
+                    playsinline
+                    disablePictureInPicture
+                    tabindex="-1"
                 >
                 </video>
             </div>
@@ -541,6 +544,7 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+                pointer-events: none;
             }
         }
 
