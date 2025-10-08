@@ -10,8 +10,12 @@ import fs from 'fs';
 // 	}
 // }
 
-export default defineConfig(async  ({ command, mode, isSsrBuild, isPreview }) => {
-	const is_production = command === 'build';
+export default defineConfig(async  (user_config) => {
+	const is_production = user_config.mode === 'production';
+	console.log(`Mode: ${user_config.mode}`)
+
+	const host_string = is_production ? "texas.loschilaquiles.com" : "texas-dev.loschilaquiles.com";
+	console.log("host_string: ", host_string);
 
 	/** @type {import('vite').UserConfig} */
 	let config = {
@@ -21,7 +25,7 @@ export default defineConfig(async  ({ command, mode, isSsrBuild, isPreview }) =>
 			port: 1367,
 			hmr: {
 				protocol: 'wss',
-				host: 'texas.loschilaquiles.com',
+				host: host_string,
 				port: 1367,
 			}
 		},

@@ -1,11 +1,11 @@
 server {
     listen 443;
-    server_name texas.loschilaquiles.com;
+    server_name texas-dev.loschilaquiles.com;
 
     http2 on;
 
-    ssl_certificate /home/el_maligno/local_domain_certificates/texas.loschilaquiles.com/texas.loschilaquiles.com.pem;
-    ssl_certificate_key /home/el_maligno/local_domain_certificates/texas.loschilaquiles.com/texas.loschilaquiles.com-key.pem;
+    ssl_certificate /home/el_maligno/local_domain_certificates/texas.loschilaquiles.com/texas-dev.loschilaquiles.com.pem;
+    ssl_certificate_key /home/el_maligno/local_domain_certificates/texas.loschilaquiles.com/texas-dev.loschilaquiles.com-key.pem;
 
     location / {
         proxy_set_header Host $host;
@@ -14,7 +14,7 @@ server {
         proxy_set_header Connection 'upgrade';
         proxy_method $request_method;
         # Development server
-        proxy_pass https://texas.loschilaquiles.com:1367;
+        proxy_pass https://texas-dev.loschilaquiles.com:1367;
 
         # Production server
         # proxy_pass http://localhost:1367;
@@ -31,7 +31,7 @@ server {
 
 server {
     listen 80;
-    server_name texas.loschilaquiles.com;
+    server_name texas-dev.loschilaquiles.com;
 
     location / {
         return 301 https://$host$request_uri;
