@@ -1,46 +1,28 @@
 <script>
-    import { external_links } from "@app/common/page_paths";
-    import InstagramIcon from "@components/icons/InstagramIcon.svelte";
     import AddressLabel from "@components/InformationElements/AddressLabel.svelte";
+    import EmailLabel from "@components/InformationElements/EmailLabel.svelte";
+    import InstagramLink from "@components/InformationElements/InstagramLink.svelte";
+    import OpenHoursLabel from "@components/InformationElements/OpenHoursLabel.svelte";
+    import PhoneLabel from "@components/InformationElements/PhoneLabel.svelte";
 </script>
 
 <footer id="txc-vbpl-footer">
     <address id="txc-vbpl-footer-content">
-        <div id="txc-vbpl-footer-contact-address-container">
+        <div id="txc-vbpl-footer-contact-address-container" class="txc-vbpl-footer-contact-item">
             <AddressLabel />
         </div>
-        <hgroup id="txc-vbpl-footer-open-days">
-            <h4>
-                SEVEN DAYS A WEEK / <strong>FROM 7AM TO 3PM</strong>
-            </h4>
-        </hgroup>
-        <a 
-            id="txc-vbpl-footer-contact-email"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="{external_links.EMAIL}"
-            class="txc-vbpl-footer-contact-item"
-        >
-            hola@loschilaquiles.com
-        </a>
-        <a 
-            id="txc-vbpl-footer-instagram"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="{external_links.INSTAGRAM}" 
-            class="txc-nv-cl-socials-item-icon-wrapper"
-        >
-            <InstagramIcon />
-        </a>
-        <a 
-            id="txc-vbpl-footer-contact-phone"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="{external_links.PHONE}"
-            class="txc-vbpl-footer-contact-item"
-        >
-            +1 832 469 7664
-        </a>
+        <div id="txc-vbpl-footer-open-days-container" class="txc-vbpl-footer-contact-item">
+            <OpenHoursLabel /> 
+        </div>
+        <div id="txc-vbpl-footer-contact-email-container" class="txc-vbpl-footer-contact-item">
+            <EmailLabel />
+        </div>
+        <div id="txc-vbpl-footer-contact-instagram-link-container" class="txc-vbpl-footer-contact-item">
+            <InstagramLink />
+        </div>
+        <div id="txc-vbpl-footer-contact-phone-container" class="txc-vbpl-footer-contact-item">
+            <PhoneLabel />
+        </div>
     </address>
 </footer>
 
@@ -55,51 +37,23 @@
     address#txc-vbpl-footer-content {
         display: flex;
         align-items: center;
-        height: 2.6190em;
+        height: max-content;
         gap: max(1em, 5.6826cqw);
         font-style: normal;
         --txc-links-size: 0.9523em;
-
-        & a, h4 {
-            text-decoration: none;
-            font-size: 0.9523em;
-            white-space: nowrap;
-        }
     }
 
-    hgroup#txc-vbpl-footer-open-days {
-        display: flex;
-        align-self: stretch;
-        border: 1px solid currentColor;
-        place-items: center;
-        padding-inline: 1.1428em;
-
-        & h4 {
-            font-family: var(--font-read);
-        }
-
-        & h4 > strong {
-            font-family: var(--font-titles);
-        }
-    }
-
-    a#txc-vbpl-footer-contact-email, a#txc-vbpl-footer-contact-phone {
+    #txc-vbpl-footer-contact-phone-container {
         font-family: var(--font-titles);
     }
 
-    a#txc-vbpl-footer-instagram {
+    #txc-vbpl-footer-contact-instagram-link-container {
         display: none;
     }
 
     /*=============================================
     =            Responsiveness            =
     =============================================*/
-
-        /* @media (max-width: 1300px) {
-            footer#txc-vbpl-footer {
-                font-size: min(var(--font-size-3), 1.5svh);
-            }
-        } */
 
         @container vbpl-footer (980px < width <= 1300px) {
             address#txc-vbpl-footer-content {
@@ -109,7 +63,6 @@
         }
 
         @container (width <= 980px) {
-
             address#txc-vbpl-footer-content {
                 display: grid;
                 width: 100%;
@@ -118,18 +71,11 @@
                 font-size: 2.4cqw;
                 row-gap: min(10px, 0.5em);
                 
-                & hgroup#txc-vbpl-footer-open-days {
+                & #txc-vbpl-footer-open-days-container {
                     grid-column: 1 / -1;
                     grid-row: 1;
-                    display: flex;
-                    justify-content: center;
                     align-self: auto;
-                    padding-inline: 0;
-                    padding: min(13px, calc(var(--spacing-3) * 0.90625)) 0;
-                }
-
-                & hgroup#txc-vbpl-footer-open-days h4 {
-                    font-size: 1.1285em;
+                    --txc-links-size: 1.1285em;
                 }
 
                 & #txc-vbpl-footer-contact-address-container {
@@ -137,20 +83,20 @@
                     grid-row: 2;
                 }
 
-                & a#txc-vbpl-footer-instagram {
+                & #txc-vbpl-footer-contact-instagram-link-container {
                     grid-column: 2 / span 1;
                     display: block;
                     aspect-ratio: 1 / 1;
                     grid-row: 2;
                 }
 
-                & a#txc-vbpl-footer-contact-phone {
+                & #txc-vbpl-footer-contact-phone-container {
                     grid-column: 3 / span 1;
                     grid-row: 2;
                     text-align: right;
                 }
 
-                & a#txc-vbpl-footer-contact-email {
+                & #txc-vbpl-footer-contact-email-container {
                     display: none;
                 }
             }
