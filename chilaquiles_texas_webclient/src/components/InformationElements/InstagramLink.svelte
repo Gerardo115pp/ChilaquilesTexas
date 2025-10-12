@@ -14,7 +14,7 @@
         /**
          * @type {EmailLabelProps}
          */
-        const { font_size } = $props();
+        const { font_size="var(--txc-links-size, 1em)" } = $props();
 
     
     /*=====  End of Properties  ======*/

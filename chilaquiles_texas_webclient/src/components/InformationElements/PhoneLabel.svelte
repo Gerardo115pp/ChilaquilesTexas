@@ -13,7 +13,8 @@
         /**
          * @type {PhoneLabelProps}
          */
-        const { font_size } = $props();
+        const { font_size="var(--txc-links-size, 1em)" } = $props();
+
 
     
     /*=====  End of Properties  ======*/
@@ -26,6 +27,7 @@
     target="_blank"
     rel="noopener noreferrer"
     href="{external_links.PHONE}"
+    style:font-size="{font_size}"
 >
     +1 832 469 7664
 </a>

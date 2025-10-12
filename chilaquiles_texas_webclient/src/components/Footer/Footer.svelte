@@ -31,16 +31,16 @@
         width: 100%;
         container-type: inline-size;
         container-name: vbpl-footer;
-        font-size: var(--font-size-3);
     }
     
     address#txc-vbpl-footer-content {
         display: flex;
         align-items: center;
         height: max-content;
-        gap: max(1em, 5.6826cqw);
+        justify-content: space-between;
+        /* gap: 5cqw; */
         font-style: normal;
-        --txc-links-size: 0.9523em;
+        --txc-links-size: 1.25cqw;
     }
 
     #txc-vbpl-footer-contact-phone-container {
@@ -66,9 +66,10 @@
             address#txc-vbpl-footer-content {
                 display: grid;
                 width: 100%;
-                grid-template-columns: auto min(26px, 5.6353%) 28.8397%;
+                grid-template-columns: auto 4cqw 28.8397%;
                 column-gap: 3%;
-                font-size: 2.4cqw;
+                font-size: 2.6cqw;
+                --txc-links-size: 1em;
                 row-gap: min(10px, 0.5em);
                 
                 & #txc-vbpl-footer-open-days-container {
