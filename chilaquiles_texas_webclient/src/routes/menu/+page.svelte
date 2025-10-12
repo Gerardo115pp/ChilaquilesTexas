@@ -388,27 +388,22 @@
         </header>
         <div id="txc-rmp--menu-listing" class="txc-rmp-content-area">
             <article id="rmp-ml--san-miguel-copy">
-                <header id="rmp-ml-smc--header">
-                    <h2>
-                        FROM SAN MIGUEL,<br>WITH FLAVOR
-                    </h2>
-                    <p class="main-content-paragraph">
-                        Ours is a kitchen born in the<br> highlands of San Miguel Cuyutlán,<br>
-                        where cows still have names and<br> every recipe has a reason.<br>
-                        We don’t rush. We simmer, steep,<br> stir with memory, not manuals,<br>
-                        because breakfast has no rules.
-                    </p>
-                    <h1>
-                        Welcome to<br>Los Chilaquiles.
-                    </h1>
-                </header>
+                <strong>
+                    WE'RE NOT COOKING<br>
+                    TO TELL A STORY.<br>
+                    WE'RE COOKING<br>
+                    BECAUSE WE HAVE ONE,<br>
+                    AND YOU'LL<br>
+                    UNDERSTAND IT<br>
+                    <span class="theme-text">WHEN YOU TASTE IT.</span>
+                </strong>
             </article>
             <div id="txc-rmp-ml-calls-to-action">
                 <button class="discourage-btn">
                     Download
                 </button>
                 <button >
-                    Order Online
+                    ORDER ONLINE
                 </button>
             </div>
             <ol id="txc-rmp-ml--sections-list">
@@ -516,29 +511,15 @@
         /*----------  Header article  ----------*/
         
             article#rmp-ml--san-miguel-copy {
-                color: var(--theme-color);
-                font-size: calc(var(--font-size-1) * 0.8);
+                font-size: var(--font-size-3);
                 text-align: left;
+                
+                & strong {
+                    font-family: var(--font-titles);
+                    font-weight: bold;
+                }
             } 
 
-            header#rmp-ml-smc--header {
-                display: flex;
-                flex-direction: column;
-                gap: calc(var(--spacing-2) * 1);
-
-                & h1, & h2 {
-                    font-size: 2em;
-                }
-
-                & > p.main-content-paragraph {
-                    font-size: 1.2em;
-                    color: var(--body-fg-color);
-                    line-height: 1.3;
-                    font-weight: lighter;
-                    text-align: inherit;
-                    margin: 0;
-                }
-            }
         
         /*----------  Calls to action  ----------*/
 
