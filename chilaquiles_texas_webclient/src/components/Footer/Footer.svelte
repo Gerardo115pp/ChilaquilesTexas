@@ -1,19 +1,14 @@
 <script>
     import { external_links } from "@app/common/page_paths";
     import InstagramIcon from "@components/icons/InstagramIcon.svelte";
+    import AddressLabel from "@components/InformationElements/AddressLabel.svelte";
 </script>
 
 <footer id="txc-vbpl-footer">
     <address id="txc-vbpl-footer-content">
-        <a 
-            id="txc-vbpl-footer-contact-address"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="{external_links.ADDRESS}"
-            class="txc-vbpl-footer-contact-item"
-        >
-            702 E 11TH STREET, HOUSTON, TEXAS
-        </a>
+        <div id="txc-vbpl-footer-contact-address-container">
+            <AddressLabel />
+        </div>
         <hgroup id="txc-vbpl-footer-open-days">
             <h4>
                 SEVEN DAYS A WEEK / <strong>FROM 7AM TO 3PM</strong>
@@ -63,6 +58,7 @@
         height: 2.6190em;
         gap: max(1em, 5.6826cqw);
         font-style: normal;
+        --txc-links-size: 0.9523em;
 
         & a, h4 {
             text-decoration: none;
@@ -136,7 +132,7 @@
                     font-size: 1.1285em;
                 }
 
-                & a#txc-vbpl-footer-contact-address {
+                & #txc-vbpl-footer-contact-address-container {
                     grid-column: 1 / span 1;
                     grid-row: 2;
                 }

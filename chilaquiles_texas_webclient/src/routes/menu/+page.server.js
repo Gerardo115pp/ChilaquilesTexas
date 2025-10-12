@@ -2,7 +2,7 @@ import { processAcceptLanguageHeader } from '@libs/LangUtils';
 import { generateWorkInProgressPath } from '@libs/NavigationUtils';
 import { redirect } from '@sveltejs/kit';
 
-const enabled_web_menu = true; // whether to redirect to work in progress page
+const enabled_web_menu = false; // whether to redirect to work in progress page
 
 /**
  * @type {import('./$types').PageServerLoad}
@@ -12,7 +12,9 @@ export function load(request_data) {
 
     console.log(`in [${request_data.url}] : Accept-Language:`, accept_language);
 
-    if (!enabled_web_menu) {
+    const force_enable = request_data.url.searchParams.get("force-enable") !== null;
+
+    if (!enabled_web_menu && !force_enable) {
         const redirection_code = 307;
         const redirection_lang = accept_language === "en" || accept_language === "es" ? accept_language : "en";
         const redirection_uri = generateWorkInProgressPath(redirection_lang);
