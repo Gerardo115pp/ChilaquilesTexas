@@ -154,11 +154,12 @@ const menu_languages = new Set([
         }
 
         /**
-         * The text of the warning tag.
-         * @returns {string}
+         * Whether the element is a template fragment. meaning is meant to be replaced by something else, no
+         * rendered directly.
+         * @returns {boolean}
          */
-        get Text() {
-            return this.#text;
+        isTemplateFragment() {
+            return this.#text.startsWith("{{");
         }
 
         /**
@@ -175,6 +176,14 @@ const menu_languages = new Set([
          */
         get HtmlClasses() {
             return this.#html_classes;
+        }
+
+        /**
+         * The text of the warning tag.
+         * @returns {string}
+         */
+        get Text() {
+            return this.#text;
         }
     }
 

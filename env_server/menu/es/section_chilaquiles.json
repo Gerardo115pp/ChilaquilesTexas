@@ -16,7 +16,7 @@
         },
         {
             "title": "Verdis",
-            "price": 13.9,
+            "price": 14,
             "description": "Una receta que honra el legado de Doña Diana Kennedy (La mejor investigadora de cocina auténtica de México) con ingredientes muy de antaño. El Blanquillo Revueltito o Estrellado no puede faltar.",
             "item_modifiers": [],
             "item_extras": [],
@@ -25,7 +25,12 @@
             "item_uuid": "050c0f1f-09f4-5773-a294-6dd4a80149b8-2",
             "warnings": [
                 {
-                    "text": "SPICY",
+                    "text": "{{spicy}}",
+                    "danger_level": 1,
+                    "html_classes": []
+                },
+                {
+                    "text": "(gluten-free)",
                     "danger_level": 1,
                     "html_classes": []
                 }

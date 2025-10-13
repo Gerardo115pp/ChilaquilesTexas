@@ -2,6 +2,12 @@ import adapter from '@sveltejs/adapter-node';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
+	onwarn: (warning, f) => {
+		if (warning.code.startsWith('a11y')) {
+			return;
+		}
+		f(warning);
+	},
 	kit: {
 		// adapter-auto only supports some environments, see https://svelte.dev/docs/kit/adapter-auto for a list.
 		// If your environment is not supported, or you settled on a specific environment, switch out the adapter.

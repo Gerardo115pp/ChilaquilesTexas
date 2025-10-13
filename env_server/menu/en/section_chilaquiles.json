@@ -4,28 +4,33 @@
     "item_list_title": "Chilaquiles",
     "items": [
         {
-            "title": "Coloraos (coh-loh-RAH-ohs)",
+            "title": "Coloraos",
             "price": 13.9,
             "description": "Sautéed in our homemade Roma salsa (not to brag but we’ve been told it’s the most beloved chilaquiles sauce from San Miguel all the way to the North Pole). Topped with blanquillos -that’s what we call eggs in San Miguel- fried or scrambled, as you like.",
             "item_modifiers": [],
             "item_extras": [],
-            "parentheses_label": "GF",
+            "parentheses_label": "coh-loh-RAH-ohs",
             "html_classes": [],
             "item_uuid": "050c0f1f-09f4-5773-a294-6dd4a80149b8-1",
             "warnings": []
         },
         {
-            "title": "Verdis (VEHR-dees)",
-            "price": 13.9,
+            "title": "Verdis",
+            "price": 14,
             "description": "A tribute to Doña Diana Kennedy, guardian of Mexico’s true flavors. Made with old-soul ingredients that still speak loud. Served with blanquillos, of course, because some things just belong together.",
             "item_modifiers": [],
             "item_extras": [],
-            "parentheses_label": "GF",
+            "parentheses_label": "VEHR-dees",
             "html_classes": [],
             "item_uuid": "050c0f1f-09f4-5773-a294-6dd4a80149b8-2",
             "warnings": [
                 {
-                    "text": "SPICY",
+                    "text": "{{spicy}}",
+                    "danger_level": 1,
+                    "html_classes": []
+                },
+                {
+                    "text": "(gluten-free)",
                     "danger_level": 1,
                     "html_classes": []
                 }
