@@ -387,34 +387,37 @@
             />
         </header>
         <div id="txc-rmp--menu-listing" class="txc-rmp-content-area">
-            <article id="rmp-ml--san-miguel-copy">
-                <strong>
-                    WE'RE NOT COOKING<br>
-                    TO TELL A STORY.<br>
-                    WE'RE COOKING<br>
-                    BECAUSE WE HAVE ONE,<br>
-                    AND YOU'LL<br>
-                    UNDERSTAND IT<br>
-                    <span class="theme-text">WHEN YOU TASTE IT.</span>
-                </strong>
-            </article>
-            <div id="txc-rmp-ml-calls-to-action">
-                <button class="discourage-btn">
-                    Download
-                </button>
-                <button >
-                    ORDER ONLINE
-                </button>
+            <div id="txc-rmp-ml--article-wrapper">
+                <article id="rmp-ml--san-miguel-copy">
+                    <strong>
+                        WE'RE NOT COOKING<br>
+                        TO TELL A STORY.<br>
+                        WE'RE COOKING<br>
+                        BECAUSE WE HAVE ONE,<br>
+                        AND YOU'LL<br>
+                        UNDERSTAND IT<br>
+                        <span class="theme-text">WHEN YOU TASTE IT.</span>
+                    </strong>
+                </article>
+                <div id="txc-rmp-ml-calls-to-action">
+                    <button class="discourage-btn">
+                        Download
+                    </button>
+                    <button >
+                        ORDER ONLINE
+                    </button>
+                </div>
+                <ol id="txc-rmp-ml--sections-list">
+                    {#if menu_metadata}
+                        {#each menu_metadata.menu_listing as section_item}
+                            <li onclick={handleMenuSectionClick} class="txc-rmp-ml--listing-section-item" data-section-file={section_item.section_file}>
+                                {section_item.section_name}
+                            </li>
+                        {/each}
+                    {/if}
+                </ol>
             </div>
-            <ol id="txc-rmp-ml--sections-list">
-                {#if menu_metadata}
-                    {#each menu_metadata.menu_listing as section_item}
-                        <li onclick={handleMenuSectionClick} class="txc-rmp-ml--listing-section-item" data-section-file={section_item.section_file}>
-                            {section_item.section_name}
-                        </li>
-                    {/each}
-                {/if}
-            </ol>
+            <div id="txc-rmp-ml--divisor"></div>
         </div>
         <article id="txc-rmp--menu-content" class="txc-rmp-content-area">
                 {#if menu_metadata}
@@ -439,7 +442,8 @@
     }
     
     #txc-rmp-content-wrapper {
-        --content-separation-border: 1px solid var(--grey-5);
+        --content-separation-color: var(--grey-5);
+        --content-separation-border: 1px solid var(--content-separation-color);
         
         display: grid;
         width: 100cqw;
@@ -499,14 +503,36 @@
     /*=============================================
     =            Menu Listing            =
     =============================================*/
-    
+
         #txc-rmp--menu-listing {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #txc-rmp-ml--divisor {
+            width: 2px;
+            height: 90%;
+            container-type: size;
+            background-color: var(--content-separation-color);
+
+            &::after {
+                --red-block-width: calc(100cqw * 6.5);
+                display: block;
+                content: "";
+                width: var(--red-block-width);
+                height: 7%;
+                background-color: var(--theme-color);
+                translate: calc(-50% + calc(var(--red-block-width) * 0.1)) 20cqh;
+            }
+        }
+
+        #txc-rmp-ml--article-wrapper {
             display: flex;
             flex-direction: column;
             gap: var(--spacing-3);
             padding: var(--spacing-1) var(--spacing-4);
-            border-right: var(--content-separation-border);
         }
+    
 
         /*----------  Header article  ----------*/
         
@@ -573,7 +599,7 @@
                 height: 100%;
                 flex-direction: column;
                 padding-left: var(--spacing-4);
-                box-shadow: inset 8px 0 8px -8px var(--grey-3);
+                /* box-shadow: inset 8px 0 8px -8px var(--grey-3); */
                 gap: var(--spacing-4);
                 overflow-y: auto;
 
