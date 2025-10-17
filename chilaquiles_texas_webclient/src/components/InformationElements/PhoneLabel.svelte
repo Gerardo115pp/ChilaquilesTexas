@@ -29,7 +29,7 @@
     href="{external_links.PHONE}"
     style:font-size="{font_size}"
 >
-    +1 832 469 7664
+    +1 713 393 7824
 </a>
 
 <style>
