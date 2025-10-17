@@ -1,6 +1,7 @@
 <script>
     import { browser } from '$app/environment';
     import { page } from '$app/state';
+    import SpicyLevel from '@components/icons/SpicyLevel.svelte';
     import { onMount } from 'svelte';
     
     /*=============================================
@@ -255,6 +256,11 @@
             </ul>
         </div>
         <div class="txc-menu-msw-mi-ih-right">
+            {#if spicy_level} 
+                <SpicyLevel 
+                    spice_level={spicy_level.DangerLevel}
+                />
+            {/if}
         </div>
     </hgroup>
     <div class="txc-menu-msw-mi--content">
@@ -304,13 +310,14 @@
                 grid-row: 2;
             }
         }
+
+        .txc-menu-msw-mi-ih-right {
+            width: 10%;
+        } 
     
     
     /*=====  End of Menu Item Header  ======*/
     
-    
-
-
 
     .txc-menu-msw-mi--content { 
         & p.txc-menu-msw-mi--description { 
