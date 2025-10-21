@@ -446,7 +446,6 @@
                     </strong>
                 </article>
                 <div id="txc-rmp-ml-calls-to-action">
-                    <!-- Improve the user lang pdf selection(set the link with a setup function) -->
                     {#if menu_pdf_url !== null}
                         <a download href="{menu_pdf_url.toString()}" class="txc-button discourage-btn">
                             Download
@@ -580,7 +579,6 @@
             gap: var(--spacing-3);
             padding: var(--spacing-1) var(--spacing-4);
         }
-    
 
         /*----------  Header article  ----------*/
         
@@ -627,7 +625,6 @@
                 container-type: size;
                 width: 100%;
                 height: 36dvh;
-                /* justify-self: stretch; */
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 grid-auto-rows: max-content;
@@ -713,11 +710,67 @@
 
                 #txc-rmp--menu-listing {
                     width: 100%;
-                    height: 40dvh;
+                    height: max-content;
+
+                    --txc-rmp--listing-font-size: min(var(--font-size-h4), 10dvw);
+                }
+
+                #txc-rmp-ml--article-wrapper {
+                    display: grid;
+                    width: 100%;
+                    grid-template-columns: 1fr 38%;
+                    row-gap: calc(var(--spacing-3) * 1.5);
+                }
+
+                article#rmp-ml--san-miguel-copy {
+                    padding-left: var(--txc-rmp--inline-padding);
+                }
+
+                #txc-rmp-ml-calls-to-action {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    row-gap: var(--spacing-2);
+                    padding-right: var(--txc-rmp--inline-padding);
+
+                    & > button, & > a {
+                        font-size: calc(var(--txc-rmp--listing-font-size) * 0.9);
+                        text-align: center;
+                        padding-block: 1em;
+                        padding-inline: 0;
+                        background-color: var(--theme-color);
+                        white-space: nowrap;
+                    }
+
+                    & > .txc-button.discourage-btn {
+                        background-color: transparent;
+                    }
                 }
 
                 #txc-rmp-ml--divisor {
                     display: none;
+                }
+
+                ol#txc-rmp-ml--sections-list {
+                    display: flex;
+                    height: 3em;
+                    width: 100%;
+                    grid-column: 1 / -1 ;
+                    justify-content: flex-start;
+                    overflow-x: scroll;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 1em;
+                    font-size: calc(var(--txc-rmp--listing-font-size) * 1.2);
+                    flex-wrap: nowrap;
+                    border-top: var(--content-separation-border);
+                    border-bottom: var(--content-separation-border);
+
+                    & > li.txc-rmp-ml--listing-section-item {
+                        width: max-content;
+                        text-align: center;
+                        white-space: nowrap;
+                    }
                 }
             
             /*----------  Content  ----------*/
