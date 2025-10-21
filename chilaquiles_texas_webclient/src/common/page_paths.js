@@ -126,5 +126,9 @@ export const external_links = {
     INSTAGRAM: "https://www.instagram.com/loschilaquileshouston",
     SPOTIFY: "https://open.spotify.com/playlist/3KNS6keFi8j2YLiQqPsuiX?pi=oqGSNiKfTtCFk",
     GENERIC_WORK_IN_PROGRESS: "/en/work-in-progress",
-    ORDER_ONLINE: "/en/work-in-progress"
+    ORDER_ONLINE: "/en/work-in-progress",
+    PDF_ENGLISH_MENU: "/resources/data/pdfs/EnglishMenu-LosChilaquiles.opt-1761035190.pdf", // Optimized versions
+    PDF_SPANISH_MENU: "/resources/data/pdfs/SpanishMenu-LosChilaquiles.opt-1761034823.pdf",
+    // PDF_ENGLISH_MENU: "/resources/data/pdfs/EnglishMenu-LosChilaquiles.pdf", // Original versions
+    // PDF_SPANISH_MENU: "/resources/data/pdfs/SpanishMenu-LosChilaquiles.pdf",
 }

@@ -1,6 +1,8 @@
 <script>
     import { browser } from "$app/environment";
     import { page } from "$app/state";
+    import { external_links } from "@app/common/page_paths";
+    import layout_properties from "@stores/layout/layout";
     import { 
         getMenuMetadata,
         getMenuSection
@@ -23,6 +25,12 @@
          * @type {string}
          */
         let user_lang = $state(page_props.language);
+
+        /**
+         * The URL for the menu's pdf file.
+         * @type {URL | null}
+         */
+        let menu_pdf_url = $state(null);
 
         /**
          * The menu metadata.
@@ -60,6 +68,7 @@
     
     onMount(() => {
         setupMenuData();
+        setupMenuPdfUrl();
 
         if (debug_mode) {
             debugMP__attachDebugMethods();
@@ -222,7 +231,15 @@
 
                 requestIdleCallback(progressivelyLoadAllMenuSections);
             }
-        
+
+            /**
+             * Sets up the menu PDF URL based on the user's preferred language.
+             * @returns {void}
+             */        
+            const setupMenuPdfUrl = () => {
+                menu_pdf_url = getMenuPdfUrlForLang(user_lang);
+            }
+
         /*=====  End of Setup  ======*/
 
         /**
@@ -243,6 +260,33 @@
             user_lang = new_locale;
 
             setupMenuData();
+        }
+
+        /**
+         * Returns a URL object for the menu's pdf file based on the given ISO 639 language code.
+         * @param {string} lang_code
+         * @returns {URL | null}
+         */
+        const getMenuPdfUrlForLang = (lang_code) => {
+            let pdf_uri = external_links.PDF_ENGLISH_MENU;
+
+            switch (lang_code) {
+                case 'es':
+                    pdf_uri = external_links.PDF_SPANISH_MENU;
+                    break;
+                case 'en':
+                default:
+                    pdf_uri = external_links.PDF_ENGLISH_MENU;
+                    break;
+            }
+
+            let pdf_url = null;
+
+            if (URL.canParse(pdf_uri, location.origin)) {
+                pdf_url = new URL(pdf_uri, location.origin);
+            }
+
+            return pdf_url;
         }
 
         /**
@@ -268,7 +312,9 @@
         const handleLocaleChange = (new_locale) => {
             console.log(`Locale change requested: ${new_locale}`);
 
-            changeLocale(new_locale);
+            changeLocale(new_locale).then(() => {
+                setupMenuPdfUrl();
+            });
         }
 
         /**
@@ -400,9 +446,12 @@
                     </strong>
                 </article>
                 <div id="txc-rmp-ml-calls-to-action">
-                    <button class="discourage-btn">
-                        Download
-                    </button>
+                    <!-- Improve the user lang pdf selection(set the link with a setup function) -->
+                    {#if menu_pdf_url !== null}
+                        <a download href="{menu_pdf_url.toString()}" class="txc-button discourage-btn">
+                            Download
+                        </a>
+                    {/if}
                     <button >
                         ORDER ONLINE
                     </button>
@@ -437,7 +486,7 @@
     main#txc-restaurant-menu-page {
         width: 100svw;
         height: 100svh;
-        container-type: size;
+        container-type: inline-size;
         overflow: hidden;
     }
     
@@ -446,14 +495,13 @@
         --content-separation-border: 1px solid var(--content-separation-color);
         
         display: grid;
-        width: 100cqw;
-        height: 100cqh;
+        width: 100%;
+        height: 100%;
         grid-template-columns: minmax(250px, 30%) repeat(2, 1fr);
         row-gap: var(--spacing-3);
-        grid-template-rows: minmax(100px, 10cqh) 1fr;
+        grid-template-rows: minmax(100px, 10svh) 1fr;
         padding-block: var(--spacing-1);
         padding-inline: var(--spacing-2);
-
     }
 
     .txc-rmp-content-area {
@@ -488,8 +536,6 @@
     
     /*=====  End of Menu content  ======*/
 
-
-    
     /*=============================================
     =            Menu navbar            =
     =============================================*/
@@ -507,6 +553,8 @@
         #txc-rmp--menu-listing {
             display: flex;
             justify-content: space-between;
+
+            --txc-rmp--listing-font-size: min(var(--font-size-3), 1.102dvw);
         }
 
         #txc-rmp-ml--divisor {
@@ -522,7 +570,7 @@
                 width: var(--red-block-width);
                 height: 7%;
                 background-color: var(--theme-color);
-                translate: calc(-50% + calc(var(--red-block-width) * 0.1)) 20cqh;
+                translate: calc(-50% + calc(var(--red-block-width) * 0.1)) 20svh;
             }
         }
 
@@ -537,7 +585,7 @@
         /*----------  Header article  ----------*/
         
             article#rmp-ml--san-miguel-copy {
-                font-size: var(--font-size-3);
+                font-size: var(--txc-rmp--listing-font-size);
                 text-align: left;
                 
                 & strong {
@@ -545,7 +593,6 @@
                     font-weight: bold;
                 }
             } 
-
         
         /*----------  Calls to action  ----------*/
 
@@ -553,28 +600,42 @@
                 display: flex;
                 column-gap: var(--spacing-2);
 
-                & > button {
+                & > button, & > a {
+                    font-size: calc(var(--txc-rmp--listing-font-size) * 0.6);
                     text-transform: none;
-                    padding-block: calc(var(--spacing-1) * 1.5);
+                    padding-block: 1em;
+                    padding-inline: 1.8em;
                 }
 
-                & > button.discourage-btn {
+                & > .txc-button.discourage-btn {
+                    font-family: var(--font-titles);
+                    letter-spacing: 0.03em;
                     color: var(--theme-color);
                 }
+
+                & > .txc-button.discourage-btn:not(#something-that-it-is-not):hover {
+                    background-color: hsl(from var(--theme-color) h s l / .8);
+                    color: var(--body-bg-color);
+                    transition: background-color .3s ease-out;
+                } 
             }
-        
         
         /*----------  Sections list  ----------*/
         
             ol#txc-rmp-ml--sections-list {
                 cursor: default;
+                container-type: size;
+                width: 100%;
+                height: 36dvh;
+                /* justify-self: stretch; */
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-auto-rows: max-content;
+                font-size: calc(var(--txc-rmp--listing-font-size) * 0.66);
+                row-gap: min(calc(var(--spacing-2) * 1.1), 2svh);
                 list-style: none;
                 margin: 0;
                 padding: 0;
-                display: grid;
-                font-size: var(--font-size-1);
-                row-gap: calc(var(--spacing-2) * 1.1);
-                grid-template-columns: repeat(2, 1fr);
                 
                 & > li.txc-rmp-ml--listing-section-item {
                     width: 100%;
@@ -613,4 +674,48 @@
             }
 
     /*=====  End of Menu content  ======*/
+
+
+    /* -------------------------------------------------------------------------- */
+    /*                              RESPONSIVE RULES                              */
+    /* -------------------------------------------------------------------------- */
+
+    @media (max-aspect-ratio: 0.99) {
+        /* not landscape */
+        main#txc-restaurant-menu-page {
+            overflow-y: auto;
+            height: auto;
+        }
+
+        main#txc-restaurant-menu-page #txc-rmp-content-wrapper {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+        }
+
+        /* =            Menu layout grid            = */
+
+            /*----------  Menu navbar  ----------*/
+            
+                header#txc-rmp--navbar {
+                    width: 100cqw;
+                    height: 20dvh;
+                }
+            
+            /*----------  Listing  ----------*/
+
+                #txc-rmp--menu-listing {
+                    width: 100cqw;
+                    height: 40dvh;
+                }
+            
+            /*----------  Content  ----------*/
+
+                #txc-rmp--menu-content {
+                    width: 100cqw;
+                    height: auto;
+                }
+        
+        /*=====  End of Menu content  ======*/
+    }
 </style>

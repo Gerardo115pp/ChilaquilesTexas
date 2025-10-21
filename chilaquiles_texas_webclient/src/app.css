@@ -231,6 +231,7 @@
             border: 1px solid var(--theme-color);
             text-transform: none;
         }
+        
         &.discourage-btn:hover {
             background-color: hsl(from var(--theme-color) h s l / .8);
             transition: background-color .3s ease-out;
