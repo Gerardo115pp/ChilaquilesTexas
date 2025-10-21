@@ -48,7 +48,6 @@
 
     @container (width <= 980px) {
 
-
         hgroup#txc-vbpl-footer-open-days {
             display: flex;
             justify-content: center;

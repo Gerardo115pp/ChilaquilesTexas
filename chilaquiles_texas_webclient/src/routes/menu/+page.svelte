@@ -682,15 +682,20 @@
 
     @media (max-aspect-ratio: 0.99) {
         /* not landscape */
-        main#txc-restaurant-menu-page {
-            overflow-y: auto;
+        main#txc-restaurant-menu-page:not(#something-that-it-is-not) {
+            --txc-rmp--inline-padding: var(--spacing-4);
+            --txc-rmp--block-padding: var(--txc-rmp--inline-padding);
+
+            overflow: auto;
             height: auto;
+            padding: var(--txc-rmp--block-padding) 0;
         }
 
         main#txc-restaurant-menu-page #txc-rmp-content-wrapper {
             display: flex;
-            flex-direction: column;
             height: auto;
+            flex-direction: column;
+            row-gap: var(--txc-rmp--block-padding);
         }
 
         /* =            Menu layout grid            = */
@@ -698,24 +703,32 @@
             /*----------  Menu navbar  ----------*/
             
                 header#txc-rmp--navbar {
-                    width: 100cqw;
-                    height: 20dvh;
+                    width: 100%;
+                    height: 25dvh;
+                    padding-inline: var(--txc-rmp--inline-padding);
+                    border-bottom: none;
                 }
             
             /*----------  Listing  ----------*/
 
                 #txc-rmp--menu-listing {
-                    width: 100cqw;
+                    width: 100%;
                     height: 40dvh;
+                }
+
+                #txc-rmp-ml--divisor {
+                    display: none;
                 }
             
             /*----------  Content  ----------*/
 
                 #txc-rmp--menu-content {
-                    width: 100cqw;
+                    width: 100%;
                     height: auto;
                 }
         
         /*=====  End of Menu content  ======*/
+
+
     }
 </style>
