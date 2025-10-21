@@ -1,12 +1,12 @@
 {
-    "title": "Bebidas calientitas'n",
+    "title": "Bebidas Calientitas'n",
     "section_uuid": "d7cf75c9-fbfa-5ccb-9c3a-4211e6d0c3a7",
     "item_list_title": "Bebidas calientitas",
     "items": [
         {
-            "title": "Café descafeinado",
-            "price": 3.9,
-            "description": "Un café suave y con sabor.",
+            "title": "Café de olla",
+            "price": 4.0,
+            "description": "Un café de olla con la receta más popular en San Miguel. Funciona para despertar a un nuevo día y conectar con el alma en cada sorbo. ¡Ni más, ni menos! De lo bueno, poco.\n¡No refill!",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -15,9 +15,9 @@
             "warnings": []
         },
         {
-            "title": "Café americano de máquina",
-            "price": 5.9,
-            "description": "Un espresso largo para despertar.",
+            "title": "Café Puerto Vallarta",
+            "price": 7.0,
+            "description": "La combinación de crema de coco y espresso con espuma de leche logra esta exquisita bebida para “disfrutarse con calma”, como si se estuviera viendo la puesta del sol en esas tierras paradisíacas.",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -26,9 +26,9 @@
             "warnings": []
         },
         {
-            "title": "Atole Doña Mary",
-            "price": 4.9,
-            "description": "A tole tradicional ideal para disfrutar con gorditas.",
+            "title": "Café negro",
+            "price": 4.0,
+            "description": "Café de sabor intenso, con el carácter que le dan los mejores cafés de altura, cultivados a más de 1,700 metros sobre el nivel del mar en el estado de Chiapas, tierra de los mejores cafés del mundo. ¡Aquí sí, con refill!",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -37,9 +37,9 @@
             "warnings": []
         },
         {
-            "title": "Chocolate caliente",
-            "price": 4.2,
-            "description": "Hecho con receta tapatía tradicional.",
+            "title": "Café lechero",
+            "price": 5.0,
+            "description": "Leche caliente espumada y espresso servidos con mucha maestría. ¿A usted qué le gusta más: admirar cómo se sirve o simplemente disfrutarlo? ¿O ambas cosas?",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -48,9 +48,9 @@
             "warnings": []
         },
         {
-            "title": "Café de olla",
-            "price": 3.9,
-            "description": "Café con canela y piloncillo.",
+            "title": "Café descafeinado",
+            "price": 4.0,
+            "description": "Un café suave y con sabor, bajo en cafeína. ¡Aquí sí, con refill!",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -59,9 +59,9 @@
             "warnings": []
         },
         {
-            "title": "Café negro",
-            "price": 3.9,
-            "description": "Café intenso para paladares exigentes.",
+            "title": "Espresso",
+            "price": 4.0,
+            "description": "Intenso. Para degustarse elegantemente con tres de los cinco sentidos. Logrado gracias a una extraordinaria selección de granos de café de la sierra alta de Chiapas.",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -70,9 +70,9 @@
             "warnings": []
         },
         {
-            "title": "Café Puerto Vallarta",
-            "price": 6.9,
-            "description": "Espresso con crema de coco y leche espumada.",
+            "title": "Café americano de máquina",
+            "price": 6.0,
+            "description": "Es un espresso largo, largo. Ideal para quienes quieren despertar la mente para ponerse creativos, trabajadores… o simplemente para darse uno de esos gustos que la vida trae. Este café se logra extrayendo lo mejor de nuestro café gourmet con la pericia de nuestros baristas. De lo bueno, poco.  ¡No refill!",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -81,9 +81,9 @@
             "warnings": []
         },
         {
-            "title": "Café lechero",
-            "price": 4.9,
-            "description": "Leche caliente espumada con espresso.",
+            "title": "Capuchino",
+            "price": 5.0,
+            "description": "Elaborado con café gourmet de altura cultivado a más de 1,700 metros. Como ya usted lo sabe, la diferencia entre el capuchino, el latte o el macchiato está en la exacta proporción de leche y café en partes iguales. *Así se dice en San Miguel.",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -92,9 +92,9 @@
             "warnings": []
         },
         {
-            "title": "Espresso",
-            "price": 3.9,
-            "description": "Intenso y concentrado.",
+            "title": "Atole Doña Mary",
+            "price": 5.0,
+            "description": "A lo largo de los años, nuestros invitados definen a nuestro atole como “muy, muy sabrosísimo”. Se vale sopearle gorditas Doña Mary o concha tradicional de nuestra panaderia.",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -103,14 +103,25 @@
             "warnings": []
         },
         {
-            "title": "Capuchino",
-            "price": 4.85,
-            "description": "Equilibrio perfecto entre café y leche.",
+            "title": "Latte Coffee",
+            "price": 6.0,
+            "description": "Café de altura cultivado en las montañas de Chiapas, excelente leche de Texas y manos expertas manejando nuestra máquina de café espresso consiguen un latte extraordinario.",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
             "html_classes": [],
             "item_uuid": "d7cf75c9-fbfa-5ccb-9c3a-4211e6d0c3a7-10",
+            "warnings": []
+        },
+        {
+            "title": "Chocolate caliente",
+            "price": 5.0,
+            "description": "Utilizamos un extraordinario chocolate tapatío cuya receta tiene más de tres generaciones deleitando paladares. ",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "d7cf75c9-fbfa-5ccb-9c3a-4211e6d0c3a7-11",
             "warnings": []
         }
     ],

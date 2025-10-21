@@ -1,0 +1,56 @@
+{
+    "title": "Molletes Y Tamales",
+    "section_uuid": "cfe7912b-877b-5877-bedf-a3e57c925b81",
+    "item_list_title": "molletes & tamales",
+    "items": [
+        {
+            "title": "Molletes con mermelada de fresa o piña",
+            "price": 10.0,
+            "description": "Nos gusta hacer las cosas como antaño. A dos rebanadas de nuestro pan artesanal hecho en casa les ponemos mermelada de fresa, piña o dulce de leche (también hecho en casa). Se sugiere acompañarlos con un chocolate caliente o café de olla.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "cfe7912b-877b-5877-bedf-a3e57c925b81-1",
+            "warnings": []
+        },
+        {
+            "title": "Molletes de frijolitos gratinados",
+            "price": 10.0,
+            "description": "Dos rebanadas de nuestro pan artesanal hecho en casa con frijolitos, con elote y queso gratinado.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "cfe7912b-877b-5877-bedf-a3e57c925b81-2",
+            "warnings": []
+        },
+        {
+            "title": "Molletes de chilaquiles",
+            "price": 13.0,
+            "description": "Dos rebanadas de nuestro pan artesanal hecho en casa con frijolitos con elote y chilaquiles de su elección.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "cfe7912b-877b-5877-bedf-a3e57c925b81-3",
+            "warnings": []
+        },
+        {
+            "title": "Tamal oaxaqueño ",
+            "price": 18.0,
+            "description": "Envuelto en hoja de vástago (hoja del árbol de la banana), relleno de cerdito en adobo y cocinado a fuego lento. Acompañado de frijolitos de la casa. Una receta más que recuerda a la inolvidable Doña Diana Kennedy.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "gluten free",
+            "html_classes": [],
+            "item_uuid": "cfe7912b-877b-5877-bedf-a3e57c925b81-4",
+            "warnings": []
+        }
+    ],
+    "modifiers": [],
+    "extras": [],
+    "teaser_image_url": "",
+    "html_classes": [],
+    "external_sections": ""
+}

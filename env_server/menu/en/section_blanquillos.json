@@ -1,55 +1,79 @@
 {
-    "title": "Los blanquillos",
+    "title": "Los Blanquillos",
     "section_uuid": "55f0aee4-9d43-5387-a8ac-0db6418a26eb",
     "item_list_title": "Blanquillos",
     "items": [
         {
             "title": "A la mexicana",
-            "price": 9.9,
+            "price": 10.0,
             "description": "Scrambled with fresh pico de gallo, served with your choice of homemade refried beans or our refried beans or garden salad.",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
             "html_classes": [],
             "item_uuid": "55f0aee4-9d43-5387-a8ac-0db6418a26eb-1",
-            "warnings": []
+            "warnings": [
+                {
+                    "text": "(gluten-free)",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
         },
         {
             "title": "With ham or bacon",
-            "price": 12.9,
+            "price": 13.0,
             "description": "Your way - scrambled or fried - and a side of either refried beans or our refried beans or garden salad",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
             "html_classes": [],
             "item_uuid": "55f0aee4-9d43-5387-a8ac-0db6418a26eb-2",
-            "warnings": []
+            "warnings": [
+                {
+                    "text": "(gluten-free)",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
         },
         {
             "title": "With chorizo",
-            "price": 12.9,
+            "price": 13.0,
             "description": "Spiced just right. Comes with your choice of house refried beans or garden salad",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
             "html_classes": [],
             "item_uuid": "55f0aee4-9d43-5387-a8ac-0db6418a26eb-3",
-            "warnings": []
+            "warnings": [
+                {
+                    "text": "(gluten-free)",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
         },
         {
             "title": "With nopalitos",
-            "price": 9.9,
+            "price": 10.0,
             "description": "A timeless classic. Tasty Mexican pear cactus strips cooked until tender, with a side of our refried beans or garden salad.",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
             "html_classes": [],
             "item_uuid": "55f0aee4-9d43-5387-a8ac-0db6418a26eb-4",
-            "warnings": []
+            "warnings": [
+                {
+                    "text": "(gluten-free)",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
         },
         {
             "title": "Divorciados",
-            "price": 9.9,
+            "price": 10.0,
             "description": "Two eggs, now amicably separated: one bathed in red salsa, the other in green, both atop crisp tortillas, with refried beans or garden salad keeping the peace.",
             "item_modifiers": [],
             "item_extras": [],
@@ -58,7 +82,12 @@
             "item_uuid": "55f0aee4-9d43-5387-a8ac-0db6418a26eb-5",
             "warnings": [
                 {
-                    "text": "SPICY",
+                    "text": "(gluten-free)",
+                    "danger_level": 0,
+                    "html_classes": []
+                },
+                {
+                    "text": "{{spicy}}",
                     "danger_level": 1,
                     "html_classes": []
                 }
@@ -66,21 +95,16 @@
         },
         {
             "title": "Sorpresa (surprise!)",
-            "price": 11.9,
+            "price": 12.0,
             "description": "A gem from Doña Diana Kennedy’s notebooks: a freshly pressed tortilla, stuffed with a whole blanquillo, with our refried beans or garden salad. Then gently fried and smothered in the salsa of your choice. Served as a pair, because one is never enough.",
             "item_modifiers": [],
             "item_extras": [],
-            "parentheses_label": "GF",
+            "parentheses_label": "",
             "html_classes": [],
             "item_uuid": "55f0aee4-9d43-5387-a8ac-0db6418a26eb-6",
             "warnings": [
                 {
-                    "text": "SPICY",
-                    "danger_level": 1,
-                    "html_classes": []
-                },
-                {
-                    "text": "NUTS",
+                    "text": "(gluten-free)",
                     "danger_level": 0,
                     "html_classes": []
                 }
@@ -88,31 +112,42 @@
         },
         {
             "title": "Rancheros extra Rancheros",
-            "price": 9.9,
+            "price": 10.0,
             "description": "Our crispy artisanal tostadas (fried corn tortillas) with refried beans on top, bathed in whichever of our salsas, and served with a mighty chile on the side.",
             "item_modifiers": [],
             "item_extras": [],
-            "parentheses_label": "GF",
+            "parentheses_label": "",
             "html_classes": [],
             "item_uuid": "55f0aee4-9d43-5387-a8ac-0db6418a26eb-7",
             "warnings": [
                 {
-                    "text": "SPICY",
+                    "text": "may contain nuts",
                     "danger_level": 1,
+                    "html_classes": []
+                },
+                {
+                    "text": "(gluten-free)",
+                    "danger_level": 0,
                     "html_classes": []
                 }
             ]
         },
         {
             "title": "Omeletes’n",
-            "price": 11.9,
+            "price": 12.0,
             "description": "Filled with melted cheese, with your choice of peppers, or mushrooms. Or, if you’d rather go lighter, have them with just eggwhites and a side of our garden salad.",
             "item_modifiers": [],
             "item_extras": [],
-            "parentheses_label": "GF",
+            "parentheses_label": "",
             "html_classes": [],
             "item_uuid": "55f0aee4-9d43-5387-a8ac-0db6418a26eb-8",
-            "warnings": []
+            "warnings": [
+                {
+                    "text": "(gluten-free)",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
         }
     ],
     "modifiers": [],

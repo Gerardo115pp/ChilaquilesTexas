@@ -1,55 +1,79 @@
 {
-    "title": "Los blanquillos",
+    "title": "Los Blanquillos",
     "section_uuid": "55f0aee4-9d43-5387-a8ac-0db6418a26eb",
     "item_list_title": "Blanquillos",
     "items": [
         {
             "title": "A la mexicana",
-            "price": 9.9,
+            "price": 10.0,
             "description": "Con pico de gallo y guarnición de frijolitos refritos o ensalada del jardín.",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
             "html_classes": [],
             "item_uuid": "55f0aee4-9d43-5387-a8ac-0db6418a26eb-1",
-            "warnings": []
+            "warnings": [
+                {
+                    "text": "(gluten-free)",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
         },
         {
-            "title": "Con steak de jamón o tocino",
-            "price": 12.9,
-            "description": "y guarnición de frijolitos refritos o ensalada del jardín.",
+            "title": "Con jamón o tocino",
+            "price": 13.0,
+            "description": "Guarnición de frijolitos refritos o ensalada del jardín.",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
             "html_classes": [],
             "item_uuid": "55f0aee4-9d43-5387-a8ac-0db6418a26eb-2",
-            "warnings": []
+            "warnings": [
+                {
+                    "text": "(gluten-free)",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
         },
         {
             "title": "Con chorizo",
-            "price": 12.9,
-            "description": "y guarnición de frijolitos refritos o ensalada del jardín.",
+            "price": 13.0,
+            "description": "Guarnición de frijolitos refritos o ensalada del jardín.",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
             "html_classes": [],
             "item_uuid": "55f0aee4-9d43-5387-a8ac-0db6418a26eb-3",
-            "warnings": []
+            "warnings": [
+                {
+                    "text": "(gluten-free)",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
         },
         {
             "title": "Con nopalitos a la mexicana",
-            "price": 9.9,
-            "description": "Mexican tasty Cactus. Con guarnición de frijolitos refritos o ensalada del jardin.",
+            "price": 10.0,
+            "description": "Con guarnición de frijolitos refritos o ensalada del jardín.",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
             "html_classes": [],
             "item_uuid": "55f0aee4-9d43-5387-a8ac-0db6418a26eb-4",
-            "warnings": []
+            "warnings": [
+                {
+                    "text": "(gluten-free)",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
         },
         {
             "title": "Divorciados",
-            "price": 9.9,
+            "price": 10.0,
             "description": "Ahora que son divorciados estos blanquillos se llevan re bien. Un blanquillo estrellado bañado en salsa colorada y otro bañado en salsa verdi sobre nuestras tostaditas raspadas artesanales untadas de frijolitos refritos.",
             "item_modifiers": [],
             "item_extras": [],
@@ -58,8 +82,69 @@
             "item_uuid": "55f0aee4-9d43-5387-a8ac-0db6418a26eb-5",
             "warnings": [
                 {
-                    "text": "SPICY",
+                    "text": "(gluten-free)",
+                    "danger_level": 0,
+                    "html_classes": []
+                },
+                {
+                    "text": "{{spicy}}",
                     "danger_level": 1,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Blanquillos sorpresa",
+            "price": 12.0,
+            "description": "Una joya del recetario de Diana Kennedy (la mejor investigadora de cocina tradicional mexicana). En una tortilla de maíz recién hecha, se le pone dentro un blanquillo y se fríe. Al final se baña con la salsa que más se le antoje. La orden es de dos piezas.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "55f0aee4-9d43-5387-a8ac-0db6418a26eb-6",
+            "warnings": [
+                {
+                    "text": "(gluten-free)",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Rancheros extra Rancheros",
+            "price": 10.0,
+            "description": "Frijolitos untados en nuestras tostaditas raspadas artesanales, bañados en cualesquiera de nuestras salsas y con un chilito jalapeño toreado.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "55f0aee4-9d43-5387-a8ac-0db6418a26eb-7",
+            "warnings": [
+                {
+                    "text": "may contain nuts",
+                    "danger_level": 1,
+                    "html_classes": []
+                },
+                {
+                    "text": "(gluten-free)",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Omeletes’n",
+            "price": 12.0,
+            "description": "Rellenos de queso, y pueden llevar jamón, tocino, pimientos, champiñones o incluso solo con claras y una guarnición de ensalada del jardín.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "55f0aee4-9d43-5387-a8ac-0db6418a26eb-8",
+            "warnings": [
+                {
+                    "text": "(gluten-free)",
+                    "danger_level": 0,
                     "html_classes": []
                 }
             ]

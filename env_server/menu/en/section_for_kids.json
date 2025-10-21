@@ -1,11 +1,11 @@
 {
-    "title": "Options for the little ones",
+    "title": "Options For The Little Ones",
     "section_uuid": "fdb0926a-dbcf-59ee-85f3-a7f7edc9d31a",
     "item_list_title": "Kids",
     "items": [
         {
             "title": "Kids chilaquiles",
-            "price": 6.9,
+            "price": 7.0,
             "description": "Half order of red chilaquiles, bisabuela Maty (no spice), served with a scrambled egg and refried beans.",
             "item_modifiers": [],
             "item_extras": [],
@@ -14,7 +14,7 @@
             "item_uuid": "fdb0926a-dbcf-59ee-85f3-a7f7edc9d31a-1",
             "warnings": [
                 {
-                    "text": "GF",
+                    "text": "(gluten-free)",
                     "danger_level": 0,
                     "html_classes": []
                 }
@@ -22,7 +22,7 @@
         },
         {
             "title": "Scrambled egg",
-            "price": 9.9,
+            "price": 10.0,
             "description": "With ham or bacon and refried beans.",
             "item_modifiers": [],
             "item_extras": [],
@@ -33,7 +33,7 @@
         },
         {
             "title": "Quesadillitas",
-            "price": 9.3,
+            "price": 10.0,
             "description": "Two pieces of quesadillitas with our melted cheese, served with house refried beans and choice of fries or fresh fruit.",
             "item_modifiers": [],
             "item_extras": [],
@@ -42,7 +42,7 @@
             "item_uuid": "fdb0926a-dbcf-59ee-85f3-a7f7edc9d31a-3",
             "warnings": [
                 {
-                    "text": "GF",
+                    "text": "(gluten-free)",
                     "danger_level": 0,
                     "html_classes": []
                 }
@@ -50,18 +50,24 @@
         },
         {
             "title": "Waffles",
-            "price": 10.9,
+            "price": 11.0,
             "description": "Made from scratch with our house recipe, served with fresh berries and whipped cream.",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
             "html_classes": [],
             "item_uuid": "fdb0926a-dbcf-59ee-85f3-a7f7edc9d31a-4",
-            "warnings": []
+            "warnings": [
+                {
+                    "text": "(contains gluten)",
+                    "danger_level": 1,
+                    "html_classes": []
+                }
+            ]
         },
         {
             "title": "Chicken tenders",
-            "price": 12.9,
+            "price": 13.0,
             "description": "Juicy breaded chicken pieces in corn flake crust, fried to order and served with fries.",
             "item_modifiers": [],
             "item_extras": [],
@@ -70,7 +76,7 @@
             "item_uuid": "fdb0926a-dbcf-59ee-85f3-a7f7edc9d31a-5",
             "warnings": [
                 {
-                    "text": "GF",
+                    "text": "(gluten-free)",
                     "danger_level": 0,
                     "html_classes": []
                 }
@@ -78,8 +84,8 @@
         },
         {
             "title": "Order of fries",
-            "price": 7.9,
-            "description": "Served with ketchup.",
+            "price": 8.0,
+            "description": "No Happy Meals here, but a whole lot of happy kids. Served with ketchup on the side",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -87,16 +93,16 @@
             "item_uuid": "fdb0926a-dbcf-59ee-85f3-a7f7edc9d31a-6",
             "warnings": [
                 {
-                    "text": "GF",
-                    "danger_level": 0,
+                    "text": "(contains gluten)",
+                    "danger_level": 1,
                     "html_classes": []
                 }
             ]
         },
         {
             "title": "Truffle fries with Cotija",
-            "price": 12.9,
-            "description": "Fries tossed in truffle oil with Cotija cheese.",
+            "price": 13.0,
+            "description": "",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -104,7 +110,7 @@
             "item_uuid": "fdb0926a-dbcf-59ee-85f3-a7f7edc9d31a-7",
             "warnings": [
                 {
-                    "text": "GF",
+                    "text": "(gluten-free)",
                     "danger_level": 0,
                     "html_classes": []
                 }

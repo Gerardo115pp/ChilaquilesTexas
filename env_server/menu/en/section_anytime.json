@@ -1,11 +1,11 @@
 {
-    "title": "Any time",
+    "title": "Any Time",
     "section_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b",
     "item_list_title": "Starters & Mains",
     "items": [
         {
             "title": "Tortilla soup 'Jalisco Es México' Style",
-            "price": 14.9,
+            "price": 15.0,
             "description": "Straight from Diana Kennedy's cookbook. Our take on this traditional recipe comes with shredded chicken, creamy avocado, fried pasilla chile strips, and fresh panela cheese.",
             "item_modifiers": [],
             "item_extras": [],
@@ -14,12 +14,12 @@
             "item_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b-1",
             "warnings": [
                 {
-                    "text": "GF",
+                    "text": "(gluten-free)",
                     "danger_level": 0,
                     "html_classes": []
                 },
                 {
-                    "text": "SPICY 1",
+                    "text": "{{spicy}}",
                     "danger_level": 1,
                     "html_classes": []
                 }
@@ -27,7 +27,7 @@
         },
         {
             "title": "Garden salad",
-            "price": 10.9,
+            "price": 11.0,
             "description": "Mixed lettuces, asparagus, red onion, grape tomatoes, and shaved radish.",
             "item_modifiers": [],
             "item_extras": [],
@@ -36,7 +36,7 @@
             "item_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b-2",
             "warnings": [
                 {
-                    "text": "GF",
+                    "text": "(gluten-free)",
                     "danger_level": 0,
                     "html_classes": []
                 }
@@ -44,8 +44,8 @@
         },
         {
             "title": "Houston, we have ensalada!",
-            "price": 10.9,
-            "description": "Crisp romaine hearts, fresh avocado, crispy bacon, red onion, grape tomatoes, and our homemade ranch.",
+            "price": 11.0,
+            "description": "A salad that’s out of this world: crisp romaine hearts, fresh avocado, crispy bacon, red onion, grape tomatoes, and our homemade ranch. Mission delicious.",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -53,48 +53,48 @@
             "item_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b-3",
             "warnings": [
                 {
-                    "text": "GF",
+                    "text": "(gluten-free)",
                     "danger_level": 0,
                     "html_classes": []
                 }
             ]
         },
         {
-            "title": "César salad",
-            "price": 10.9,
-            "description": "Romaine hearts dressed in our house Caesar, finished with a dusting of aged Cotija.",
+            "title": "Birria tatemada 'Los Chilaquiles'",
+            "price": 23.0,
+            "description": "This is the birria recipe from San Miguel, and as every local will tell you, San Miguel is where the world’s best birria is born. Say less.",
             "item_modifiers": [],
-            "item_extras": [
-                {
-                    "text": "Marinated grilled chicken",
-                    "price": 6.9,
-                    "parentheses_label": "(GF)",
-                    "html_classes": []
-                },
-                {
-                    "text": "Oven baked salmon",
-                    "price": 13.9,
-                    "parentheses_label": "(GF)",
-                    "html_classes": []
-                },
-                {
-                    "text": "Sauteed shrimp marinated in our adobo",
-                    "price": 8.9,
-                    "parentheses_label": "(GF)",
-                    "html_classes": []
-                }
-            ],
+            "item_extras": [],
             "parentheses_label": "",
             "html_classes": [],
             "item_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b-4",
             "warnings": []
         },
         {
-            "title": "Birria tatemada 'Los Chilaquiles'",
-            "price": 22.9,
-            "description": "This is the birria recipe from San Miguel, and as every local will tell you, San Miguel is where the world's best birria is born.",
+            "title": "César salad",
+            "price": 11.0,
+            "description": "Romaine hearts dressed in our house Caesar, finished with a dusting of aged Cotija.",
             "item_modifiers": [],
-            "item_extras": [],
+            "item_extras": [
+                {
+                    "text": "Marinated grilled chicken",
+                    "price": 7.0,
+                    "parentheses_label": "gluten-free",
+                    "html_classes": []
+                },
+                {
+                    "text": "Oven baked salmon",
+                    "price": 14.0,
+                    "parentheses_label": "gluten-free",
+                    "html_classes": []
+                },
+                {
+                    "text": "Sautéed shrimp marinated in our adobo",
+                    "price": 9.0,
+                    "parentheses_label": "gluten-free",
+                    "html_classes": []
+                }
+            ],
             "parentheses_label": "",
             "html_classes": [],
             "item_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b-5",
@@ -102,8 +102,8 @@
         },
         {
             "title": "Al ajillo shrimp",
-            "price": 26.9,
-            "description": "Sautéed shrimp on our savory garlic-chile oil with mushrooms and just the right touch of pasilla chile. Served with white rice.",
+            "price": 27.0,
+            "description": "Sautéed shrimp on our savory garlic-chile oil with mushrooms and just the right touch of pasilla Chile. Served with white rice as the perfect contrast.",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -113,7 +113,7 @@
         },
         {
             "title": "A la diabla shrimp",
-            "price": 26.9,
+            "price": 27.0,
             "description": "Straight from the coast of southern Jalisco: shrimp sautéed in a spicy sauce with butter and mushrooms. Served with white rice.",
             "item_modifiers": [],
             "item_extras": [],
@@ -122,12 +122,12 @@
             "item_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b-7",
             "warnings": [
                 {
-                    "text": "GF",
+                    "text": "(gluten-free)",
                     "danger_level": 0,
                     "html_classes": []
                 },
                 {
-                    "text": "SPICY 3",
+                    "text": "{{spicy}}",
                     "danger_level": 3,
                     "html_classes": []
                 }
@@ -135,8 +135,8 @@
         },
         {
             "title": "Salmon al ajillo",
-            "price": 29.9,
-            "description": "8 oz center-cut salmon from Northern Norway, mounted on a bed of asparagus and sautéed mushrooms.",
+            "price": 30.0,
+            "description": "A light, flavorful, fresh option, ideal for salmon lovers. Oven baked and served over a bed of asparagus with mushrooms.",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -146,8 +146,8 @@
         },
         {
             "title": "Pollo a la talla",
-            "price": 22.9,
-            "description": "Juicy grilled adobado chicken breast with rice, refried beans and pico de gallo.",
+            "price": 23.0,
+            "description": "Tender grilled chicken breast marinated in our special adobo, served with rice, and accompanied by our refried beans and pico de gallo.",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -155,8 +155,69 @@
             "item_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b-9",
             "warnings": [
                 {
-                    "text": "GF",
+                    "text": "(gluten-free)",
                     "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Grilled arrachera",
+            "price": 29.0,
+            "description": "Texan Arrachera skirt steak grilled over a bed of grilled onions, refried beans and pico de Gallo. A Mexican classic turned Texan.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b-10",
+            "warnings": [
+                {
+                    "text": "(gluten-free)",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Arrachera “Nevado de Colima”",
+            "price": 31.0,
+            "description": "Named after the snow-capped Toluca volcano, this juicy skirt steak is crowned with our melted cheese blend, onions, and roasted poblano pepper strips. And of course, with a side of our homemade refried beans.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b-11",
+            "warnings": [
+                {
+                    "text": "(gluten-free)",
+                    "danger_level": 0,
+                    "html_classes": []
+                },
+                {
+                    "text": "{{spicy}}",
+                    "danger_level": 1,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Pozole",
+            "price": 17.0,
+            "description": "Tender corn kernels and juicy pork, slow-cooked in a rich red broth full of Jalisco soul.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b-12",
+            "warnings": [
+                {
+                    "text": "(gluten-free)",
+                    "danger_level": 0,
+                    "html_classes": []
+                },
+                {
+                    "text": "{{spicy}}",
+                    "danger_level": 1,
                     "html_classes": []
                 }
             ]

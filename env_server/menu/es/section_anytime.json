@@ -1,11 +1,11 @@
 {
-    "title": "A cualquier hora",
+    "title": "A Cualquier Hora",
     "section_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b",
     "item_list_title": "Entradas y platos",
     "items": [
         {
             "title": "Sopa de tortilla estilo 'Jalisco es México'",
-            "price": 14.9,
+            "price": 15.0,
             "description": "Directo del recetario de Doña Diana Kennedy. Nuestra versión tradicional con su toque de aguacatito, pollo deshebrado, unas tiritas de chilito pasilla dorado y quesito panela fresco.",
             "item_modifiers": [],
             "item_extras": [],
@@ -14,12 +14,12 @@
             "item_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b-1",
             "warnings": [
                 {
-                    "text": "GF",
+                    "text": "(gluten-free)",
                     "danger_level": 0,
                     "html_classes": []
                 },
                 {
-                    "text": "SPICY 1",
+                    "text": "{{spicy}}",
                     "danger_level": 1,
                     "html_classes": []
                 }
@@ -27,7 +27,7 @@
         },
         {
             "title": "Ensalada del jardín",
-            "price": 10.9,
+            "price": 11.0,
             "description": "Combinación de lechugas, espárragos, cebolla morada, grape tomates y rabanitos rallados.",
             "item_modifiers": [],
             "item_extras": [],
@@ -36,7 +36,7 @@
             "item_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b-2",
             "warnings": [
                 {
-                    "text": "GF",
+                    "text": "(gluten-free)",
                     "danger_level": 0,
                     "html_classes": []
                 }
@@ -44,8 +44,8 @@
         },
         {
             "title": "Houston, we have ensalada!",
-            "price": 10.9,
-            "description": "Crujientes corazones de lechuga romana, aguacate fresco, tocino doradito y bien crunchy, tiritas de cebolla morada, dulces tomatitos uva y nuestro aderezo Ranch casero.",
+            "price": 11.0,
+            "description": "Una ensalada fuera de este mundo. Lleva crujientes corazones de lechuga romana, aguacate fresco, tocino doradito y bien crunchy, tiritas de cebolla morada, dulces tomatitos uva y nuestro aderezo ranch casero.\n",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -53,48 +53,48 @@
             "item_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b-3",
             "warnings": [
                 {
-                    "text": "GF",
+                    "text": "(gluten-free)",
                     "danger_level": 0,
                     "html_classes": []
                 }
             ]
         },
         {
-            "title": "Ensalada César",
-            "price": 10.9,
-            "description": "Corazones de lechuga en nuestro aderezo de la casa, crotones, y ese toque especial que le da nuestro queso Cotija.",
+            "title": "Birria tatemada 'Los Chilaquiles'",
+            "price": 23.0,
+            "description": "Es la mejor receta de birria de San Miguel, y como en San Miguel se cocina la mejor birria del mundo… ¡Imagínese!",
             "item_modifiers": [],
-            "item_extras": [
-                {
-                    "text": "Pollo adobado a la parrilla",
-                    "price": 6.9,
-                    "parentheses_label": "(GF)",
-                    "html_classes": []
-                },
-                {
-                    "text": "Salmón al horno",
-                    "price": 13.9,
-                    "parentheses_label": "(GF)",
-                    "html_classes": []
-                },
-                {
-                    "text": "Camarones adobados al sartén",
-                    "price": 8.9,
-                    "parentheses_label": "(GF)",
-                    "html_classes": []
-                }
-            ],
+            "item_extras": [],
             "parentheses_label": "",
             "html_classes": [],
             "item_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b-4",
             "warnings": []
         },
         {
-            "title": "Birria tatemada 'Los Chilaquiles'",
-            "price": 22.9,
-            "description": "Es la mejor receta de birria de San Miguel, y como en San Miguel se cocina la mejor birria del mundo… ¡Imagínese!",
+            "title": "Ensalada César",
+            "price": 11.0,
+            "description": "Corazones de lechuga en nuestro aderezo de la casa, crotones, y ese toque especial que le da nuestro queso Cotija.",
             "item_modifiers": [],
-            "item_extras": [],
+            "item_extras": [
+                {
+                    "text": "Pollo adobado a la parrilla",
+                    "price": 7.0,
+                    "parentheses_label": "gluten-free",
+                    "html_classes": []
+                },
+                {
+                    "text": "Salmón al horno",
+                    "price": 14.0,
+                    "parentheses_label": "gluten-free",
+                    "html_classes": []
+                },
+                {
+                    "text": "Camarones adobados al sartén",
+                    "price": 9.0,
+                    "parentheses_label": "gluten-free",
+                    "html_classes": []
+                }
+            ],
             "parentheses_label": "",
             "html_classes": [],
             "item_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b-5",
@@ -102,7 +102,7 @@
         },
         {
             "title": "Camarones al ajillo",
-            "price": 26.9,
+            "price": 27.0,
             "description": "Camarones sarteneados en nuestra receta de sabroso ajillo, con champiñones y un toque de chile pasilla. De guarnición lo acompañamos con nuestro arroz blanco.",
             "item_modifiers": [],
             "item_extras": [],
@@ -113,7 +113,7 @@
         },
         {
             "title": "Camarones a la diabla",
-            "price": 26.9,
+            "price": 27.0,
             "description": "Esta receta viene desde la costa Sur de Jalisco. Camarones sarteneados en una salsa ligeramente picante con mantequilla y champiñones. De guarnición lo acompañamos con nuestro arroz blanco.",
             "item_modifiers": [],
             "item_extras": [],
@@ -122,12 +122,12 @@
             "item_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b-7",
             "warnings": [
                 {
-                    "text": "GF",
+                    "text": "(gluten-free)",
                     "danger_level": 0,
                     "html_classes": []
                 },
                 {
-                    "text": "SPICY 3",
+                    "text": "{{spicy}}",
                     "danger_level": 3,
                     "html_classes": []
                 }
@@ -135,7 +135,7 @@
         },
         {
             "title": "Salmón al ajillo",
-            "price": 29.9,
+            "price": 30.0,
             "description": "8 onzas de Corte de Centro de Salmón del Norte de Noruega, montado sobre una cama de espárragos y champiñones sarteneaditos.",
             "item_modifiers": [],
             "item_extras": [],
@@ -146,7 +146,7 @@
         },
         {
             "title": "Pollo a la talla",
-            "price": 22.9,
+            "price": 23.0,
             "description": "Jugosa pechuga de pollo adobaditta al grill con arroz, frijolitos refritos y pico de gallo.",
             "item_modifiers": [],
             "item_extras": [],
@@ -155,8 +155,69 @@
             "item_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b-9",
             "warnings": [
                 {
-                    "text": "GF",
+                    "text": "(gluten-free)",
                     "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Arrachera al grill",
+            "price": 29.0,
+            "description": "Arrachera texana seleccionada al grill acompañada de chilitos toreados, frijolitos refritos y pico de gallo.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b-10",
+            "warnings": [
+                {
+                    "text": "(gluten-free)",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Arrachera “Nevado de Colima”",
+            "price": 31.0,
+            "description": "Se le llama así porque este platillo va coronado con nuestra combinación de quesos gratinados, cebollitas y rajas. No pueden faltar nuestros frijolitos refritos de la casa.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b-11",
+            "warnings": [
+                {
+                    "text": "(gluten-free)",
+                    "danger_level": 0,
+                    "html_classes": []
+                },
+                {
+                    "text": "{{spicy}}",
+                    "danger_level": 1,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Pozole",
+            "price": 17.0,
+            "description": "Granos tiernos de maíz cocido acompañan a una generosa porción de carne de cerdo jugosa, bañada en un caldo rojo lleno de sabor.”",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "adb6a872-3ea2-5e56-9520-eded2713439b-12",
+            "warnings": [
+                {
+                    "text": "(gluten-free)",
+                    "danger_level": 0,
+                    "html_classes": []
+                },
+                {
+                    "text": "{{spicy}}",
+                    "danger_level": 1,
                     "html_classes": []
                 }
             ]

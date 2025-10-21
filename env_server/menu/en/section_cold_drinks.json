@@ -1,5 +1,5 @@
 {
-    "title": "Non-alcoholic beverages",
+    "title": "Soft Drinks",
     "section_uuid": "1e333138-4606-5559-a82e-77e12f58df13",
     "item_list_title": "Beverages",
     "items": [
@@ -70,8 +70,8 @@
             "warnings": []
         },
         {
-            "title": "Horchata",
-            "price": 4.9,
+            "title": "Agua natural",
+            "price": 3.0,
             "description": "",
             "item_modifiers": [],
             "item_extras": [],
@@ -81,7 +81,7 @@
             "warnings": []
         },
         {
-            "title": "Hibiscus agua fresca",
+            "title": "Horchata",
             "price": 4.9,
             "description": "",
             "item_modifiers": [],
@@ -92,7 +92,7 @@
             "warnings": []
         },
         {
-            "title": "Mint & pineapple agua fresca",
+            "title": "Hibiscus agua fresca",
             "price": 4.9,
             "description": "",
             "item_modifiers": [],
@@ -103,7 +103,7 @@
             "warnings": []
         },
         {
-            "title": "Iced tea",
+            "title": "Mint & pineapple agua fresca",
             "price": 4.9,
             "description": "",
             "item_modifiers": [],
@@ -114,6 +114,17 @@
             "warnings": []
         },
         {
+            "title": "Iced tea",
+            "price": 4.9,
+            "description": "",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-11",
+            "warnings": []
+        },
+        {
             "title": "Orange juice",
             "price": 6.4,
             "description": "",
@@ -121,7 +132,7 @@
             "item_extras": [],
             "parentheses_label": "",
             "html_classes": [],
-            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-11",
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-12",
             "warnings": []
         },
         {
@@ -132,7 +143,7 @@
             "item_extras": [],
             "parentheses_label": "",
             "html_classes": [],
-            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-12",
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-13",
             "warnings": []
         },
         {
@@ -143,7 +154,88 @@
             "item_extras": [],
             "parentheses_label": "",
             "html_classes": [],
-            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-13",
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-14",
+            "warnings": []
+        },
+        {
+            "title": "Naranja y Fresa",
+            "price": 7.0,
+            "description": "",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-15",
+            "warnings": [
+                {
+                    "text": "(gluten-free)",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Naranja y Zanahoria",
+            "price": 7.0,
+            "description": "",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-16",
+            "warnings": [
+                {
+                    "text": "(gluten-free)",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Red Power",
+            "price": 7.0,
+            "description": "",
+            "item_modifiers": [
+                {
+                    "text": "Beetroot",
+                    "price": -1.0,
+                    "parentheses_label": "",
+                    "html_classes": []
+                },
+                {
+                    "text": "Celery",
+                    "price": -1.0,
+                    "parentheses_label": "",
+                    "html_classes": []
+                },
+                {
+                    "text": "Apple",
+                    "price": -1.0,
+                    "parentheses_label": "",
+                    "html_classes": []
+                },
+                {
+                    "text": "Carrot, Peach and Parsley",
+                    "price": -1.0,
+                    "parentheses_label": "",
+                    "html_classes": []
+                }
+            ],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-17",
+            "warnings": []
+        },
+        {
+            "title": "Green Power",
+            "price": 7.0,
+            "description": "They say if you take a daily “caballito” (shot) of this liquor, you’ll live for at least a hundred years. Made with pure honey, natural aloe vera pulp, and silver tequila—this drink already has a huge fan club back in Mexico.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-18",
             "warnings": []
         }
     ],

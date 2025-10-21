@@ -5,7 +5,7 @@
     "items": [
         {
             "title": "Jameson",
-            "price": 8.0,
+            "price": 12.0,
             "description": "",
             "item_modifiers": [],
             "item_extras": [],
@@ -16,7 +16,7 @@
         },
         {
             "title": "Crown Royal",
-            "price": 8.0,
+            "price": 12.0,
             "description": "",
             "item_modifiers": [],
             "item_extras": [],

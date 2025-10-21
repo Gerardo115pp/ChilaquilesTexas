@@ -1,5 +1,5 @@
 {
-    "title": "Bebidas sin alcohol",
+    "title": "Bebidas Sin Alcohol",
     "section_uuid": "1e333138-4606-5559-a82e-77e12f58df13",
     "item_list_title": "Bebidas",
     "items": [
@@ -70,9 +70,9 @@
             "warnings": []
         },
         {
-            "title": "Agua de horchata",
-            "price": 4.9,
-            "description": "Agua fresca.",
+            "title": "Agua natural",
+            "price": 3.0,
+            "description": "",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -81,7 +81,7 @@
             "warnings": []
         },
         {
-            "title": "Agua de jamaica",
+            "title": "Agua de horchata",
             "price": 4.9,
             "description": "Agua fresca.",
             "item_modifiers": [],
@@ -92,7 +92,7 @@
             "warnings": []
         },
         {
-            "title": "Agua de hierbabuena con piña",
+            "title": "Agua de jamaica",
             "price": 4.9,
             "description": "Agua fresca.",
             "item_modifiers": [],
@@ -103,6 +103,17 @@
             "warnings": []
         },
         {
+            "title": "Agua de hierbabuena con piña",
+            "price": 4.9,
+            "description": "Agua fresca.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-10",
+            "warnings": []
+        },
+        {
             "title": "Té helado",
             "price": 4.9,
             "description": "Refresco.",
@@ -110,7 +121,7 @@
             "item_extras": [],
             "parentheses_label": "",
             "html_classes": [],
-            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-10",
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-11",
             "warnings": []
         },
         {
@@ -121,7 +132,7 @@
             "item_extras": [],
             "parentheses_label": "",
             "html_classes": [],
-            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-11",
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-12",
             "warnings": []
         },
         {
@@ -132,7 +143,7 @@
             "item_extras": [],
             "parentheses_label": "",
             "html_classes": [],
-            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-12",
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-13",
             "warnings": []
         },
         {
@@ -143,7 +154,88 @@
             "item_extras": [],
             "parentheses_label": "",
             "html_classes": [],
-            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-13",
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-14",
+            "warnings": []
+        },
+        {
+            "title": "Naranja y Fresa",
+            "price": 7.0,
+            "description": "",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-15",
+            "warnings": [
+                {
+                    "text": "(gluten-free)",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Naranja y Zanahoria",
+            "price": 7.0,
+            "description": "",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-16",
+            "warnings": [
+                {
+                    "text": "(gluten-free)",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Red Power",
+            "price": 7.0,
+            "description": "",
+            "item_modifiers": [
+                {
+                    "text": "Betabel",
+                    "price": -1.0,
+                    "parentheses_label": "",
+                    "html_classes": []
+                },
+                {
+                    "text": "Apio",
+                    "price": -1.0,
+                    "parentheses_label": "",
+                    "html_classes": []
+                },
+                {
+                    "text": "Manzana",
+                    "price": -1.0,
+                    "parentheses_label": "",
+                    "html_classes": []
+                },
+                {
+                    "text": "Zanahoria, Durazno y Perejil",
+                    "price": -1.0,
+                    "parentheses_label": "",
+                    "html_classes": []
+                }
+            ],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-17",
+            "warnings": []
+        },
+        {
+            "title": "Green Power",
+            "price": 7.0,
+            "description": "Se dice que si usted se toma “un caballito” diario de este digestivo, vivirá cuando menos Cien Años. Miel de abeja auténtica, pulpa de aloe vera natural y tequila blanco son los ingredientes de esta bebida que cuenta con muchísimos fans en México.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "1e333138-4606-5559-a82e-77e12f58df13-18",
             "warnings": []
         }
     ],

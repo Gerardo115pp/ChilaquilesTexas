@@ -1,0 +1,156 @@
+{
+    "title": "Las Cervecitas",
+    "section_uuid": "e52ff2fa-63e2-53da-abfd-b8b9f80dc033",
+    "item_list_title": "beers",
+    "items": [
+        {
+            "title": "DE BARRIL",
+            "price": -1.0,
+            "description": "",
+            "item_modifiers": [
+                {
+                    "text": "Michelob Ultra",
+                    "price": 7.0,
+                    "parentheses_label": "",
+                    "html_classes": []
+                },
+                {
+                    "text": "Miller Lite",
+                    "price": 7.0,
+                    "parentheses_label": "",
+                    "html_classes": []
+                },
+                {
+                    "text": "XX Lager Especial",
+                    "price": 8.0,
+                    "parentheses_label": "",
+                    "html_classes": []
+                },
+                {
+                    "text": "Modelo Especial",
+                    "price": 8.0,
+                    "parentheses_label": "",
+                    "html_classes": []
+                },
+                {
+                    "text": "Shiner Bock",
+                    "price": 7.0,
+                    "parentheses_label": "",
+                    "html_classes": []
+                },
+                {
+                    "text": "Coors Light",
+                    "price": 7.0,
+                    "parentheses_label": "",
+                    "html_classes": []
+                },
+                {
+                    "text": "Michelada",
+                    "price": 2.9,
+                    "parentheses_label": "",
+                    "html_classes": []
+                }
+            ],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [
+                ""
+            ],
+            "item_uuid": "e52ff2fa-63e2-53da-abfd-b8b9f80dc033-1",
+            "warnings": []
+        },
+        {
+            "title": "EN BOTELLA",
+            "price": -1.0,
+            "description": "",
+            "item_modifiers": [
+                {
+                    "text": "Michelob Ultra",
+                    "price": 7.0,
+                    "parentheses_label": "",
+                    "html_classes": []
+                },
+                {
+                    "text": "Corona Extra",
+                    "price": 8.0,
+                    "parentheses_label": "",
+                    "html_classes": []
+                },
+                {
+                    "text": "Corona Light",
+                    "price": 7.0,
+                    "parentheses_label": "",
+                    "html_classes": []
+                },
+                {
+                    "text": "Bud Light",
+                    "price": 7.0,
+                    "parentheses_label": "",
+                    "html_classes": []
+                },
+                {
+                    "text": "Modelo Especial",
+                    "price": 8.0,
+                    "parentheses_label": "",
+                    "html_classes": []
+                },
+                {
+                    "text": "XX Lager Especial",
+                    "price": 8.0,
+                    "parentheses_label": "",
+                    "html_classes": []
+                },
+                {
+                    "text": "Coors Banquet",
+                    "price": 7.0,
+                    "parentheses_label": "",
+                    "html_classes": []
+                },
+                {
+                    "text": "Pacifico",
+                    "price": 8.0,
+                    "parentheses_label": "",
+                    "html_classes": []
+                },
+                {
+                    "text": "Stella Artois",
+                    "price": 8.0,
+                    "parentheses_label": "",
+                    "html_classes": []
+                }
+            ],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [
+                ""
+            ],
+            "item_uuid": "e52ff2fa-63e2-53da-abfd-b8b9f80dc033-2",
+            "warnings": []
+        },
+        {
+            "title": "SIN ALCOHOL",
+            "price": -1.0,
+            "description": "",
+            "item_modifiers": [
+                {
+                    "text": "Heineken",
+                    "price": 6.9,
+                    "parentheses_label": "",
+                    "html_classes": []
+                }
+            ],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [
+                ""
+            ],
+            "item_uuid": "e52ff2fa-63e2-53da-abfd-b8b9f80dc033-3",
+            "warnings": []
+        }
+    ],
+    "modifiers": [],
+    "extras": [],
+    "teaser_image_url": "",
+    "html_classes": [],
+    "external_sections": ""
+}

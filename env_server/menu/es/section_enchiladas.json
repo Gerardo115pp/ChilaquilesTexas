@@ -1,11 +1,11 @@
 {
-    "title": "Nuestra variedad de enchiladas",
+    "title": "Nuestra Variedad De Enchiladas",
     "section_uuid": "d1de94e0-e99d-5325-a431-8713d9a2dfe4",
     "item_list_title": "Enchiladas",
     "items": [
         {
             "title": "Tex Mex",
-            "price": 24.9,
+            "price": 25.0,
             "description": "Rellenas de fajitas de arrachera texana seleccionada y bañadas con una salsita colorada. Acompañadas de frijolitos refritos.",
             "item_modifiers": [],
             "item_extras": [],
@@ -14,12 +14,12 @@
             "item_uuid": "d1de94e0-e99d-5325-a431-8713d9a2dfe4-1",
             "warnings": [
                 {
-                    "text": "GF",
+                    "text": "(gluten-free)",
                     "danger_level": 0,
                     "html_classes": []
                 },
                 {
-                    "text": "SPICY 1",
+                    "text": "{{spicy}}",
                     "danger_level": 1,
                     "html_classes": []
                 }
@@ -27,43 +27,81 @@
         },
         {
             "title": "En mole artesanal",
-            "price": 15.0,
+            "price": -1.0,
             "description": "Bañadas en nuestro mole artesanal de 36 ingredientes. Opciones: Queso $15.00 / Pollo $15.50 / Cerdo $15.90.",
-            "item_modifiers": [],
+            "item_modifiers": [
+                {
+                    "text": "Queso",
+                    "price": 15.0,
+                    "parentheses_label": "",
+                    "html_classes": []
+                },
+                {
+                    "text": "Pollo",
+                    "price": 16.0,
+                    "parentheses_label": "",
+                    "html_classes": []
+                },
+                {
+                    "text": "Cerdo",
+                    "price": 17.0,
+                    "parentheses_label": "",
+                    "html_classes": []
+                }
+            ],
             "item_extras": [],
             "parentheses_label": "",
             "html_classes": [],
             "item_uuid": "d1de94e0-e99d-5325-a431-8713d9a2dfe4-2",
             "warnings": [
                 {
-                    "text": "GF",
-                    "danger_level": 0,
-                    "html_classes": []
-                },
-                {
-                    "text": "SPICY 1",
+                    "text": "may contain nuts",
                     "danger_level": 1,
                     "html_classes": []
                 },
                 {
-                    "text": "NUT",
+                    "text": "(gluten-free)",
                     "danger_level": 0,
+                    "html_classes": []
+                },
+                {
+                    "text": "{{spicy}}",
+                    "danger_level": 1,
                     "html_classes": []
                 }
             ]
         },
         {
             "title": "Adobadas’n",
-            "price": 15.0,
+            "price": -1.0,
             "description": "Muy típicas en los mercados de muchos pueblitos de Jalisco, acompañadas con frijolitos a un lado. Opciones: Queso $15.00 / Pollo $15.50 / Cerdo $15.90.",
-            "item_modifiers": [],
+            "item_modifiers": [
+                {
+                    "text": "Queso",
+                    "price": 15.0,
+                    "parentheses_label": "",
+                    "html_classes": []
+                },
+                {
+                    "text": "Pollo",
+                    "price": 16.0,
+                    "parentheses_label": "",
+                    "html_classes": []
+                },
+                {
+                    "text": "Cerdo",
+                    "price": 17.0,
+                    "parentheses_label": "",
+                    "html_classes": []
+                }
+            ],
             "item_extras": [],
             "parentheses_label": "",
             "html_classes": [],
             "item_uuid": "d1de94e0-e99d-5325-a431-8713d9a2dfe4-3",
             "warnings": [
                 {
-                    "text": "GF",
+                    "text": "(gluten-free)",
                     "danger_level": 0,
                     "html_classes": []
                 }
@@ -71,7 +109,7 @@
         },
         {
             "title": "Surtiditas’n",
-            "price": 15.9,
+            "price": 16.0,
             "description": "Una de mole rellena con pollo, una verde rellena de puerco y una salsa tex-mex rellena de queso fresco.",
             "item_modifiers": [],
             "item_extras": [],
@@ -80,17 +118,12 @@
             "item_uuid": "d1de94e0-e99d-5325-a431-8713d9a2dfe4-4",
             "warnings": [
                 {
-                    "text": "GF",
-                    "danger_level": 0,
-                    "html_classes": []
-                },
-                {
-                    "text": "SPICY 1",
+                    "text": "may contain nuts",
                     "danger_level": 1,
                     "html_classes": []
                 },
                 {
-                    "text": "NUT",
+                    "text": "(gluten-free)",
                     "danger_level": 0,
                     "html_classes": []
                 }
@@ -98,7 +131,7 @@
         },
         {
             "title": "Suizas",
-            "price": 16.9,
+            "price": 17.0,
             "description": "Rellenitas de pollo bañadas en nuestra deliciosa salsa verdi y con quesito gratinado.",
             "item_modifiers": [],
             "item_extras": [],
@@ -107,13 +140,8 @@
             "item_uuid": "d1de94e0-e99d-5325-a431-8713d9a2dfe4-5",
             "warnings": [
                 {
-                    "text": "GF",
+                    "text": "(gluten-free)",
                     "danger_level": 0,
-                    "html_classes": []
-                },
-                {
-                    "text": "SPICY 1",
-                    "danger_level": 1,
                     "html_classes": []
                 }
             ]

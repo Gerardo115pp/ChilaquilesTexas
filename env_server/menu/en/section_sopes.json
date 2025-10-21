@@ -5,7 +5,7 @@
     "items": [
         {
             "title": "De frijolitos'n",
-            "price": 9.9,
+            "price": 10.0,
             "description": "Topped with our classic homemade refried beans.",
             "item_modifiers": [],
             "item_extras": [],
@@ -14,7 +14,7 @@
             "item_uuid": "454328ec-94bc-5d3f-b1bc-86000533f115-1",
             "warnings": [
                 {
-                    "text": "GF",
+                    "text": "(gluten-free)",
                     "danger_level": 0,
                     "html_classes": []
                 }
@@ -22,8 +22,8 @@
         },
         {
             "title": "Rajas con panela",
-            "price": 11.9,
-            "description": "Roasted poblano strips cooked with panela cheese.",
+            "price": 12.0,
+            "description": "Roasted poblano peppers sliced into strips, cooked with fresh panela cheese. A combination that always has a seat at our table.",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -31,12 +31,12 @@
             "item_uuid": "454328ec-94bc-5d3f-b1bc-86000533f115-2",
             "warnings": [
                 {
-                    "text": "GF",
+                    "text": "(gluten-free)",
                     "danger_level": 0,
                     "html_classes": []
                 },
                 {
-                    "text": "SPICY 1",
+                    "text": "{{spicy}}",
                     "danger_level": 1,
                     "html_classes": []
                 }

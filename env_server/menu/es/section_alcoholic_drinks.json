@@ -1,11 +1,11 @@
 {
-    "title": "Bebidas espirituosas y digestivos",
+    "title": "Bebidas Espirituosas Y Digestivos",
     "section_uuid": "29045a2f-5023-577d-965f-dc4828836a2a",
     "item_list_title": "Bebidas espirituosas y digestivos",
     "items": [
         {
             "title": "Tónico Cien Años",
-            "price": 11.0,
+            "price": 12.0,
             "description": "Digestivo con miel de abeja, aloe vera y tequila blanco.",
             "item_modifiers": [],
             "item_extras": [],
@@ -17,7 +17,7 @@
         {
             "title": "Cazuela de cítricos (con alcohol)",
             "price": 19.0,
-            "description": "Refresco de toronja con tequila reposado.",
+            "description": "Refresco de toronja, sal de grano, trozos de naranja, toronja, limón y el mejor tequila reposado conforman esta bebida que lo hace a uno sentirse en modo festivo cualquier día de la semana.",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -28,7 +28,7 @@
         {
             "title": "Cazuela de cítricos (sin alcohol)",
             "price": 16.0,
-            "description": "Misma receta sin tequila.",
+            "description": "La misma receta pero sin tequila.",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -39,7 +39,7 @@
         {
             "title": "Carajillo",
             "price": 14.0,
-            "description": "Licor 43 con espresso y hielo.",
+            "description": "Esta popular bebida de la que ya le contamos la historia páginas atrás, lleva Licor 43 (un licor de hierbas de origen español) hielos grandes, y café espresso recién hecho. Se agita con energía y ritmo para que los sabores se integren. Después del primer sorbo, solo resta decir: Esto es pa’l Carajillo.",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -49,8 +49,8 @@
         },
         {
             "title": "Aperol",
-            "price": 6.0,
-            "description": "Aperitivo a base de Aperol.",
+            "price": 8.0,
+            "description": "",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -59,9 +59,9 @@
             "warnings": []
         },
         {
-            "title": "Kahlua",
-            "price": 6.0,
-            "description": "Licor de café.",
+            "title": "Baileys",
+            "price": 8.0,
+            "description": "",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -70,9 +70,9 @@
             "warnings": []
         },
         {
-            "title": "Baileys",
-            "price": 7.0,
-            "description": "Crema irlandesa.",
+            "title": "Kahlua",
+            "price": 9.0,
+            "description": "",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",

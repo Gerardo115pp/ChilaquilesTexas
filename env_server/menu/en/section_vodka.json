@@ -5,7 +5,7 @@
     "items": [
         {
             "title": "Titos Handmade Vodka",
-            "price": 7.0,
+            "price": 12.0,
             "description": "",
             "item_modifiers": [],
             "item_extras": [],
@@ -16,7 +16,7 @@
         },
         {
             "title": "Grey Goose",
-            "price": 10.0,
+            "price": 14.0,
             "description": "",
             "item_modifiers": [],
             "item_extras": [],
@@ -27,7 +27,7 @@
         },
         {
             "title": "Ketel One",
-            "price": 8.0,
+            "price": 14.0,
             "description": "",
             "item_modifiers": [],
             "item_extras": [],
@@ -38,7 +38,7 @@
         },
         {
             "title": "Absolut",
-            "price": 7.0,
+            "price": 10.0,
             "description": "",
             "item_modifiers": [],
             "item_extras": [],

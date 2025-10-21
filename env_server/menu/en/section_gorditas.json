@@ -5,38 +5,55 @@
     "items": [
         {
             "title": "Doña Mary style",
-            "price": 5.9,
+            "price": 6.0,
             "description": "Steamed, soft, and buttery, ideal for dunking into a hot atole or chocolatito caliente.",
             "item_modifiers": [],
             "item_extras": [],
-            "parentheses_label": "GF",
+            "parentheses_label": "",
             "html_classes": [],
             "item_uuid": "e680cbc5-e390-53f5-a580-3df07b2f7f39-1",
-            "warnings": []
+            "warnings": [
+                {
+                    "text": "(gluten-free)",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
         },
         {
             "title": "De frijolitos’n",
-            "price": 9.9,
+            "price": 10.0,
             "description": "Stuffed with our housemade frijolitos’n. Served as 3 pieces.",
             "item_modifiers": [],
             "item_extras": [],
-            "parentheses_label": "GF",
+            "parentheses_label": "",
             "html_classes": [],
             "item_uuid": "e680cbc5-e390-53f5-a580-3df07b2f7f39-2",
-            "warnings": []
+            "warnings": [
+                {
+                    "text": "(gluten-free)",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
         },
         {
             "title": "Rajas con panela",
-            "price": 11.9,
+            "price": 12.0,
             "description": "Roasted poblano peppers sliced into strips, cooked with fresh panela cheese. Served as 3 pieces.",
             "item_modifiers": [],
             "item_extras": [],
-            "parentheses_label": "GF",
+            "parentheses_label": "",
             "html_classes": [],
             "item_uuid": "e680cbc5-e390-53f5-a580-3df07b2f7f39-3",
             "warnings": [
                 {
-                    "text": "SPICY 1",
+                    "text": "(gluten-free)",
+                    "danger_level": 0,
+                    "html_classes": []
+                },
+                {
+                    "text": "{{spicy}}",
                     "danger_level": 1,
                     "html_classes": []
                 }

@@ -4,43 +4,32 @@
     "item_list_title": "Dulces",
     "items": [
         {
-            "title": "Molletes con nata y mermelada",
-            "price": 18.9,
-            "description": "Pan chapata tipo bolillo con nata de leche casera, y mermelada de fresa o piña hecha en nuestra cocina.",
+            "title": "Flan de Carajillo",
+            "price": 14.0,
+            "description": "Tomando como base esa bebida con gran historia (más adelante le contamos el origen del carajillo a detalle), nuestros chefs han creado un postre que nos quedamos cortos si le decimos que es Bocatto di Cardenale. ¡Todas esas aventuras contenidas en un flan mexicano!",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
             "html_classes": [],
             "item_uuid": "1c4caa74-3148-599e-9572-3927ebdf07f0-1",
-            "warnings": []
+            "warnings": [
+                {
+                    "text": "(gluten-free)",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
         },
         {
-            "title": "Pastel de tres leches",
-            "price": 13.9,
-            "description": "Nuestra receta especial heredada de la Tía Mariquita.",
+            "title": "Molletes con nata y mermelada de fresa o piña",
+            "price": 19.0,
+            "description": "Pan chapata tipo bolillo con nata de leche casera, y mermelada de fresa o piña también hecha en nuestra cocina con fruta 100% natural.",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
             "html_classes": [],
             "item_uuid": "1c4caa74-3148-599e-9572-3927ebdf07f0-2",
             "warnings": []
-        },
-        {
-            "title": "Flan de Carajillo",
-            "price": 13.9,
-            "description": "Tomando como base la bebida carajillo, nuestros chefs han creado un postre excepcional.",
-            "item_modifiers": [],
-            "item_extras": [],
-            "parentheses_label": "",
-            "html_classes": [],
-            "item_uuid": "1c4caa74-3148-599e-9572-3927ebdf07f0-3",
-            "warnings": [
-                {
-                    "text": "GF",
-                    "danger_level": 0,
-                    "html_classes": []
-                }
-            ]
         }
     ],
     "modifiers": [],

@@ -1,11 +1,11 @@
 {
-    "title": "Ginebra",
+    "title": "Gin",
     "section_uuid": "78bb7a5f-95d6-583f-8e6d-2956968e4c55",
     "item_list_title": "Ginebra",
     "items": [
         {
             "title": "Tanqueray",
-            "price": 7.0,
+            "price": 12.0,
             "description": "",
             "item_modifiers": [],
             "item_extras": [],
@@ -16,7 +16,7 @@
         },
         {
             "title": "Bombay",
-            "price": 8.0,
+            "price": 12.0,
             "description": "",
             "item_modifiers": [],
             "item_extras": [],

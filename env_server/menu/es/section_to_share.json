@@ -1,12 +1,12 @@
 {
-    "title": "Pa' compartir",
+    "title": "Pa' Compartir",
     "section_uuid": "0accc071-d3be-55c4-9921-df2bae6a248e",
     "item_list_title": "Para compartir",
     "items": [
         {
-            "title": "Orden de cochinita pibil",
-            "price": 22.9,
-            "description": "Jugosa carnita de cerdo cocinada a fuego lento al estilo tradicional yucateco. Se sirve sobre una hoja de vástago y se acompaña de cebollita roja encurtida con chilito habanero. No pueden faltar los frijolitos refritos de la casa.",
+            "title": "Quesadillas de panela en tortillas de cilantro",
+            "price": 10.0,
+            "description": "Creamos unas tortillas de maíz auténtico a las que les añadimos cilantro, especialmente para recibir generosas porciones de nuestro panela fresco. Dos piezas acompañadas de frijolitos refritos de la casa.",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -19,24 +19,7 @@
                     "html_classes": []
                 },
                 {
-                    "text": "SPICY 4",
-                    "danger_level": 4,
-                    "html_classes": []
-                }
-            ]
-        },
-        {
-            "title": "Quesadillas de panela en tortillas de cilantro",
-            "price": 9.9,
-            "description": "Creamos unas tortillas de maíz auténtico a las que les añadimos cilantro, especialmente para recibir generosas porciones de nuestro panela fresco. Dos piezas acompañadas de frijolitos refritos de la casa.",
-            "item_modifiers": [],
-            "item_extras": [],
-            "parentheses_label": "",
-            "html_classes": [],
-            "item_uuid": "0accc071-d3be-55c4-9921-df2bae6a248e-2",
-            "warnings": [
-                {
-                    "text": "GF",
+                    "text": "(gluten-free)",
                     "danger_level": 0,
                     "html_classes": []
                 }
@@ -44,8 +27,25 @@
         },
         {
             "title": "Chile poblano 'Los Chilaquiles'",
-            "price": 10.9,
+            "price": 11.0,
             "description": "Relleno de nuestra combinación de quesos gratinados, montado sobre una cama de nuestra salsa roja de la casa.",
+            "item_modifiers": [],
+            "item_extras": [],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "0accc071-d3be-55c4-9921-df2bae6a248e-2",
+            "warnings": [
+                {
+                    "text": "(gluten-free)",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Empanada de plátano",
+            "price": 12.0,
+            "description": "Rellenita de pollito y queso, bañadita con nuestro mole artesanal de 36 ingredientes.",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -61,40 +61,63 @@
                     "text": "SPICY 1",
                     "danger_level": 1,
                     "html_classes": []
-                }
-            ]
-        },
-        {
-            "title": "Empanada de plátano",
-            "price": 11.9,
-            "description": "Rellenita de pollito y queso, bañadita con nuestro mole artesanal de 36 ingredientes.",
-            "item_modifiers": [],
-            "item_extras": [],
-            "parentheses_label": "",
-            "html_classes": [],
-            "item_uuid": "0accc071-d3be-55c4-9921-df2bae6a248e-4",
-            "warnings": [
-                {
-                    "text": "GF",
-                    "danger_level": 0,
-                    "html_classes": []
-                },
-                {
-                    "text": "SPICY 1",
-                    "danger_level": 1,
-                    "html_classes": []
                 },
                 {
                     "text": "NUTS",
                     "danger_level": 0,
+                    "html_classes": []
+                },
+                {
+                    "text": "{{spicy}}",
+                    "danger_level": 1,
+                    "html_classes": []
+                },
+                {
+                    "text": "{{spicy}}",
+                    "danger_level": 1,
+                    "html_classes": []
+                },
+                {
+                    "text": "may contain nuts",
+                    "danger_level": 1,
                     "html_classes": []
                 }
             ]
         },
         {
             "title": "Queso fundido",
-            "price": 17.9,
+            "price": 18.0,
             "description": "La mejor manera de disfrutar nuestra excepcional mezcla de quesos, fabricados con las mejores técnicas mexicanas y con la leche de la más alta calidad del estado de Colorado.",
+            "item_modifiers": [],
+            "item_extras": [
+                {
+                    "text": "champiñones o rajas",
+                    "price": 18.9,
+                    "parentheses_label": "",
+                    "html_classes": []
+                },
+                {
+                    "text": "chorizo",
+                    "price": 19.9,
+                    "parentheses_label": "",
+                    "html_classes": []
+                }
+            ],
+            "parentheses_label": "",
+            "html_classes": [],
+            "item_uuid": "0accc071-d3be-55c4-9921-df2bae6a248e-4",
+            "warnings": [
+                {
+                    "text": "(gluten-free)",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
+        },
+        {
+            "title": "Guacamole San Miguel",
+            "price": 20.0,
+            "description": "Una preparación muy del meritito San Miguel, con un ligero toque de chile verde, acompañado de trozos de panelita y nuestras tostadas raspadas en metate, una por una, de forma artesanal.",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -102,34 +125,12 @@
             "item_uuid": "0accc071-d3be-55c4-9921-df2bae6a248e-5",
             "warnings": [
                 {
-                    "text": "GF",
+                    "text": "(gluten-free)",
                     "danger_level": 0,
                     "html_classes": []
                 },
                 {
-                    "text": "SPICY 1",
-                    "danger_level": 1,
-                    "html_classes": []
-                }
-            ]
-        },
-        {
-            "title": "Guacamole San Miguel",
-            "price": 19.9,
-            "description": "Una preparación muy del meritito San Miguel, con un ligero toque de chile verde, acompañado de trozos de panelita y nuestras tostadas raspadas en metate, una por una, de forma artesanal.",
-            "item_modifiers": [],
-            "item_extras": [],
-            "parentheses_label": "",
-            "html_classes": [],
-            "item_uuid": "0accc071-d3be-55c4-9921-df2bae6a248e-6",
-            "warnings": [
-                {
-                    "text": "GF",
-                    "danger_level": 0,
-                    "html_classes": []
-                },
-                {
-                    "text": "SPICY 1",
+                    "text": "{{spicy}}",
                     "danger_level": 1,
                     "html_classes": []
                 }
@@ -137,22 +138,17 @@
         },
         {
             "title": "Quesadillas de fresa",
-            "price": 10.9,
+            "price": 11.0,
             "description": "Dos piezas de quesadillas con nuestros quesos gratinados, acompañadas de frijolitos de la casa y salsa morita.",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
             "html_classes": [],
-            "item_uuid": "0accc071-d3be-55c4-9921-df2bae6a248e-7",
+            "item_uuid": "0accc071-d3be-55c4-9921-df2bae6a248e-6",
             "warnings": [
                 {
-                    "text": "GF",
+                    "text": "(gluten-free)",
                     "danger_level": 0,
-                    "html_classes": []
-                },
-                {
-                    "text": "SPICY 2",
-                    "danger_level": 2,
                     "html_classes": []
                 }
             ]

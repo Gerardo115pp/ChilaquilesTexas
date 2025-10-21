@@ -4,9 +4,9 @@
     "item_list_title": "Beers & Spirits",
     "items": [
         {
-            "title": "Michelob Ultra (Draft)",
-            "price": 4.9,
-            "description": "Draft beer.",
+            "title": "Tónico Cien Años",
+            "price": 12.0,
+            "description": "Digestivo con miel de abeja, aloe vera y tequila blanco.",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -15,9 +15,9 @@
             "warnings": []
         },
         {
-            "title": "Miller Lite (Draft)",
-            "price": 4.9,
-            "description": "Draft beer.",
+            "title": "Cazuela de cítricos (con alcohol)",
+            "price": 19.0,
+            "description": "A drink that gets you in a festive mood any day of the week. Grapefruit soda, coarse salt, chunks of orange, grapefruit, lime, and the best reposado tequila.",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -26,9 +26,9 @@
             "warnings": []
         },
         {
-            "title": "XX Lager Especial (Draft)",
-            "price": 5.9,
-            "description": "Draft beer.",
+            "title": "Cazuela de cítricos (sin alcohol)",
+            "price": 16.0,
+            "description": "The same recipe, but without tequila.",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -37,9 +37,9 @@
             "warnings": []
         },
         {
-            "title": "Modelo Especial (Draft)",
-            "price": 5.9,
-            "description": "Draft beer.",
+            "title": "Carajillo",
+            "price": 14.0,
+            "description": "This renowned drink - whose story we’ve already told you a few pages back - is made with Licor 43 (a Spanish herbal liqueur), large ice cubes, and freshly brewed espresso. It’s shaken with energy and rhythm so the flavors dance and blend with each other perfectly.",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -48,9 +48,9 @@
             "warnings": []
         },
         {
-            "title": "Shiner Bock (Draft)",
-            "price": 5.9,
-            "description": "Draft beer.",
+            "title": "Aperol",
+            "price": 8.0,
+            "description": "",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -59,9 +59,9 @@
             "warnings": []
         },
         {
-            "title": "Coors Light (Draft)",
-            "price": 4.9,
-            "description": "Draft beer.",
+            "title": "Baileys",
+            "price": 8.0,
+            "description": "",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -70,113 +70,14 @@
             "warnings": []
         },
         {
-            "title": "Corona Extra (Bottle)",
-            "price": 6.9,
-            "description": "Bottled beer.",
+            "title": "Kahlua",
+            "price": 9.0,
+            "description": "",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
             "html_classes": [],
             "item_uuid": "29045a2f-5023-577d-965f-dc4828836a2a-7",
-            "warnings": []
-        },
-        {
-            "title": "Bud Light (Bottle)",
-            "price": 5.9,
-            "description": "Bottled beer.",
-            "item_modifiers": [],
-            "item_extras": [],
-            "parentheses_label": "",
-            "html_classes": [],
-            "item_uuid": "29045a2f-5023-577d-965f-dc4828836a2a-8",
-            "warnings": []
-        },
-        {
-            "title": "Stella Artois (Bottle)",
-            "price": 6.9,
-            "description": "Bottled beer.",
-            "item_modifiers": [],
-            "item_extras": [],
-            "parentheses_label": "",
-            "html_classes": [],
-            "item_uuid": "29045a2f-5023-577d-965f-dc4828836a2a-9",
-            "warnings": []
-        },
-        {
-            "title": "Tónico 100 años",
-            "price": 11.0,
-            "description": "Digestif made with honey, aloe vera pulp and silver tequila.",
-            "item_modifiers": [],
-            "item_extras": [],
-            "parentheses_label": "",
-            "html_classes": [],
-            "item_uuid": "29045a2f-5023-577d-965f-dc4828836a2a-10",
-            "warnings": []
-        },
-        {
-            "title": "Cazuela de cítricos (with tequila)",
-            "price": 19.0,
-            "description": "Grapefruit soda with orange, grapefruit, lime and reposado tequila.",
-            "item_modifiers": [],
-            "item_extras": [],
-            "parentheses_label": "",
-            "html_classes": [],
-            "item_uuid": "29045a2f-5023-577d-965f-dc4828836a2a-11",
-            "warnings": []
-        },
-        {
-            "title": "Cazuela de cítricos (non-alcoholic)",
-            "price": 16.0,
-            "description": "Same recipe without tequila.",
-            "item_modifiers": [],
-            "item_extras": [],
-            "parentheses_label": "",
-            "html_classes": [],
-            "item_uuid": "29045a2f-5023-577d-965f-dc4828836a2a-12",
-            "warnings": []
-        },
-        {
-            "title": "Carajillo",
-            "price": 14.0,
-            "description": "Licor 43 with espresso and ice.",
-            "item_modifiers": [],
-            "item_extras": [],
-            "parentheses_label": "",
-            "html_classes": [],
-            "item_uuid": "29045a2f-5023-577d-965f-dc4828836a2a-13",
-            "warnings": []
-        },
-        {
-            "title": "Aperol",
-            "price": 6.0,
-            "description": "Aperol-based aperitivo.",
-            "item_modifiers": [],
-            "item_extras": [],
-            "parentheses_label": "",
-            "html_classes": [],
-            "item_uuid": "29045a2f-5023-577d-965f-dc4828836a2a-14",
-            "warnings": []
-        },
-        {
-            "title": "Kahlua",
-            "price": 6.0,
-            "description": "Coffee liqueur.",
-            "item_modifiers": [],
-            "item_extras": [],
-            "parentheses_label": "",
-            "html_classes": [],
-            "item_uuid": "29045a2f-5023-577d-965f-dc4828836a2a-15",
-            "warnings": []
-        },
-        {
-            "title": "Baileys",
-            "price": 7.0,
-            "description": "Irish cream liqueur.",
-            "item_modifiers": [],
-            "item_extras": [],
-            "parentheses_label": "",
-            "html_classes": [],
-            "item_uuid": "29045a2f-5023-577d-965f-dc4828836a2a-16",
             "warnings": []
         }
     ],

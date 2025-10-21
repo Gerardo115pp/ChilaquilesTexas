@@ -4,9 +4,9 @@
     "item_list_title": "Hot Drinks",
     "items": [
         {
-            "title": "Decaf coffee",
-            "price": 3.9,
-            "description": "Gentle in caffeine, rich in flavor.",
+            "title": "Café de olla",
+            "price": 4.0,
+            "description": "The most beloved recipe in San Miguel: coffee brewed with cinnamon and piloncillo. It wakes you up and, somehow, wakes up your soul too. No refill!",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -15,9 +15,9 @@
             "warnings": []
         },
         {
-            "title": "Latte Coffee",
-            "price": 5.1,
-            "description": "Rich espresso with silky milk.",
+            "title": "Café Puerto Vallarta",
+            "price": 7.0,
+            "description": "Espresso with coconut cream and steamed milk.",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -26,9 +26,9 @@
             "warnings": []
         },
         {
-            "title": "Machine-brewed americano",
-            "price": 5.9,
-            "description": "A long espresso, bold and satisfying.",
+            "title": "Black coffee",
+            "price": 4.0,
+            "description": "Bold, strong, and proud, just like the high-altitude beans from Chiapas (grown at 5,500 ft) that give it its character.Refill available!",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -37,9 +37,9 @@
             "warnings": []
         },
         {
-            "title": "Café de olla",
-            "price": 3.9,
-            "description": "Traditional Mexican cinnamon-and-piloncillo brewed coffee.",
+            "title": "Café lechero",
+            "price": 5.0,
+            "description": "Steamed milk poured over espresso with a flourish that’s almost as satisfying as drinking it. Almost.",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -48,9 +48,9 @@
             "warnings": []
         },
         {
-            "title": "Black coffee",
-            "price": 3.9,
-            "description": "Bold, strong, and proud.",
+            "title": "Decaf coffee",
+            "price": 4.0,
+            "description": "Gentle in caffeine, rich in flavor. For when you want the ritual without the buzz. Refill available!",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -59,9 +59,9 @@
             "warnings": []
         },
         {
-            "title": "Café Puerto Vallarta",
-            "price": 6.9,
-            "description": "Espresso with coconut cream and steamed milk.",
+            "title": "Espresso",
+            "price": 4.0,
+            "description": "Extraordinary beans. Extraordinary baristas. Extraordinary, period.",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -70,9 +70,9 @@
             "warnings": []
         },
         {
-            "title": "Café lechero",
-            "price": 4.9,
-            "description": "Steamed milk poured over espresso.",
+            "title": "Machine-brewed americano",
+            "price": 6.0,
+            "description": "A long espresso, the kind that gets the wheels turning, whether it’s for ideas, work, or just because you can.  No refill!",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -81,9 +81,9 @@
             "warnings": []
         },
         {
-            "title": "Espresso",
-            "price": 3.9,
-            "description": "Extraordinary beans, extraordinary extraction.",
+            "title": "Capuchino",
+            "price": 5.0,
+            "description": "A delicious balance of equal-parts between coffee and milk, made with gourmet coffee grains.",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -92,9 +92,9 @@
             "warnings": []
         },
         {
-            "title": "Capuchino",
-            "price": 4.85,
-            "description": "A delicious balance of coffee and milk.",
+            "title": "Atole Doña Mary",
+            "price": 5.0,
+            "description": "Our guests call it “muy muy sabrosísimo. We call it the ”perfect excuse” to dunk a gordita Doña Mary or a piece of sweet bread.",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -103,9 +103,9 @@
             "warnings": []
         },
         {
-            "title": "Hot chocolate",
-            "price": 4.2,
-            "description": "Made with a Tapatío chocolate recipe passed down generations.",
+            "title": "Latte Coffee",
+            "price": 6.0,
+            "description": "Rich espresso, silky milk and skilled hands come together in a latte that’s smooth, balanced and crafted with care.",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -114,9 +114,9 @@
             "warnings": []
         },
         {
-            "title": "Atole Doña Mary",
-            "price": 4.9,
-            "description": "A traditional warm corn-based drink ideal for dunking gorditas.",
+            "title": "Hot chocolate",
+            "price": 5.0,
+            "description": "Made with a Tapatío chocolate recipe passed down for three generations. Like drinking a family tradition.",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",

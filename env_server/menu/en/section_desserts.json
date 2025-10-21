@@ -4,43 +4,32 @@
     "item_list_title": "Sweets",
     "items": [
         {
-            "title": "Molletes with cream and jam",
-            "price": 18.9,
-            "description": "Chapata-style bread with homemade cream and strawberry or pineapple jam.",
+            "title": "Carajillo flan",
+            "price": 14.0,
+            "description": "Inspired by the legendary drink, this flan is a spoonful of espresso, Licor 43, and mischief.",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
             "html_classes": [],
             "item_uuid": "1c4caa74-3148-599e-9572-3927ebdf07f0-1",
-            "warnings": []
+            "warnings": [
+                {
+                    "text": "(gluten-free)",
+                    "danger_level": 0,
+                    "html_classes": []
+                }
+            ]
         },
         {
-            "title": "Tres leches cake",
-            "price": 13.9,
-            "description": "Our special family recipe.",
+            "title": "Molletes con nata y mermelada o dulce de leche",
+            "price": 19.0,
+            "description": "Ciabatta-style bolillo bread with homemade cream and your choice of strawberry or pineapple homemade jam, or rich dulce de leche. Crispy and sweet all in the same bite.",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
             "html_classes": [],
             "item_uuid": "1c4caa74-3148-599e-9572-3927ebdf07f0-2",
             "warnings": []
-        },
-        {
-            "title": "Carajillo flan",
-            "price": 13.9,
-            "description": "A flan inspired by the carajillo drink.",
-            "item_modifiers": [],
-            "item_extras": [],
-            "parentheses_label": "",
-            "html_classes": [],
-            "item_uuid": "1c4caa74-3148-599e-9572-3927ebdf07f0-3",
-            "warnings": [
-                {
-                    "text": "GF",
-                    "danger_level": 0,
-                    "html_classes": []
-                }
-            ]
         }
     ],
     "modifiers": [],

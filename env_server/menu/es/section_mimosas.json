@@ -37,7 +37,14 @@
             "warnings": []
         }
     ],
-    "modifiers": [],
+    "modifiers": [
+        {
+            "text": "(1.5oz)",
+            "price": -1.0,
+            "parentheses_label": "",
+            "html_classes": []
+        }
+    ],
     "extras": [],
     "teaser_image_url": "",
     "html_classes": [],

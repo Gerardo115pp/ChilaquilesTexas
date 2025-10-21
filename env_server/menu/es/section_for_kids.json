@@ -1,11 +1,11 @@
 {
-    "title": "Opciones para los más pequeños",
+    "title": "Opciones Para Los Más Pequeños",
     "section_uuid": "fdb0926a-dbcf-59ee-85f3-a7f7edc9d31a",
     "item_list_title": "Para niños",
     "items": [
         {
             "title": "Chilaquiles infantiles",
-            "price": 6.9,
+            "price": 7.0,
             "description": "Media orden de chilaquiles coloraos, bisabuela Maty (sin picante), acompañados de un blanquillo revuelto y frijolitos.",
             "item_modifiers": [],
             "item_extras": [],
@@ -14,7 +14,7 @@
             "item_uuid": "fdb0926a-dbcf-59ee-85f3-a7f7edc9d31a-1",
             "warnings": [
                 {
-                    "text": "GF",
+                    "text": "(gluten-free)",
                     "danger_level": 0,
                     "html_classes": []
                 }
@@ -22,7 +22,7 @@
         },
         {
             "title": "Blanquillo revuelto",
-            "price": 9.9,
+            "price": 10.0,
             "description": "Con jamoncito o con tocinito y frijolitos.",
             "item_modifiers": [],
             "item_extras": [],
@@ -33,7 +33,7 @@
         },
         {
             "title": "Quesadillitas",
-            "price": 9.3,
+            "price": 10.0,
             "description": "Dos piezas de quesadillitas con nuestro queso gratin y acompañadas de frijolitos de la casa. Y papas a la francesa o fruta natural.",
             "item_modifiers": [],
             "item_extras": [],
@@ -42,7 +42,7 @@
             "item_uuid": "fdb0926a-dbcf-59ee-85f3-a7f7edc9d31a-3",
             "warnings": [
                 {
-                    "text": "GF",
+                    "text": "(gluten-free)",
                     "danger_level": 0,
                     "html_classes": []
                 }
@@ -50,18 +50,24 @@
         },
         {
             "title": "Waffles",
-            "price": 10.9,
+            "price": 11.0,
             "description": "Hechos desde cero con nuestra receta de la casa y acompañados de frutos rojos y crema batida.",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
             "html_classes": [],
             "item_uuid": "fdb0926a-dbcf-59ee-85f3-a7f7edc9d31a-4",
-            "warnings": []
+            "warnings": [
+                {
+                    "text": "(contains gluten)",
+                    "danger_level": 1,
+                    "html_classes": []
+                }
+            ]
         },
         {
             "title": "Chicken tenders",
-            "price": 12.9,
+            "price": 13.0,
             "description": "Jugosos trocitos de pollo empanizados en hojuelas de maíz y fritos al momento acompañados de una porción de papas a la francesa.",
             "item_modifiers": [],
             "item_extras": [],
@@ -70,7 +76,7 @@
             "item_uuid": "fdb0926a-dbcf-59ee-85f3-a7f7edc9d31a-5",
             "warnings": [
                 {
-                    "text": "GF",
+                    "text": "(gluten-free)",
                     "danger_level": 0,
                     "html_classes": []
                 }
@@ -78,8 +84,8 @@
         },
         {
             "title": "Orden de papas a la francesa",
-            "price": 7.9,
-            "description": "Vienen con cátsup!",
+            "price": 8.0,
+            "description": "¡Vienen con cátsup! Aquí no hay Cajitas Felices pero sí muchos chiquillos contentos.",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -87,16 +93,16 @@
             "item_uuid": "fdb0926a-dbcf-59ee-85f3-a7f7edc9d31a-6",
             "warnings": [
                 {
-                    "text": "GF",
-                    "danger_level": 0,
+                    "text": "(contains gluten)",
+                    "danger_level": 1,
                     "html_classes": []
                 }
             ]
         },
         {
             "title": "Papas fritas en aceite de trufa con queso cotija",
-            "price": 12.9,
-            "description": "Papas fritas con aceite de trufa y queso cotija.",
+            "price": 13.0,
+            "description": "",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -104,7 +110,7 @@
             "item_uuid": "fdb0926a-dbcf-59ee-85f3-a7f7edc9d31a-7",
             "warnings": [
                 {
-                    "text": "GF",
+                    "text": "(gluten-free)",
                     "danger_level": 0,
                     "html_classes": []
                 }

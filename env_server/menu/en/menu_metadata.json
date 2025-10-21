@@ -1,6 +1,7 @@
 {
     "load_order": [
         "section_chilaquiles.json",
+        "section_molletes.json",
         "section_blanquillos.json",
         "section_gorditas.json",
         "section_sopes.json",

@@ -1,11 +1,11 @@
 {
-    "title": "Selección tequilas",
+    "title": "Selección Tequilas",
     "section_uuid": "8e38f43f-b45a-5e99-981e-7055f9338142",
     "item_list_title": "Tequilas",
     "items": [
         {
             "title": "Espolón",
-            "price": 7.9,
+            "price": 12.0,
             "description": "",
             "item_modifiers": [],
             "item_extras": [],
@@ -16,7 +16,7 @@
         },
         {
             "title": "José Cuervo Tradicional",
-            "price": 8.9,
+            "price": 10.0,
             "description": "",
             "item_modifiers": [],
             "item_extras": [],
@@ -27,7 +27,7 @@
         },
         {
             "title": "818",
-            "price": 9.3,
+            "price": 14.0,
             "description": "",
             "item_modifiers": [],
             "item_extras": [],
@@ -38,7 +38,7 @@
         },
         {
             "title": "Herradura Reposado",
-            "price": 9.9,
+            "price": 10.0,
             "description": "",
             "item_modifiers": [],
             "item_extras": [],
@@ -49,7 +49,7 @@
         },
         {
             "title": "Tierra Noble Blanco",
-            "price": 10.2,
+            "price": 12.0,
             "description": "",
             "item_modifiers": [],
             "item_extras": [],
@@ -60,7 +60,7 @@
         },
         {
             "title": "Casa Amigos Blanco",
-            "price": 11.9,
+            "price": 14.0,
             "description": "",
             "item_modifiers": [],
             "item_extras": [],
@@ -71,7 +71,7 @@
         },
         {
             "title": "Patrón Reposado",
-            "price": 13.9,
+            "price": 14.0,
             "description": "",
             "item_modifiers": [],
             "item_extras": [],
@@ -82,7 +82,7 @@
         },
         {
             "title": "Tierra Noble Añejo",
-            "price": 13.5,
+            "price": 14.0,
             "description": "",
             "item_modifiers": [],
             "item_extras": [],
@@ -92,8 +92,8 @@
             "warnings": []
         },
         {
-            "title": "Patrón Silver",
-            "price": 11.9,
+            "title": "Patrón Reposado",
+            "price": 14.0,
             "description": "",
             "item_modifiers": [],
             "item_extras": [],
@@ -104,7 +104,7 @@
         },
         {
             "title": "Don Julio Reposado",
-            "price": 14.6,
+            "price": 15.0,
             "description": "",
             "item_modifiers": [],
             "item_extras": [],
@@ -115,7 +115,7 @@
         },
         {
             "title": "Clase Azul Reposado",
-            "price": 33.9,
+            "price": 35.0,
             "description": "",
             "item_modifiers": [],
             "item_extras": [],

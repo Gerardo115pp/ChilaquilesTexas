@@ -1,12 +1,12 @@
 {
-    "title": "Café con piquete",
+    "title": "Café Con Piquete",
     "section_uuid": "5de413cd-4003-5f36-ab3c-ef674068a4dd",
     "item_list_title": "Café con piquete (1.5oz)",
     "items": [
         {
             "title": "Café lechero with rompope",
-            "price": 7.9,
-            "description": "Café lechero con rompope.",
+            "price": 10.0,
+            "description": "* Rompope is a traditional drink once made in convents by nuns using eggs, vanilla, milk, sugar, and alcohol, often while singing their hymns during Lauds or the Angelus. When rompope, espresso, and warm milk come together in a cup, they create a holy experience worth including in your morning ritual.",
             "item_modifiers": [],
             "item_extras": [],
             "parentheses_label": "",
@@ -16,7 +16,7 @@
         },
         {
             "title": "Capuchino with Baileys",
-            "price": 11.9,
+            "price": 12.0,
             "description": "Capuchino con Baileys.",
             "item_modifiers": [],
             "item_extras": [],
@@ -27,7 +27,7 @@
         },
         {
             "title": "Capuchino with Kahlua",
-            "price": 11.9,
+            "price": 12.0,
             "description": "Capuchino con Kahlua.",
             "item_modifiers": [],
             "item_extras": [],
